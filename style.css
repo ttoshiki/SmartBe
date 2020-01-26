@@ -6421,6 +6421,12 @@ a.guest-url {
   }
 }
 
+/* ----------------
+
+追加CSS
+
+---------------- */
+
 /* カレンダーのスタイル */
 .eo-fullcalendar {
   font-family: "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro",
@@ -6439,4 +6445,39 @@ a.guest-url {
 
 .eo-fullcalendar .fc-view-container .fc-view > table > tbody {
   background-color: #f7f5ef;
+}
+
+.front-page__catchCopy {
+  display: flex;
+  justify-content: center;
+}
+
+.front-page__text {
+  display: inline;
+  font-size: 42px;
+  font-weight: 400;
+  text-align: center;
+  color: #49240d;
+  position: relative;
+  margin: 120px auto 50px;
+}
+
+.front-page__text::before,
+.front-page__text::after {
+  position: absolute;
+  content: "";
+  background-color: #49240d;
+  width: 1px;
+  height: 64px;
+  transform: skew(-45deg);
+}
+
+.front-page__text::before {
+  top: -40px;
+  left: -40px;
+}
+
+.front-page__text::after {
+  bottom: -28px;
+  right: -16px;
 }

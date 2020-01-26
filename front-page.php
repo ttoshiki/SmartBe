@@ -43,7 +43,24 @@
 
     get_header();
 ?>
-
+<div id="thumb-v" class="slider-pro">
+  <div class="sp-slides">
+    <div class="sp-slide">
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.png" />
+    </div>
+    <div class="sp-slide">
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.png" />
+    </div>
+    <div class="sp-slide">
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.png" />
+    </div>
+  <!--/ sp-slides--></div>
+  <div class="sp-thumbnails">
+    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.png"/>
+    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.png"/>
+    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.png"/>
+  </div>
+<!--/ thumb-v--></div>
 <?php
     // 画像スライダー
     if (!empty($header_slider['slider'])) :
@@ -256,6 +273,10 @@
       endif;
     endif;
 ?>
+
+<section class="front-page__catchCopy">
+    <h1 class="front-page__text">起業やライフスタイルを豊かにする<br />女性のための総合アカデミー</h1>
+</section>
 
 <div id="main_col">
   <!-- original -->
@@ -670,5 +691,33 @@ $args = array(
   <!-- original -->
 
 </div><!-- END #main_col -->
+<script>
+$( document ).ready(function( $ ) {
+  $('#thumb-v').sliderPro({
+    width: 1020,//横幅
+    height: 480,
+    orientation: 'vertical',//スライドの方向
+    arrows: true,//左右の矢印
+    buttons: false,//ナビゲーションボタン
+    loop: false,//ループ
+    thumbnailsPosition: 'right',//サムネイルの位置
+    thumbnailPointer: true,//アクティブなサムネイルにマークを付ける
+    thumbnailWidth: 200,//サムネイルの横幅
+    thumbnailHeight: 80,//サムネイルの縦幅
+    breakpoints: {
+      796: {//表示方法を変えるサイズ
+        thumbnailsPosition: 'bottom',
+        thumbnailWidth: 200,
+        thumbnailHeight: 80
+      },
+      480: {//表示方法を変えるサイズ
+        orientation: 'horizontal',
+        thumbnailWidth: 0,
+        thumbnailHeight: 0
+      }
+    }
+  });
+});
+</script>
 
 <?php get_footer(); ?>

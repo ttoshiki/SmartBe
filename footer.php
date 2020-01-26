@@ -22,7 +22,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
  <div id="side_fixedbanner">
   <ul>
     <li><a href="https://www.facebook.com/hiromi.ito.888" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/201911/side_bnr01.png"></a><li>
-    <li><a href="<?php echo content_url() ?>mg src="<?php echo get_template_directory_uri(); ?>/img/201911/side_bnr02.png"></a><li>
+    <li><a href="<?php echo content_url() ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/201911/side_bnr02.png"></a><li>
   </ul>
 </div><!-- side_fixedbanner -->
 
