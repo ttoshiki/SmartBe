@@ -2,29 +2,41 @@
     get_header();
 
     $display_title = get_post_meta($post->ID, 'display_title', true);
-    if (!$display_title) $display_title = 'show';
+    if (!$display_title) {
+        $display_title = 'show';
+    }
     $display_side_content = get_post_meta($post->ID, 'display_side_content', true);
-    if (!$display_side_content) $display_side_content = 'show';
+    if (!$display_side_content) {
+        $display_side_content = 'show';
+    }
 
     $image_id = get_post_meta($post->ID, 'page_image', true);
     if ($image_id) {
-      $image = wp_get_attachment_image_src( $image_id, 'full' );
+        $image = wp_get_attachment_image_src($image_id, 'full');
     }
     if (!empty($image[0])) {
-      $headline = get_post_meta($post->ID, 'page_headline', true);
-      $caption_style = 'font-size:'.get_post_meta($post->ID, 'page_headline_font_size', true).'px;';
-      $caption_style .= 'color:'.get_post_meta($post->ID, 'page_headline_color', true).';';
-      $shadow1 = get_post_meta($post->ID, 'page_headline_shadow1', true);
-      $shadow2 = get_post_meta($post->ID, 'page_headline_shadow2', true);
-      $shadow3 = get_post_meta($post->ID, 'page_headline_shadow3', true);
-      $shadow4 = get_post_meta($post->ID, 'page_headline_shadow4', true);
-      if (empty($shadow1)) $shadow1 = 0;
-      if (empty($shadow2)) $shadow2 = 0;
-      if (empty($shadow3)) $shadow3 = 0;
-      if (empty($shadow4)) $shadow4 = '#333333';
-      if ($shadow1 || $shadow2 || $shadow3) {
-        $caption_style .= 'text-shadow:'.$shadow1.'px '.$shadow2.'px '.$shadow3.'px '.$shadow4.';';
-      }
+        $headline = get_post_meta($post->ID, 'page_headline', true);
+        $caption_style = 'font-size:'.get_post_meta($post->ID, 'page_headline_font_size', true).'px;';
+        $caption_style .= 'color:'.get_post_meta($post->ID, 'page_headline_color', true).';';
+        $shadow1 = get_post_meta($post->ID, 'page_headline_shadow1', true);
+        $shadow2 = get_post_meta($post->ID, 'page_headline_shadow2', true);
+        $shadow3 = get_post_meta($post->ID, 'page_headline_shadow3', true);
+        $shadow4 = get_post_meta($post->ID, 'page_headline_shadow4', true);
+        if (empty($shadow1)) {
+            $shadow1 = 0;
+        }
+        if (empty($shadow2)) {
+            $shadow2 = 0;
+        }
+        if (empty($shadow3)) {
+            $shadow3 = 0;
+        }
+        if (empty($shadow4)) {
+            $shadow4 = '#333333';
+        }
+        if ($shadow1 || $shadow2 || $shadow3) {
+            $caption_style .= 'text-shadow:'.$shadow1.'px '.$shadow2.'px '.$shadow3.'px '.$shadow4.';';
+        }
     }
 ?>
 
@@ -33,7 +45,7 @@
 <?php if (!empty($image[0])) { ?>
   <div id="header_image">
    <img src="<?php echo esc_attr($image[0]); ?>" alt="" />
-   <?php if ($headline){ ?>
+   <?php if ($headline) { ?>
    <div class="caption rich_font" style="<?php echo esc_attr($caption_style); ?>">
     <?php echo str_replace(array("\r\n", "\r", "\n"), '<br />', esc_html($headline)); ?>
    </div>
@@ -45,6 +57,7 @@
 	<div class="about_wrapper">
 		<div class="about_study">
 			<h3>SmartBeがご提供する女性のための学び</h3>
+			<?php echo do_shortcode('[eo_fullcalendar]'); ?>
 			<div class="about_study_box">
 				<div class="about_stydy_box_ttlwrapper clearfix">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_img01.png">
@@ -59,11 +72,11 @@
 					また女性の一人起業家の場合、体力も限られているため効率的に集客をこなさなければ、理想の収益を出すことは難しいです。<br>
 					<br>
 					SmartBeが誇る、賢女の集客アカデミーでは150名を超える同じ志を持った仲間とともに、女性の強みを活かした集客の方法や売り上げの立て方を1から学ぶことができます。<br></p>
-					<a href="<?php echo get_page_link( 333 );?>">お申し込み・お問い合わせはこちら</a>
+					<a href="<?php echo get_page_link(333);?>">お申し込み・お問い合わせはこちら</a>
 					</div>
 					<!-- <div class="openbtn">
 						<div class="close">READ MORE<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_readmore.png"></div>
-						<div class="open">CLOSE<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_close.png"></div> 
+						<div class="open">CLOSE<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_close.png"></div>
 					</div>-->
 				</div><!-- about_stydy_box_ac -->
 			</div><!-- about_study_box -->
@@ -125,12 +138,12 @@
 				<div class="about_link_box">
 					<h4>受講生の声</h4>
 					<p>さらに詳しい声はこちらから</p>
-					<a href="<?php echo get_page_link( 52 );?>">READ MORE</a>
+					<a href="<?php echo get_page_link(52);?>">READ MORE</a>
 				</div>
 				<div class="about_link_box">
 					<h4>よくあるご質問</h4>
 					<p>セミナー参加希望の方や受講生から多く寄せられるご質問はこちらから</p>
-					<a href="<?php echo get_page_link( 58 );?>">READ MORE</a>
+					<a href="<?php echo get_page_link(58);?>">READ MORE</a>
 				</div>
 			</div>
 		</div><!-- about_link -->

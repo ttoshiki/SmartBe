@@ -1,10 +1,12 @@
 <?php
 global $dp_options;
-if (! $dp_options) $dp_options = get_desing_plus_option();
+if (! $dp_options) {
+    $dp_options = get_desing_plus_option();
+}
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<?php if($dp_options['use_ogp']) { ?>
+<?php if ($dp_options['use_ogp']) { ?>
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <?php } else { ?>
 <head>
@@ -14,12 +16,16 @@ if (! $dp_options) $dp_options = get_desing_plus_option();
 <meta name="viewport" content="width=device-width">
 <title><?php wp_title('|', true, 'right'); ?></title>
 <meta name="description" content="<?php seo_description(); ?>">
-<?php if ($dp_options['use_ogp']) { ogp(); }; ?>
+<?php if ($dp_options['use_ogp']) {
+    ogp();
+}; ?>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 <?php if ($favicon = wp_get_attachment_image_src($dp_options['favicon'], 'full')) : ?>
 <link rel="shortcut icon" href="<?php echo esc_attr($favicon[0]); ?>">
 <?php endif; ?>
-<?php wp_enqueue_style('style', get_stylesheet_uri(), false, version_num(), 'all'); wp_enqueue_script( 'jquery' ); if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+<?php wp_enqueue_style('style', get_stylesheet_uri(), false, version_num(), 'all'); wp_enqueue_script('jquery'); if (is_singular()) {
+    wp_enqueue_script('comment-reply');
+} ?>
 <?php wp_head(); ?>
 </head>
 <body id="body" <?php body_class(); ?>>
@@ -46,17 +52,11 @@ if (! $dp_options) $dp_options = get_desing_plus_option();
       </div>
       <div class="header_sublink pc">
         <ul>
-          <li><a href="<?php bloginfo('url'); ?>/smartbe/faq/" class="first">よくある質問</a></li>
-          <li><a href="<?php bloginfo('url'); ?>/smartbe/reception/">取材受付</a></li>
-          <li><a href="<?php bloginfo('url'); ?>/smartbe/contact/" class="last">お問い合わせ</a></li>
+          <li><a href="<?php bloginfo('url'); ?>/smartbe/contact/" class="first">お問い合わせ</a></li>
+          <li><a href="<?php bloginfo('url'); ?>/smartbe/reception/" class="last">取材受付</a></li>
         </ul>
       </div>
     </div><!-- header_upper -->
-    <!-- 
-    <?php if ($dp_options['show_search_bar_subpage'] && !is_front_page() && is_show_custom_search_form()) { ?>
-        <a href="#" class="search_button"><span><?php _e('Search', 'tcd-w'); ?></span></a>
-    <?php } ?>
-    -->
     <!-- グローバルメニュー -->
     <?php if (has_nav_menu('global-menu')) { ?>
         <!-- SP_Gメニューボタン▼▼▼  -->
@@ -64,11 +64,10 @@ if (! $dp_options) $dp_options = get_desing_plus_option();
         <!-- SP_Gメニューボタン▲▲▲  -->
         <!-- Gメニューリスト▼▼▼  -->
         <div id="global_menu">
-        <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'theme_location' => 'global-menu' , 'container' => '' ) ); ?>
+        <?php wp_nav_menu(array( 'sort_column' => 'menu_order', 'theme_location' => 'global-menu' , 'container' => '' )); ?>
         <ul class="sp">
-          <li><a href="<?php bloginfo('url'); ?>/smartbe/faq/" class="first">よくある質問</a></li>
-          <li><a href="<?php bloginfo('url'); ?>/smartbe/reception/">取材受付</a></li>
-          <li><a href="<?php bloginfo('url'); ?>/smartbe/contact/" class="last">お問い合わせ</a></li>
+          <li><a href="<?php bloginfo('url'); ?>/smartbe/contact/" class="first">お問い合わせ</a></li>
+          <li><a href="<?php bloginfo('url'); ?>/smartbe/reception/" class="last">取材受付</a></li>
         </ul>
         </div>
         <!-- Gメニューリスト▲▲▲  -->
@@ -76,13 +75,6 @@ if (! $dp_options) $dp_options = get_desing_plus_option();
     <!-- グローバルメニューここまで -->
    </div>
   </div>
-<?php if ($dp_options['show_search_bar_subpage'] && (!is_front_page() || $GLOBALS['custom_search_vars']) && is_show_custom_search_form()) { ?>
-  <div id="header_search">
-   <div class="inner">
-<?php get_template_part('custom_search_form'); ?>
-   </div>
-  </div>
-<?php } ?>
  </div><!-- END #header -->
 
  <div id="main_contents" class="clearfix">

@@ -6420,3 +6420,23 @@ a.guest-url {
     display: block;
   }
 }
+
+/* カレンダーのスタイル */
+.eo-fullcalendar {
+  font-family: "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro",
+    メイリオ, Meiryo, sans-serif;
+}
+
+.fc-widget-header .fc-row .fc-sat {
+  background-color: #627ff5;
+  color: #fff;
+}
+
+.fc-widget-header .fc-row .fc-sun {
+  background-color: #f4627e;
+  color: #fff;
+}
+
+.eo-fullcalendar .fc-view-container .fc-view > table > tbody {
+  background-color: #f7f5ef;
+}
