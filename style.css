@@ -243,7 +243,21 @@ img {
 
 /* ----------------------------------------------------------------------
  基本設定
----------------------------------------------------------------------- */
+ ---------------------------------------------------------------------- */
+:root {
+  /* color Rule */
+  --pink: #f4627e;
+  --lightpink: #f5718a;
+  --orange: #ff995e;
+  --yellow: #fff68e;
+  --blue: #627ff5;
+  --white: #ffffff;
+
+  /* font Rule */
+  --medium: 400;
+  --semibold: 500;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -320,6 +334,35 @@ a:hover {
 #left_col > :last-child,
 #side_col > :last-child {
   margin-bottom: 0;
+}
+
+.c-button {
+  background-color: transparent;
+  display: block;
+  margin: 48px auto;
+  padding: 16px 48px;
+  font-size: 20px;
+  border-radius: 32px;
+  transition: background-color 0.2s;
+}
+
+.c-button:hover {
+  cursor: pointer;
+}
+
+.c-button.-primary {
+  border: 1px solid #b69e84;
+  color: #b69e84;
+}
+.c-button.-primary:hover {
+  background-color: #b69e84;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .c-button {
+    font-size: 16px;
+  }
 }
 
 /* ----------------------------------------------------------------------
@@ -4774,16 +4817,6 @@ a.guest-url {
   }
 }
 
-#footer .under_section_buttons {
-  margin: 20px auto 50px !important;
-}
-@media screen and (max-width: 767px) {
-  #footer .under_section_buttons {
-    margin: 20px auto 50px !important;
-    padding: 20px 0 !important;
-  }
-}
-
 /* --------------------------
 --------------#voice------------
 -------------------------- */
@@ -6421,11 +6454,130 @@ a.guest-url {
   }
 }
 
+/* --------------------------
+--------------#インフLady------------
+-------------------------- */
+.inflady__titleWrapper {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.inflady__title {
+  display: inline-block;
+  margin-top: 80px;
+  padding: 0px 48px 48px;
+  font-weight: var(--semibold);
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  background-image: url("img/carigraphy_l.svg"), url("img/carigraphy_r.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right bottom;
+  background-size: 180px;
+}
+
+.inflady__titleStrong {
+  color: var(--pink);
+  font-size: 32px;
+  font-weight: var(--semibold);
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+
+.inflady__paragraph {
+  margin-top: 48px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.inflady__sec {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.inflady__heading {
+  display: inline-block;
+  text-align: center;
+  font-size: 26px;
+  font-weight: var(--semibold);
+  letter-spacing: 2px;
+  color: #92785f;
+  border-bottom: 1px solid #92785f;
+  padding: 0 24px 2px;
+}
+
+.inflady__headingStrong {
+  font-size: 34px;
+  font-weight: var(--semibold);
+}
+
+.inflady__mustSns {
+  width: 640px;
+  margin: 48px auto 0;
+  padding: 32px 64px;
+  text-align: center;
+  border: 1px solid #92785f;
+}
+
+.inflady__mustSnsFigure {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px auto 0;
+}
+
+.inflady__snsLogo {
+  height: 64px;
+}
+
+.inflady__snsCaption {
+  color: #999999;
+}
+
+.inflady__snsFigure.-youtube {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.inflady__snsLogo.-youtube {
+  height: 48px;
+  margin-bottom: 12px;
+}
+
+.inflady__strong {
+  color: var(--pink);
+  font-weight: var(--medium);
+}
+
+.inflady__chart {
+  display: block;
+  margin: 48px auto 0;
+  width: 100%;
+  max-width: 640px;
+}
+
 /* ----------------
 
 追加CSS
 
 ---------------- */
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+}
 
 /* カレンダーのスタイル */
 .eo-fullcalendar {
@@ -6480,4 +6632,59 @@ a.guest-url {
 .front-page__text::after {
   bottom: -28px;
   right: -16px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-id-3321 #header_image img {
+    height: auto;
+  }
+
+  .page-id-3321 #header_image:before {
+    padding-top: 41%;
+  }
+
+  .inflady__sec {
+    width: 92%;
+  }
+
+  .inflady__title {
+    margin-top: 96px;
+    padding: 0 8px 64px;
+    font-size: 16px;
+    background-size: 40%;
+  }
+
+  .inflady__titleStrong {
+    font-size: 24px;
+  }
+
+  .inflady__paragraph {
+    font-size: 16px;
+  }
+
+  .inflady__mustSns {
+    width: 100%;
+    padding: 24px 32px;
+  }
+
+  .inflady__mustSnsFigure {
+    max-width: 320px;
+  }
+
+  .inflady__heading {
+    font-size: 18px;
+  }
+
+  .inflady__headingStrong {
+    font-size: 24px;
+  }
+
+  .inflady__snsLogo {
+    height: 32px;
+  }
+
+  .inflady__snsLogo.-youtube {
+    height: 24px;
+    margin-bottom: 8px;
+  }
 }

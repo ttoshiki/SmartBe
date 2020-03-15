@@ -641,16 +641,6 @@
     endif;
 ?>
 
-<!-- original -->
-<div class="section_buttons">
-  <div class="inner">
-    <ul>
-      <li><a href="/smartbe/voice/"><img src="http://25works.sakura.ne.jp/smartbe/wp-content/uploads/2019/08/btn_voice.png" alt="受講者の声"></a></li>
-      <li><a href="/smartbe/faq/"><img src="http://25works.sakura.ne.jp/smartbe/wp-content/uploads/2019/08/btn_faq.png" alt="よくあるご質問"></a></li>
-    </ul>
-  </div>
-</div><!-- section_buttons -->
-
   <!-- カスタム投稿（ブログ） -->
   <div id="top_blog_index">
   <?php

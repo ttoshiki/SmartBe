@@ -26,22 +26,6 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
   </ul>
 </div><!-- side_fixedbanner -->
 
-<!-- 下層のみ受講者の声とよくある質問を表示 -->
-<?php if (is_home() || is_front_page()) : ?>
-
-<?php else: ?>
-  <div class="section_buttons under_section_buttons">
-    <div class="inner">
-      <ul>
-        <li><a href="/smartbe/voice/"><img src="<?php echo content_url() ?>/uploads/2019/08/btn_voice.png" alt="受講者の声"></a></li>
-        <li><a href="/smartbe/faq/"><img src="<?php echo content_url() ?>/uploads/2019/08/btn_faq.png" alt="よくあるご質問"></a></li>
-      </ul>
-    </div>
-  </div><!-- section_buttons -->
-<?php endif; ?>
-<!-- 下層のみ受講者の声とよくある質問を表示 -->
-
-
  <div class="section_links">
     <div class="inner">
       <h3><img src="<?php echo content_url() ?>/uploads/2019/08/title_b.png" alt="follow us"></h3>
