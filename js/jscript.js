@@ -250,3 +250,12 @@ jQuery(function(){
     });
 });
 
+// セミナーイベント一覧 タブ
+jQuery(function(){
+  $(".seminar-event__tabButton").on("click", function() {
+    var index = $(".seminar-event__tabButton").index(this);
+    $(".seminar-event__tabButton").removeClass("-active");
+    $(this).addClass("-active");
+    $(".seminar-event__item").removeClass("-active").eq(index).addClass('-active');
+    });
+});

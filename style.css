@@ -1504,6 +1504,48 @@ form.columns-5 .header_search_button {
   background: #92785f;
 }
 
+.seminar-event__tab {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.seminar-event__tabButton {
+  width: 200px;
+  padding: 16px 0;
+  border: 1px solid #b69e84;
+  color: #b69e84;
+  transition: background-color 0.2s;
+}
+
+.seminar-event__tabButton.-active {
+  background-color: #b69e84;
+  color: var(--white);
+  transition: background-color 0.2s;
+}
+
+.seminar-event__tabButton:hover {
+  cursor: pointer;
+}
+
+.seminar-event__tabButton:first-child {
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+}
+
+.seminar-event__tabButton:nth-child(2) {
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+}
+
+.seminar-event__item {
+  display: none;
+}
+
+.seminar-event__item.-active {
+  display: block;
+}
+
 /* ----------------------------------------------------------------------
  固定ページ
 ---------------------------------------------------------------------- */
@@ -6635,11 +6677,11 @@ a.guest-url {
 }
 
 @media screen and (max-width: 767px) {
-  .page-id-3321 #header_image img {
+  .inflady #header_image img {
     height: auto;
   }
 
-  .page-id-3321 #header_image:before {
+  .inflady #header_image:before {
     padding-top: 41%;
   }
 
