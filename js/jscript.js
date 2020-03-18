@@ -252,10 +252,37 @@ jQuery(function(){
 
 // セミナーイベント一覧 タブ
 jQuery(function(){
+  $(".seminar-event__taxonomyButton").click();
+  $(".seminar-event__taxonomyButton").click();
   $(".seminar-event__tabButton").on("click", function() {
     var index = $(".seminar-event__tabButton").index(this);
-    $(".seminar-event__tabButton").removeClass("-active");
+    $(".seminar-event__tabButton").removeClass("-show");
+    $(this).addClass("-show");
+    $(".seminar-event__item").removeClass("-show").eq(index).addClass('-show');
+    $(".seminar-event__tagItem").removeClass("-active").eq(index).addClass('-active');
+
+    if(index == 0) {
+      $(".seminar-event__calendar").addClass("-show");
+      $(".seminar-event__calendarCategories").css('display', 'none');
+      $(".seminar-event__taxonomyButton").removeClass("-active");
+    }
+    if(index == 1) {
+      $(".seminar-event__item.-show").css('height', 'auto');
+    }
+  });
+
+  $(".seminar-event__taxonomyButton").on("click", function() {
+    $(".seminar-event__calendar").removeClass("-show");
+    $(".seminar-event__calendarCategory").css('height', 'auto');
+    $(".seminar-event__calendarCategories").css('display', 'block');
+    $(".seminar-event__item.-show").css('height', 'auto');
+    var taxonomyIndex = $(".seminar-event__taxonomyButton").index(this);
+    console.log(taxonomyIndex)
+    $(".seminar-event__taxonomyButton").removeClass("-active");
     $(this).addClass("-active");
-    $(".seminar-event__item").removeClass("-active").eq(index).addClass('-active');
-    });
+    $(".seminar-event__calendarCategory").removeClass("-show").eq(taxonomyIndex).addClass('-show');
+    $('.seminar-event__calendarCategory').css('display', 'none');
+    $('.seminar-event__calendarCategory.-show').css('display', 'block');
+  });
+
 });

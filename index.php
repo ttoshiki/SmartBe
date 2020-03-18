@@ -47,15 +47,40 @@
 
   <?php } ?>
 
+  <h2 class="archive__title">カテゴリーで絞り込む</h2>
+  <div class="seminar-event__list">
+    <div class="seminar-event__tagItem -active">
+        <?php
+          $taxonomies = get_terms('event-category');
+          foreach ($taxonomies as $taxonomy) {
+              echo '<button class="seminar-event__taxonomyButton">' . $taxonomy-> name . '</button>';
+          }
+       ?>
+    </div>
+    <div class="seminar-event__tagItem">
+      <?php the_category(); ?>
+    </div>
+  </div>
 
   <ul class="seminar-event__tab">
-    <li class="seminar-event__tabButton -active">カレンダー</li>
+    <li class="seminar-event__tabButton -show">カレンダー</li>
     <li class="seminar-event__tabButton">イベント一覧</li>
   </ul>
 
   <div class="seminar-event__list">
-    <div class="seminar-event__item -active">
-      <?php echo do_shortcode('[eo_fullcalendar]'); ?>
+    <div class="seminar-event__item -show">
+        <div class="seminar-event__calendar -show">
+          <?php echo do_shortcode('[eo_fullcalendar]'); ?>
+        </div>
+        <div class="seminar-event__calendarCategories">
+          <?php foreach ($taxonomies as $taxonomy) {
+           $calendarCategory = '[eo_fullcalendar category="' .$taxonomy->slug .'"]'; ?>
+           <div class="seminar-event__calendarCategory">
+             <?php echo do_shortcode($calendarCategory); ?>
+           </div>
+        <?php
+       } ?>
+        </div>
     </div>
     <div class="seminar-event__item">
       <?php if (have_posts()) : ?>
@@ -66,8 +91,8 @@
           <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
             <div class="image">
               <?php if (has_post_thumbnail()) {
-    the_post_thumbnail('size2');
-} else { ?><img src="<?php echo get_template_directory_uri(); ?>/img/common/no_image2.gif" title="" alt="" /><?php } ?>
+           the_post_thumbnail('size2');
+       } else { ?><img src="<?php echo get_template_directory_uri(); ?>/img/common/no_image2.gif" title="" alt="" /><?php } ?>
             </div>
             <h3 class="title js-ellipsis"><?php the_title(); ?></h3>
             <?php
