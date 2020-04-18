@@ -46,19 +46,27 @@
 <div id="thumb-v" class="slider-pro">
   <div class="sp-slides">
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.png" />
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.jpg" />
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.png" />
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.jpg" />
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.png" />
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.jpg" />
     </div>
-  <!--/ sp-slides--></div>
+    <div class="sp-slide">
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04.png" />
+    </div>
+    <div class="sp-slide">
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg" />
+    </div>
+  </div><!--/ sp-slides-->
   <div class="sp-thumbnails">
-    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.png"/>
-    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.png"/>
-    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.png"/>
+    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.jpg"/>
+    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.jpg"/>
+    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.jpg"/>
+    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04.png"/>
+    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg"/>
   </div>
 <!--/ thumb-v--></div>
 <?php
@@ -280,18 +288,38 @@
 
 <div id="main_col">
   <!-- original -->
-  <div class="section_feature">
-    <div class="inner">
-      <h3><img src="http://25works.sakura.ne.jp/smartbe/wp-content/uploads/2019/08/title_f.png" alt="SmartBeの強み"></h3>
-      <p>SmartBeでは女性が好きを仕事にして、経済的自立をしながら<br>自分らしく美しく豊かな人生を生きていくための様々な学びをご提供しています</p>
-      <ul class="main_col_strongpoint">
-        <li><a href="<?php bloginfo('url'); ?>/smartbe/seminar_list/"><img src="http://25works.sakura.ne.jp/smartbe/wp-content/uploads/2019/08/f-01.png" alt="圧倒的集客力が身につく"></a></li>
-        <li><a href="<?php bloginfo('url'); ?>/smartbe/seminar_list/#community"><img src="http://25works.sakura.ne.jp/smartbe/wp-content/uploads/2019/08/f-02.png" alt="インフルエンサーになれる"></a></li>
-        <li><a href="http://smartbeauty-expo.com/" target="_blank"><img src="http://25works.sakura.ne.jp/smartbe/wp-content/uploads/2019/08/f-04.png" alt="自分らしい美しさが手に入る"></a></li>
-        <li><a href=""><img src="http://25works.sakura.ne.jp/smartbe/wp-content/uploads/2019/08/f-05.png" alt="場所を選ばず学べる"></a></li>
-      </ul>
+  <section class="front-page__about">
+    <h1 class="front-page__aboutHeading">好きを仕事にして、経済的自立をしながら<br />自分らしい美しく豊かな人生を生きるために</h1>
+    <div class="front-page__aboutContents">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/top_about_image.svg" alt="">
+        <ul class="front-page__aboutTextWrapper">
+            <li>
+                <div>
+                    <h2><img src="<?php echo get_template_directory_uri(); ?>/img/top_about_learn.svg" alt="学び"></h2>
+                    <p class="front-page__aboutText">経済・マインド・時間的自立、この3つを習得し女性が自由な生き方を手に入れるためのセミナーを常時開催中です。まずはセミナーに参加して、あなたにピッタリの学びを見つけてください。</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2><img src="<?php echo get_template_directory_uri(); ?>/img/top_about_encounter.svg" alt="出会い"></h2>
+                    <p class="front-page__aboutText">
+                        集客アカデミーやスクールには、150人を超える同じ志を持った仲間が待っています。<br />
+                        ともに学ぶことでモチベーション高く学べ、コミュニティの力も身につきます。
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2><img src="<?php echo get_template_directory_uri(); ?>/img/top_about_future.svg" alt="未来"></h2>
+                    <p class="front-page__aboutText">
+                        学びを通して経済的自立や時間的余裕が手に入り、さらに多くの可能性が広がります。<br />
+                        自分だけの美しい生き方を手に入れて、輝く人生を送りましょう。
+                    </p>
+                </div>
+            </li>
+        </ul>
     </div>
-  </div>
+  </section>
 
 
   <!-- original -->
@@ -684,16 +712,16 @@ $args = array(
 <script>
 $( document ).ready(function( $ ) {
   $('#thumb-v').sliderPro({
-    width: 1020,//横幅
-    height: 480,
+    width: 933,//横幅
+    height: 526,
     orientation: 'vertical',//スライドの方向
     arrows: true,//左右の矢印
     buttons: false,//ナビゲーションボタン
     loop: false,//ループ
     thumbnailsPosition: 'right',//サムネイルの位置
     thumbnailPointer: true,//アクティブなサムネイルにマークを付ける
-    thumbnailWidth: 200,//サムネイルの横幅
-    thumbnailHeight: 80,//サムネイルの縦幅
+    thumbnailWidth: 280,//サムネイルの横幅
+    thumbnailHeight: 160,//サムネイルの縦幅
     breakpoints: {
       796: {//表示方法を変えるサイズ
         thumbnailsPosition: 'bottom',

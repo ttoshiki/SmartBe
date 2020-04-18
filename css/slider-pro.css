@@ -166,7 +166,7 @@
   margin-left: 13px;
 }
 
-.sp-right-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
+/* .sp-right-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
   content: "";
   position: absolute;
   width: 0;
@@ -177,7 +177,7 @@
   border-right: 13px solid #f00;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-}
+} */
 
 /* Left thumbnails with pointer
 -------------------------------*/
