@@ -295,13 +295,13 @@
         <ul class="front-page__aboutTextWrapper">
             <li>
                 <div>
-                    <h2><img src="<?php echo get_template_directory_uri(); ?>/img/top_about_learn.svg" alt="学び"></h2>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top_about_learn.svg" alt="学び">
                     <p class="front-page__aboutText">経済・マインド・時間的自立、この3つを習得し女性が自由な生き方を手に入れるためのセミナーを常時開催中です。まずはセミナーに参加して、あなたにピッタリの学びを見つけてください。</p>
                 </div>
             </li>
             <li>
                 <div>
-                    <h2><img src="<?php echo get_template_directory_uri(); ?>/img/top_about_encounter.svg" alt="出会い"></h2>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top_about_encounter.svg" alt="出会い">
                     <p class="front-page__aboutText">
                         集客アカデミーやスクールには、150人を超える同じ志を持った仲間が待っています。<br />
                         ともに学ぶことでモチベーション高く学べ、コミュニティの力も身につきます。
@@ -310,7 +310,7 @@
             </li>
             <li>
                 <div>
-                    <h2><img src="<?php echo get_template_directory_uri(); ?>/img/top_about_future.svg" alt="未来"></h2>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top_about_future.svg" alt="未来">
                     <p class="front-page__aboutText">
                         学びを通して経済的自立や時間的余裕が手に入り、さらに多くの可能性が広がります。<br />
                         自分だけの美しい生き方を手に入れて、輝く人生を送りましょう。
@@ -467,34 +467,52 @@
   </section>
   <section class="front-page__media">
     <h1 class="front-page__mediaHeading">
-        日本テレビ「スッキリ」, NHK「ニュース シブ5時」,日経ARIAなど<br />
-        <strong>たくさんのメディアにご紹介いただきました！</strong>
+        <div class="front-page__mediaHeadingInner">
+            <span>日本テレビ「スッキリ」, NHK「ニュース シブ5時」,日経ARIAなど</span><br />
+            <strong>たくさんのメディアにご紹介いただきました！</strong>
+        </div>
     </h1>
     <ul class="front-page__mediaList">
         <li class="front-page__mediaItem">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media01.jpg" alt="">
-            <h2>日本テレビ「スッキリ」</h2>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media01.jpg" alt="日本テレビ「スッキリ」出演" class="front-page__mediaImage">
+            <div class="front-page__mediaNameBg">
+                <h2 class="front-page__mediaName">日本テレビ「スッキリ」</h2>
+            </div>
             <time datetime="2017-08-24">2017年8月24日</time>
         </li>
         <li class="front-page__mediaItem">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media02.jpg" alt="">
-            <h2>日本テレビ「スッキリ」</h2>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media02.jpg" alt="NHK「ニュース シブ５時」" class="front-page__mediaImage">
+            <div class="front-page__mediaNameBg">
+                <h2 class="front-page__mediaName">NHK「ニュース シブ５時」</h2>
+            </div>
             <time datetime="2017-08-24">2017年10月19日</time>
         </li>
         <li class="front-page__mediaItem">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media03.jpg" alt="">
-            <h2>日本テレビ「スッキリ」</h2>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media03.jpg" alt="日経ARIA「個人ビジネス成功の方程式」" class="front-page__mediaImage">
+            <div class="front-page__mediaNameBg">
+                <h2 class="front-page__mediaName">日経ARIA「個人ビジネス成功の方程式」</h2>
+            </div>
             <time datetime="2017-08-24">2019年4月17日</time>
         </li>
         <li class="front-page__mediaItem">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media04.jpg" alt="">
-            <h2>日本テレビ「スッキリ」</h2>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media04.jpg" alt="著書 玉の輿にのれなかった崖っぷち女が　年収1000万円になった黄金の大逆転ルール" class="front-page__mediaImage">
+            <div class="front-page__mediaNameBg">
+                <h2 class="front-page__mediaName">著書 玉の輿にのれなかった崖っぷち女が<br />年収1000万円になった黄金の大逆転ルール</h2>
+            </div>
             <time datetime="2019-09">2019年9月</time>
         </li>
     </ul>
   </section>
-
-
+  <section class="front-page__aboutCourse">
+      <div class="front-page__aboutCourseInner">
+          <h1 class="front-page__aboutCourseHeading">講座について</h1>
+          <h2 class="front-page__aboutCourseCatch"><strong class="front-page__aboutCourseStrong -primary"><span>あなたにあった</span><em class="front-page__aboutCourseEmphasis">SNS集客</em></strong>を<strong class="front-page__aboutCourseStrong">総合的に学べる</strong>環境があります</h2>
+          <div class="front-page__aboutCourseSns">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/top_sns_list_l.png" alt="FaceBook LINE公式 Instagram" class="front-page__aboutCourseSnsImage"><img src="<?php echo get_template_directory_uri(); ?>/img/top_sns_list_r.png" alt="Youtube Twitter セールスコピーライティング" class="front-page__aboutCourseSnsImage">
+          </div>
+          <p class="front-page__aboutCourseContent">Smart BeではFacebookを中心としたSNS集客が学べる講座を多数用意しています。どの講座も業界では有名な講師をお呼びしているので、再現性があり結果がでる内容となっています。気軽に学べる講座から本格的にビジネスに活かす講座と幅広く選べるようになっているので、ぜひあなたにピッタリなSNS集客を見つけてみてください。</p>
+      </div>
+  </section>
 
   <!-- original -->
 
@@ -848,11 +866,11 @@
   <?php
 $args = array(
   'post_type' => 'blog', /* カスタム投稿名が「blog」の場合 */
-  'posts_per_page' => 4, /* 表示する数 */
+  'posts_per_page' => 6, /* 表示する数 */
 ); ?>
 
 <?php $my_query = new WP_Query($args); ?>
-<h3>ブログ</h3>
+<h3>コラム</h3>
 <ul class="">
 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 <!-- ▽ ループ開始 ▽ -->
