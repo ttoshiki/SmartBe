@@ -862,7 +862,41 @@
 ?>
 
   <!-- カスタム投稿（ブログ） -->
-  <div id="top_blog_index">
+  <div class="front-page__post">
+    <?php
+    $args = array(
+    'post_type' => 'post',
+    'posts_per_page' => 6, /* 表示する数 */
+    ); ?>
+
+        <?php $my_query = new WP_Query($args); ?>
+        <h3 class="front-page__postHeading">受付中のセミナー</h3>
+        <ul class="front-page__postList">
+            <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+            <!-- ▽ ループ開始 ▽ -->
+            <li class="front-page__postItem">
+                <a href="<?php the_permalink(); ?>">
+                <span class="top_blog_index_box_img"><?php echo get_the_post_thumbnail(); ?></span>
+                <div class="front-page__postInfo">
+                    <h4 class="front-page__postName"><?php the_title(); ?></h4>
+                    <ul class="post-categories">
+                        <?php
+                            foreach ((get_the_category()) as $cat) {
+                                echo '<li>' . $cat->cat_name . '</li>';
+                            };
+                        ?>
+                    </ul>
+                </div>
+                </a>
+            </li>
+            <!-- △ ループ終了 △ -->
+            <?php endwhile; ?>
+        </ul>
+        <?php wp_reset_postdata(); ?>
+    </div>
+
+  <!-- カスタム投稿（ブログ） -->
+  <div class="front-page__post">
   <?php
 $args = array(
   'post_type' => 'blog', /* カスタム投稿名が「blog」の場合 */
@@ -870,24 +904,25 @@ $args = array(
 ); ?>
 
 <?php $my_query = new WP_Query($args); ?>
-<h3>コラム</h3>
-<ul class="">
+<h3 class="front-page__postHeading">コラム</h3>
+<ul class="front-page__postList">
 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 <!-- ▽ ループ開始 ▽ -->
-  <li class="top_blog_index_box">
+  <li class="front-page__postItem">
     <a href="<?php the_permalink(); ?>">
       <span class="top_blog_index_box_img"><?php echo get_the_post_thumbnail(); ?></span>
-      <h4><?php the_title(); ?></h4>
-      <p class="top_blog_index_box_time"><?php the_time(get_option('date_format')); ?></p>
-      <p class="top_blog_index_box_cate">
-      <?php $terms = wp_get_object_terms($post->ID, 'blog');//カスタムタクソノミーのスラッグ
-            if ($terms) {
-                foreach ($terms as $term) {
-                    echo '<span class="'.$term->slug.'">'.$term->name.'</span>' ;
-                }
-            };
-        ?>
-      </p>
+      <div class="front-page__postInfo">
+          <h4 class="front-page__postName"><?php the_title(); ?></h4>
+          <ul class="post-categories">
+              <?php $terms = wp_get_object_terms($post->ID, 'blog');//カスタムタクソノミーのスラッグ
+                if ($terms) {
+                    foreach ($terms as $term) {
+                        echo '<li class="'.$term->slug.'">'.$term->name.'</li>' ;
+                    }
+                };
+                ?>
+            </ul>
+    </div>
     </a>
   </li>
 <!-- △ ループ終了 △ -->

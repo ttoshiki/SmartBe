@@ -21,22 +21,52 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
 
  <div id="side_fixedbanner">
   <ul>
-    <li><a href="https://www.facebook.com/hiromi.ito.888" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/201911/side_bnr01.png"></a><li>
-    <li><a href="<?php echo content_url() ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/201911/side_bnr02.png"></a><li>
+    <li>
+      <a href="<?php echo content_url() ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/mailmagazine_registration.svg" class="side_fixedbanner__image">
+      </a>
+    <li>
+    <li>
+      <a href="/contact" target="_blank">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/contact.svg" class="side_fixedbanner__image">
+      </a>
+    <li>
   </ul>
 </div><!-- side_fixedbanner -->
 
- <div class="section_links">
-    <div class="inner">
-      <h3><img src="<?php echo content_url() ?>/uploads/2019/08/title_b.png" alt="follow us"></h3>
-      <ul class="section_links_inner1911">
-        <li><a href="http://nav.cx/2MXCV2B" target="_blank"><img src="<?php echo content_url() ?>/uploads/2019/08/bnr_line.png" alt="LINE友だち追加"></a></li>
-        <li><a href="http://smartbe8.com/wp/magazine/" target="_blank"><img src="<?php echo content_url() ?>/uploads/2020/01/banner.png" alt="メルマガ登録"></a></li>
-        <li><a href="https://www.facebook.com/hiromi.ito.888" target="_blank"><img src="<?php echo content_url() ?>/themes/gensen_tcd050/img/201911/fb_banner1911.png" alt="代表 伊藤宏美公式Facebook"></a></li>
-        <li><a href="https://store.line.me/stickershop/product/1478176/ja" target="_blank"><img src="<?php echo content_url() ?>/themes/gensen_tcd050/img/201911/line_banner1911.png" alt="Smart Be 公式LINEスタンプ 頑張る女子の応援スタンプ"></a></li>
-      </ul>
+ <section class="footer__mailMagazine">
+   <h1 class="footer__mailMagazineHeader">
+    <div class="footer__mailMagazineHeaderInner">
+      <strong class="footer__mailMagazineHeaderStrong">メルマガ</strong>登録<span class="footer__mailMagazineHeaderSmall">で</span>無料プレゼント！
     </div>
-  </div>
+   </h1>
+   <h2 class="footer__mailMagazineCatch">2つの特典が登録後すぐに手に入ります！</h2>
+   <div class="footer__mailMagazineImages">
+     <img src="<?php echo get_template_directory_uri(); ?>/img/footer_mail_mag_l.jpg" alt="賢女のFacebook集客" class="footer__mailMagazineImage">
+     <img src="<?php echo get_template_directory_uri(); ?>/img/footer_mail_mag_r.jpg" alt="今すぐ使える「お茶会」ノウハウ集" class="footer__mailMagazineImage">
+   </div>
+   <h3 class="footer__mailMagazineCta">
+     <span><strong class="footer__mailMagazineCtaStrong">5</strong>秒で簡単登録♪特典も即ゲット！</span>
+   </h3>
+   <a href="" class="footer__mailMagazineButton">今すぐ無料で登録する</a>
+ </section>
+ <section class="footer__lineGuidance">
+   <h1 class="footer__lineGuidanceHeader">LINE公式アカウントご案内</h1>
+   <h2 class="footer__lineGuidanceCatch">最新イベントやお得な情報をお届けします。<br />ぜひ友達登録して、お得な情報をゲットしてください。</h2>
+   <div class="footer__lineGuidanceImages">
+     <img src="<?php echo get_template_directory_uri(); ?>/img/footer_line_smartPhone.svg" alt="賢女のFacebook集客" class="footer__lineGuidancePhone">
+     <div class="footer__lineGuidanceRegistration">
+       <div class="footer__lineGuidanceQRcode">
+         <img src="<?php echo get_template_directory_uri(); ?>/img/footer_line_qr.png" alt="LINE QRコード" class="footer__lineGuidanceImage">
+         <img src="<?php echo get_template_directory_uri(); ?>/img/footer_line_qr_speech_bubble.svg" alt="QRコードを読み取って友達追加！" class="footer__lineGuidanceImage">
+        </div>
+        <div class="footer__lineGuidanceIds">
+          <span class="footer__lineGuidanceLabel">LINE ID</span>
+          <span class="footer__lineGuidanceId">@hiromi888</span>
+        </div>
+     </div>
+   </div>
+ </section>
  <!-- original -->
 
 <?php if ($footer_navs) { ?>
