@@ -284,5 +284,4 @@ jQuery(function(){
     $('.seminar-event__calendarCategory').css('display', 'none');
     $('.seminar-event__calendarCategory.-show').css('display', 'block');
   });
-
 });

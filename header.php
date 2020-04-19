@@ -23,6 +23,7 @@ if (! $dp_options) {
 <?php if ($favicon = wp_get_attachment_image_src($dp_options['favicon'], 'full')) : ?>
 <link rel="shortcut icon" href="<?php echo esc_attr($favicon[0]); ?>">
 <?php endif; ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <link rel="stylesheet" type="text/css" href="<?php echo content_url(); ?>/themes/gensen_tcd050/css/slider-pro.css" media="screen" />
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
 <?php wp_enqueue_style('style', get_stylesheet_uri(), false, version_num(), 'all'); wp_enqueue_script('jquery'); if (is_singular()) {
@@ -32,7 +33,8 @@ if (! $dp_options) {
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-<script src="<?php echo content_url(); ?>/themes/gensen_tcd050/js/jquery.sliderPro.min.js" async>
+<script src="<?php echo content_url(); ?>/themes/gensen_tcd050/js/jquery.sliderPro.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <?php wp_head(); ?>
 </head>
 <body id="body" <?php body_class(); ?>>

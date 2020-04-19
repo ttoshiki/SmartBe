@@ -255,7 +255,7 @@ img {
 
   /* font Rule */
   --medium: 400;
-  --semibold: 500;
+  --semibold: 600;
 
   /* width Rule */
   --max-width: 960px;
@@ -6906,7 +6906,7 @@ a.guest-url {
 .front-page__voice {
   background-color: #f7f5ef;
   margin-top: 80px;
-  padding-top: 80px;
+  padding: 80px 0;
 }
 
 .front-page__voiceHeading {
@@ -6928,8 +6928,133 @@ a.guest-url {
 .front-page__voiceText {
   font-size: 24px;
   color: #574f48;
-  margin-top: 24px;
+  margin: 24px auto 48px;
   text-align: center;
+}
+
+.front-page__voiceItem {
+  max-width: 200px;
+}
+
+.front-page__voiceSpeechBubble {
+  position: relative;
+  padding: 16px 12px 0;
+  max-width: 100%;
+  height: 220px;
+  background: #fff;
+  border: solid 1px #dadada;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.front-page__voiceSpeechBubble::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -15px;
+  border: 10px solid transparent;
+  border-top: 10px solid #fff;
+  z-index: 50;
+}
+
+.front-page__voiceSpeechBubble::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -17px;
+  border: 12px solid transparent;
+  border-top: 12px solid #dadada;
+  z-index: 10;
+}
+
+.front-page__voiceName {
+  font-size: 18px;
+  font-weight: var(--semibold);
+}
+
+.front-page__voicePosition {
+  font-size: 14px;
+  font-weight: var(--semibold);
+  margin-top: 4px;
+  color: #49240d;
+}
+
+.front-page__voiceContent {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.front-page__voiceImage {
+  display: block;
+  margin: 0 auto;
+}
+
+.front-page__voiceSliderWrapper {
+  position: relative;
+}
+
+.front-page__voice .bx-wrapper {
+  margin: 0 auto 48px;
+  background-color: #f7f5ef;
+  border: none;
+  box-shadow: inherit;
+}
+
+.front-page__voicePrevBtn {
+  position: absolute;
+  background: url(img/angle-right.svg) no-repeat;
+  right: 9%;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  z-index: 1000;
+}
+
+.front-page__voiceNextBtn {
+  position: absolute;
+  left: 9%;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  z-index: 1000;
+  background: url(img/angle-left.svg) no-repeat;
+}
+
+.front-page__voice .bx-next {
+  display: block;
+  width: 100%;
+  height: 32px;
+}
+
+.front-page__voice .bx-prev {
+  display: block;
+  width: 100%;
+  height: 32px;
+}
+
+.front-page__voiceBgGradationPrev {
+  position: absolute;
+  background: linear-gradient(to left, transparent, #f7f5ef);
+  height: 420px;
+  width: 200px;
+  z-index: 100;
+  left: 4%;
+}
+
+.front-page__voiceBgGradationNext {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to right, transparent, #f7f5ef);
+  height: 420px;
+  width: 200px;
+  z-index: 100;
+  right: 4%;
+}
+
+.front-page__voice .bx-wrapper img {
+  width: 80%;
 }
 
 .front-page__voiceButton {

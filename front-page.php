@@ -355,12 +355,145 @@
         </li>
     </ul>
   </section>
-
   <section class="front-page__voice">
       <h1 class="front-page__voiceHeading">受講生の声</h1>
       <p class="front-page__voiceText">累計●●人以上の受講生の喜びの声をご紹介します</p>
-      <a href="/voice" class="front-page__voiceButton">もっと見る</a>
+      <div class="front-page__voiceSliderWrapper">
+        <div class="front-page__voiceBgGradationPrev"></div>
+        <div class="front-page__voiceNextBtn"></div>
+        <ul class="front-page__voiceslider">
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_01.png">
+            </li>
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_02.png">
+            </li>
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_03.png">
+            </li>
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_01.png">
+            </li>
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_02.png">
+            </li>
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_03.png">
+            </li>
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_01.png">
+            </li>
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_02.png">
+            </li>
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_03.png">
+            </li>
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_01.png">
+            </li>
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_02.png">
+            </li>
+            <li class="front-page__voiceItem">
+                <div class="front-page__voiceSpeechBubble">
+                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
+                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
+                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
+                </div>
+                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_03.png">
+            </li>
+        </ul>
+        <div class="front-page__voiceBgGradationNext"></div>
+        <div class="front-page__voicePrevBtn"></div>
+
+    </div>
+    <a href="/voice" class="front-page__voiceButton">もっと見る</a>
   </section>
+  <section class="front-page__media">
+    <h1 class="front-page__mediaHeading">
+        日本テレビ「スッキリ」, NHK「ニュース シブ5時」,日経ARIAなど<br />
+        <strong>たくさんのメディアにご紹介いただきました！</strong>
+    </h1>
+    <ul class="front-page__mediaList">
+        <li class="front-page__mediaItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media01.jpg" alt="">
+            <h2>日本テレビ「スッキリ」</h2>
+            <time datetime="2017-08-24">2017年8月24日</time>
+        </li>
+        <li class="front-page__mediaItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media02.jpg" alt="">
+            <h2>日本テレビ「スッキリ」</h2>
+            <time datetime="2017-08-24">2017年10月19日</time>
+        </li>
+        <li class="front-page__mediaItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media03.jpg" alt="">
+            <h2>日本テレビ「スッキリ」</h2>
+            <time datetime="2017-08-24">2019年4月17日</time>
+        </li>
+        <li class="front-page__mediaItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/top_media04.jpg" alt="">
+            <h2>日本テレビ「スッキリ」</h2>
+            <time datetime="2019-09">2019年9月</time>
+        </li>
+    </ul>
+  </section>
+
 
 
   <!-- original -->
@@ -778,5 +911,26 @@ $( document ).ready(function( $ ) {
   });
 });
 </script>
+
+<script>
+    $(document).ready(function(){
+      $('.front-page__voiceslider').bxSlider({
+        maxSlides: 6,
+        moveSlides: 1,
+        slideWidth: 200,
+        slideMargin: 24,
+        auto: true,
+        easing: 'ease-in',
+        pause: 3000,
+        autoHover: true,
+        pager: false,
+        nextSelector: ".front-page__voicePrevBtn",
+        prevSelector: ".front-page__voiceNextBtn",
+        nextText: "",
+        prevText: "",
+      });
+    });
+  </script>
+
 
 <?php get_footer(); ?>
