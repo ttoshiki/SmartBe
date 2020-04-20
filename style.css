@@ -6789,6 +6789,7 @@ a.guest-url {
   color: #49240d;
   font-weight: var(--semibold);
   line-height: 1.7;
+  letter-spacing: 2px;
 }
 
 .front-page__aboutContents {
@@ -6900,13 +6901,15 @@ a.guest-url {
   font-feature-settings: "palt";
 }
 
-.front-page__serviceName:nth-of-child(3) {
+.front-page__serviceItem:nth-child(4) .front-page__serviceName {
   font-size: 22px;
+  margin: 52px auto 24px;
 }
 
 .front-page__serviceItem svg {
   display: block;
   margin: 0 auto;
+  height: 110px;
 }
 
 .front-page__serviceItem:first-child svg {
