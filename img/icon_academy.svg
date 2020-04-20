@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="139.1" height="116.433" viewBox="0 0 139.1 116.433">
+  <g id="school" transform="translate(-1.25 -1.25)">
+    <path id="パス_193" data-name="パス 193" d="M154.7,146.852H109.2V71l22.752-15.2L154.7,71Z" transform="translate(-61.152 -30.548)" fill="none" stroke="#ff878a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <rect id="長方形_149" data-name="長方形 149" width="30.351" height="60.702" transform="translate(93.552 55.603)" stroke-width="2.5" stroke="#ff878a" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect id="長方形_150" data-name="長方形 150" width="30.351" height="60.702" transform="translate(17.697 55.731)" stroke-width="2.5" stroke="#ff878a" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <line id="線_105" data-name="線 105" x1="136.6" transform="translate(2.5 116.433)" fill="none" stroke="#ff878a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <line id="線_106" data-name="線 106" y1="22.752" transform="translate(70.8 2.5)" fill="none" stroke="#ff878a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <circle id="楕円形_12" data-name="楕円形 12" cx="9.946" cy="9.946" r="9.946" transform="translate(60.854 44.376)" stroke-width="2.5" stroke="#ff878a" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect id="長方形_151" data-name="長方形 151" width="15.197" height="30.351" transform="translate(63.202 85.954)" stroke-width="2.5" stroke="#ff878a" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path id="パス_194" data-name="パス 194" d="M64.076,172.1H70.1a1.859,1.859,0,0,1,1.878,1.836h0v16.179a1.859,1.859,0,0,1-1.836,1.878H64.076a1.859,1.859,0,0,1-1.878-1.836h0V173.978a1.822,1.822,0,0,1,1.793-1.878h.085Z" transform="translate(-34.213 -97.202)" fill="none" stroke="#ff878a" stroke-miterlimit="10" stroke-width="2.5"/>
+    <path id="パス_195" data-name="パス 195" d="M241.876,172.1H247.9a1.859,1.859,0,0,1,1.878,1.836h0v16.179a1.859,1.859,0,0,1-1.836,1.878h-6.062A1.858,1.858,0,0,1,240,190.157h0V173.978a1.822,1.822,0,0,1,1.793-1.878h.085Z" transform="translate(-136.115 -97.202)" fill="none" stroke="#ff878a" stroke-miterlimit="10" stroke-width="2.5"/>
+  </g>
+</svg>
