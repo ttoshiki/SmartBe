@@ -7495,6 +7495,7 @@ a.guest-url {
 
 .footer__lineGuidanceQRcode {
   display: flex;
+  align-items: flex-start;
 }
 
 .footer__lineGuidanceIds {
