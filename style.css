@@ -3545,10 +3545,8 @@ ul.banner_list li a:hover .caption {
   font-size: 12px;
   line-height: 2;
 }
-#footer_bottom_menu li:after {
-  content: "|";
-  display: inline-block;
-  padding: 0 0.5em;
+#footer_bottom_menu li:not(:first-child) {
+  margin-left: 32px;
 }
 #footer_bottom_menu li:last-child:after {
   content: "";
