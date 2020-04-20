@@ -54,7 +54,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
    <h1 class="footer__lineGuidanceHeader">LINE公式アカウントご案内</h1>
    <h2 class="footer__lineGuidanceCatch">最新イベントやお得な情報をお届けします。<br />ぜひ友達登録して、お得な情報をゲットしてください。</h2>
    <div class="footer__lineGuidanceImages">
-     <img src="<?php echo get_template_directory_uri(); ?>/img/footer_line_smartPhone.svg" alt="賢女のFacebook集客" class="footer__lineGuidancePhone">
+     <img src="<?php echo get_template_directory_uri(); ?>/img/footer_line_smartPhone.svg" alt="" class="footer__lineGuidancePhone">
      <div class="footer__lineGuidanceRegistration">
        <div class="footer__lineGuidanceQRcode">
          <img src="<?php echo get_template_directory_uri(); ?>/img/footer_line_qr.png" alt="LINE QRコード" class="footer__lineGuidanceImage">
