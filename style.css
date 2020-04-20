@@ -7316,6 +7316,58 @@ a.guest-url {
   }
 }
 
+.instructorRecruitment {
+  background: url("img/bg_1.png");
+  padding: 80px 0;
+  margin-bottom: 48px;
+}
+
+.instructorRecruitment__inner {
+  background-color: #fff;
+  max-width: 960px;
+  padding: 48px;
+  margin: 0 auto;
+}
+
+.instructorRecruitment__heading {
+  color: #fff;
+  background: url("img/bg_heading.svg") no-repeat;
+  text-align: center;
+  font-size: 24px;
+  font-weight: var(--medium);
+  margin-top: 64px;
+  height: 58px;
+  line-height: 58px;
+  letter-spacing: 1px;
+}
+
+.instructorRecruitment__paragraph {
+  margin-top: 24px;
+}
+
+.iconWithButtonWrapper {
+  display: block;
+  text-align: center;
+}
+
+.iconWithButton {
+  display: flex;
+  margin: 56px auto 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #92785f;
+  color: #fff;
+  border-radius: 64px;
+  max-width: 450px;
+  height: 70px;
+  font-size: 22px;
+}
+
+.iconWithButton__icon {
+  margin-right: 12px;
+  display: block;
+}
+
 .footer__mailMagazine {
   max-width: 960px;
   margin: 0 auto;
