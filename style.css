@@ -7471,6 +7471,236 @@ a.guest-url {
   line-height: 1.8;
 }
 
+.about__reason {
+  background: url("img/bg_1.png");
+  background-size: cover;
+  padding: 80px 0 100px;
+}
+
+.about__reasonDecoration {
+  text-align: center;
+}
+
+.about__reasonHeading {
+  font-size: 40px;
+  font-weight: var(--semibold);
+  letter-spacing: 1px;
+  text-align: center;
+  color: #49240d;
+}
+
+.about__reasonHeadingStrong {
+  font-size: 55px;
+  color: #ff878a;
+}
+
+.about__reasonHeading::after {
+  content: "";
+  width: 140px;
+  height: 1px;
+  display: block;
+  margin: 8px auto 0;
+  background-color: #49240d;
+}
+
+.about__reasonList {
+  max-width: var(--max-width);
+  margin: 64px auto 0;
+}
+
+.about__reasonItem {
+  display: flex;
+  counter-increment: reasonList;
+  position: relative;
+}
+
+.about__reasonItem:not(:first-child) {
+  margin-top: 60px;
+}
+
+.about__reasonItem:first-child .about__reasonText,
+.about__reasonItem:nth-child(3) .about__reasonText {
+  margin-right: 48px;
+}
+
+.about__reasonItem:nth-child(2) .about__reasonText {
+  margin-left: 48px;
+}
+
+.about__reasonItem::before {
+  content: counter(reasonList, decimal-leading-zero);
+  position: absolute;
+  top: 18px;
+  font-size: 160px;
+  color: #feeae2;
+  z-index: -10;
+}
+
+.about__reasonItem:nth-child(2)::before {
+  right: 0;
+}
+
+.about__reasonItemHeading {
+  color: #49240d;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.about__reasonContent {
+  margin-top: 24px;
+  color: #333333;
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+.about__reasonImage {
+  max-width: 320px;
+  max-height: 220px;
+}
+
+.about__data {
+  padding: 80px 0;
+}
+
+.about__dataList {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 48px auto 0;
+}
+
+.about__dataItem {
+  max-width: 448px;
+}
+
+.about__dataItemHeading {
+  text-align: center;
+  color: #49240d;
+  font-weight: var(--medium);
+}
+
+.about__dataItemLine {
+  margin: 12px auto 32px;
+}
+
+.about__dataChart {
+  text-align: center;
+}
+
+.about__dataExplanation {
+  color: #49240d;
+  margin-top: 70px;
+}
+
+.about__reasonDotLine {
+  text-align: center;
+  margin: 48px 0 64px;
+}
+
+.about__dataSummary {
+  text-align: center;
+  font-size: 32px;
+  font-weight: var(--semibold);
+  color: #49240d;
+  letter-spacing: 1px;
+}
+
+.about__dataSummaryStrong {
+  font-size: 36px;
+  font-weight: var(--semibold);
+  color: #f4627e;
+}
+
+.about__reasonBanner {
+  max-width: 960px;
+  display: block;
+  margin: 80px auto 0;
+}
+
+.about__about {
+  padding: 120px 0;
+  background: url("img/about/about.jpg");
+  background-size: cover;
+}
+
+.about__aboutContents {
+  text-align: center;
+  font-size: 22px;
+  color: #49240d;
+  line-height: 1.8;
+}
+
+.about__aboutContents:first-of-type {
+  margin-top: 64px;
+}
+
+.about__aboutContents:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.about__aboutContentsStrong {
+  display: inline-block;
+  background: linear-gradient(transparent 60%, #fff68e 60%);
+  font-size: 24px;
+  font-weight: var(--semibold);
+}
+
+.about__representatives {
+  padding: 80px 0;
+  background-color: #faf9f5;
+  margin-bottom: 80px;
+}
+
+.about__representativesInner {
+  width: 90%;
+  margin: 0 auto;
+  padding: 84px 0;
+  background-color: #ffffff;
+}
+
+.about__representativesContentsWrapper {
+  max-width: var(--max-width);
+  margin: 48px auto;
+}
+
+.about__representativesContentsWrapper {
+  display: flex;
+  max-width: var(--max-width);
+}
+
+.about__about__representativesSns {
+  display: block;
+  margin-top: 32px;
+}
+
+.about__representativesContentsInner:first-child {
+  margin-right: 48px;
+}
+
+.about__representativesName {
+  color: #49240d;
+  font-size: 24px;
+  font-weight: var(--semibold);
+}
+
+.about__representativesContent {
+  margin-top: 32px;
+  line-height: 1.8;
+  color: #333333;
+}
+
+.about__representativesContent:first-of-type {
+  margin-top: 24px;
+}
+
+.about__representativesContent:last-of-type {
+  margin-bottom: 12px;
+}
+
+.about__representativesSign {
+  text-align: right;
+}
+
 /* ------------------
  footer
 ------------------- */

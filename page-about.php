@@ -82,7 +82,7 @@
 		</ul>
 	</section>
 	<section class="about__reason">
-		<?php echo file_get_contents(get_template_directory() . '/img/about/reason_decoration.svg'); ?>
+		<div class="about__reasonDecoration"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_decoration.svg'); ?></div>
 		<h1 class="about__reasonHeading">Smart Beが選ばれる<strong class="about__reasonHeadingStrong">3</strong>つの理由</h1>
 		<ul class="about__reasonList">
 			<li class="about__reasonItem">
@@ -122,21 +122,22 @@
 			<li class="about__dataItem">
 				<h2 class="about__dataItemHeading">受講生の数</h2>
 				<hr class="about__dataItemLine" />
-				<span class="about__dataChart"><?php echo file_get_contents(get_template_directory() . '/img/about/data_chart01.svg'); ?></span>
+				<div class="about__dataChart"><?php echo file_get_contents(get_template_directory() . '/img/about/data_chart01.svg'); ?></div>
 				<p class="about__dataExplanation">2017年にSmart Be創業以来、高い満足度を獲得し続け、受講生は急増し続けています。</p>
 			</li>
 			<li class="about__dataItem">
 				<h2 class="about__dataItemHeading">受講生の年代</h2>
 				<hr class="about__dataItemLine" />
-				<span class="about__dataChart"><?php echo file_get_contents(get_template_directory() . '/img/about/data_chart01.svg'); ?></span>
+				<div class="about__dataChart"><?php echo file_get_contents(get_template_directory() . '/img/about/data_chart02.svg'); ?></div>
 				<p class="about__dataExplanation">受講生の半数が起業されたばかりの30代・40代の女性たちです。</p>
 			</li>
 		</ul>
+		<div class="about__reasonDotLine"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?></div>
 		<h3 class="about__dataSummary">受講生は主にコーチ・コンサル・セラピスト・お教室運営など<br /><strong class="about__dataSummaryStrong">おひとりさま起業で頑張る女性たち</strong>です</h3>
-		<img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonImage">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonBanner">
 	</section>
 	<section class="about__about">
-		<h1 class="about__aboutHeading">Smart Beとは</h1>
+		<h1 class="about__heading">Smart Beとは</h1>
 		<p class="about__aboutContents">
 			強く、そして本物の美しさをもつ女性は<br />
 			“賢さ”を持ち合わせていると思い<br />
@@ -150,34 +151,36 @@
 		<p class="about__aboutContents">
 			そのためには「Be」にあたる講座をたくさんご提供し<br />
 			企業理念である
-			<strong class="about__aboutContentsStrong">「学びを通して、人生を選択できる、自由で幸せな女性を創出する」</strong>
 		</p>
-		<p class="about__aboutContent">
+		<p class="about__aboutContents"><strong class="about__aboutContentsStrong">「学びを通して、人生を選択できる、自由で幸せな女性を創出する」</strong></p>
+		<p class="about__aboutContents">
 			これを多くの女性に体現してもらえるよう<br />
-			たくさんの想いと願いを込めてSmart Beといたしました。<br />
+			たくさんの想いと願いを込めてSmart Beといたしました。
 		</p>
 	</section>
 	<section class="about__representatives">
-		<h1 class="about__heading">代表紹介</h1>
-		<div class="about__representativesContentsWrapper">
-			<div class="about__representativesContentsInner">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/about/representatives.jpg" alt="伊藤宏美" class="about__representativesPhoto">
-				<span class="about__about__representativesSns"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></span>
-			</div>
-			<div class="about__representativesContentsInner">
-				<h2 class="about__representativesName">合同会社 Smart Be 代表　伊藤宏美</h2>
-				<p class="about__representativesContent">
-					株式会社インテリジェンスでキャリコンサルタント、
-					GMOペイメントゲートウェイ株式会社で新卒・中途採用を経験。10年間、企業に属し役職まで就くも雇われず自立したいという思いから個人ビジネスで起業。
-				</p>
-				<p class="about__representativesContent">
-					しかし現実は甘くなく、“売上ゼロ・集客ゼロ”の日々が続く。そんなある日、過労で倒れ仕事ができない状態に。「一生懸命働くのも大切だが、効率的な方法を探さないと女性の幸せは手に入らない」と感じソーシャルメディアを使った独自のWebマーケティング手法を開発。
-					その結果90日間で効果があらわれ、年間1,000人以上の集客に成功。さらにはSNSからNHKや日本テレビ、楽天クリムゾンFM、出版社からの講演依頼をいただくなど活動の幅は多岐にわたる。
-				</p>
-				<p class="about__representativesContent">
-					現在は賢女の集客アカデミーを主宰。受講生一人ひとりにあった集客メソッドを構築。企業で培った人生マネジメント能力をいかし、わずか20日間で売上100万円以上の売上実績を出すなどクライアントの業績アップに貢献している。
-				</p>
-				<span class="about__about__representativesSns"><?php echo file_get_contents(get_template_directory() . '/img/about/sign.svg'); ?></span>
+		<div class="about__representativesInner">
+			<h1 class="about__heading">代表紹介</h1>
+			<div class="about__representativesContentsWrapper">
+				<div class="about__representativesContentsInner">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/about/representatives.jpg" alt="伊藤宏美" class="about__representativesPhoto">
+					<a href="//www.facebook.com/hiromi.ito.888" class="about__about__representativesSns"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
+				</div>
+				<div class="about__representativesContentsInner">
+					<h2 class="about__representativesName">合同会社 Smart Be 代表　伊藤宏美</h2>
+					<p class="about__representativesContent">
+						株式会社インテリジェンスでキャリコンサルタント、
+						GMOペイメントゲートウェイ株式会社で新卒・中途採用を経験。10年間、企業に属し役職まで就くも雇われず自立したいという思いから個人ビジネスで起業。
+					</p>
+					<p class="about__representativesContent">
+						しかし現実は甘くなく、“売上ゼロ・集客ゼロ”の日々が続く。そんなある日、過労で倒れ仕事ができない状態に。「一生懸命働くのも大切だが、効率的な方法を探さないと女性の幸せは手に入らない」と感じソーシャルメディアを使った独自のWebマーケティング手法を開発。
+						その結果90日間で効果があらわれ、年間1,000人以上の集客に成功。さらにはSNSからNHKや日本テレビ、楽天クリムゾンFM、出版社からの講演依頼をいただくなど活動の幅は多岐にわたる。
+					</p>
+					<p class="about__representativesContent">
+						現在は賢女の集客アカデミーを主宰。受講生一人ひとりにあった集客メソッドを構築。企業で培った人生マネジメント能力をいかし、わずか20日間で売上100万円以上の売上実績を出すなどクライアントの業績アップに貢献している。
+					</p>
+					<div class="about__representativesSign"><?php echo file_get_contents(get_template_directory() . '/img/about/sign.svg'); ?></div>
+				</div>
 			</div>
 		</div>
 	</section>
