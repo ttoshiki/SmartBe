@@ -53,134 +53,135 @@
   </div>
 <?php } ?>
 
-<div id="about">
-	<div class="about_wrapper">
-		<div class="about_study">
-			<h3>SmartBeがご提供する女性のための学び</h3>
-			<?php echo do_shortcode('[eo_fullcalendar]'); ?>
-			<div class="about_study_box">
-				<div class="about_stydy_box_ttlwrapper clearfix">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_img01.png">
-					<div class="about_stydy_box_ttl">
-						<h4>賢女の集客アカデミー</h4>
-						<p>毎月10人の安定的な集客を可能にし、理想の収入を得るためのメソッドを半年かけて学べる、女性起業家のための学校。</p>
-					</div>
-				</div><!-- about_stydy_box_ttlwrapper -->
-				<div class="about_stydy_box_ac">
-					<div class="readmore_cont">
-					<p>起業家が最初にぶつかる壁は集客と言えます。<br>
-					また女性の一人起業家の場合、体力も限られているため効率的に集客をこなさなければ、理想の収益を出すことは難しいです。<br>
-					<br>
-					SmartBeが誇る、賢女の集客アカデミーでは150名を超える同じ志を持った仲間とともに、女性の強みを活かした集客の方法や売り上げの立て方を1から学ぶことができます。<br></p>
-					<a href="<?php echo get_page_link(333);?>">お申し込み・お問い合わせはこちら</a>
-					</div>
-					<!-- <div class="openbtn">
-						<div class="close">READ MORE<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_readmore.png"></div>
-						<div class="open">CLOSE<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_close.png"></div>
-					</div>-->
-				</div><!-- about_stydy_box_ac -->
-			</div><!-- about_study_box -->
-			<div class="about_study_box">
-				<div class="about_stydy_box_ttlwrapper clearfix">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_img02.png">
-					<div class="about_stydy_box_ttl">
-						<h4>インフLady</h4>
-						<p>Instagram・YouTube・twitter、それぞれの使い方を学びながら、自らインフルエンサーとなり大きな影響力を持つ人材として成長できるコミュニティ</p>
-					</div>
-				</div><!-- about_stydy_box_ttlwrapper -->
-				<div class="about_stydy_box_ac">
-					<div class="readmore_cont">
-					<p>世の中にSNSが広く浸透し、人々のコミュニケーション手段の1つとして、なくてはならないものと言っても過言ではないでしょう。<br>
-					<br>
-					そこでSmartBeではインフLadyというコミュニティを発足。<br>
-					SNSの中でも、押さえておくべき</p>
-						<ul>
-							<li>Instagram</li>
-							<li>YouTube</li>
-							<li>twitter</li>
-						</ul>
-					<p>この3つの楽しみ方・正しい活用方法を、多くの仲間とともに学べる環境をご用意しました。コミュニティに参加すると、有名インフルエンサーや各SNSを知り尽くしたスペシャリストから直接指導を受けられるイベントに参加できたり、参加者同士でフォローしあって人脈を広げたり、SNSの醍醐味を存分に味わうことができます。<br>
-					<br>
-					出会いの場として楽しんだり、しっかり学んで自らインフルエンサーとなり高い影響力を掴んだり、ビジネスもプライベートも共に充実させられるサービスです。<br></p>
-					<a href="https://www.facebook.com/groups/inflady/" target="_blank">コミュニティへの参加はこちらから</a>
-					</div>
-					<!-- <div class="openbtn">
-						<div class="close">READ MORE<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_readmore.png"></div>
-						<div class="open">CLOSE<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_close.png"></div>
-					</div>-->
-				</div><!-- about_stydy_box_ac -->
-			</div><!-- about_study_box -->
-			<div class="about_study_box">
-				<div class="about_stydy_box_ttlwrapper clearfix">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_img03.png">
-					<div class="about_stydy_box_ttl">
-						<h4>トータルビューティーを学ぶ</h4>
-						<p>心と身体の両方が輝く、美の本質を身につけ、豊かに美しく生きる女性としての人間力を学びを通して高めるサービスを近日公開予定！</p>
-					</div>
-				</div><!-- about_stydy_box_ttlwrapper -->
-				<div class="about_stydy_box_ac">
-					<div class="readmore_cont">
-					<p>女性として充実した人生を送るためには美しさが必須とSmartBeは考えます。<br>
-					この美しさは外見だけでなく、もちろん心の美しさも指します。心も身体もトータルに磨いてこそ、女性は輝きを増すからです。しかし忙しい現代女性は多くの時間を美容に割くことは難しいのが現実です。<br>
-					<br>
-					そこでSmartBeでは、外見から中身、多岐に渡るテーマの中から自分に足りない部分だけを学べるミニセミナーや短期講座を多数開催予定！全女性の美をトータルにサポート致します。
+<img src="<?php echo get_template_directory_uri(); ?>/img/about/header.jpg" alt="はじめての方へ" class="about__header">
+
+<main class="about">
+	<section class="about__learn">
+		<h1 class="about__heading">女性による女性のための学び</h1>
+		<p class="about__learnLead">
+			Beでは女性が「好き」なことを仕事にして<br />
+			経済的自立をしながら自分らしく美しく豊かな人生を生きるための<br />
+			さまざまな学びをご提供しています
+		</p>
+		<ul class="about__learnList">
+			<li class="about__learnItem">
+				<div class="about__learnImage"><?php echo file_get_contents(get_template_directory() . '/img/about/learn01.svg'); ?></div>
+				<h2 class="about__learnItemHeading">圧倒的な集客力</h2>
+				<p class="about__learnItemContent">一人ひとりに合わせた<br />再現性の高い集客が可能に</p>
+			</li>
+			<li class="about__learnItem">
+				<div class="about__learnImage"><?php echo file_get_contents(get_template_directory() . '/img/about/learn02.svg'); ?></div>
+				<h2 class="about__learnItemHeading">SNSの影響力</h2>
+				<p class="about__learnItemContent">楽しく賢くSNSを使い、<br />インフルエンサーになる</p>
+			</li>
+			<li class="about__learnItem">
+				<div class="about__learnImage"><?php echo file_get_contents(get_template_directory() . '/img/about/learn03.svg'); ?></div>
+				<h2 class="about__learnItemHeading">自分らしい生き方</h2>
+				<p class="about__learnItemContent">心身ともに明るく健康的に、<br />豊かな人生を送る</p>
+			</li>
+		</ul>
+	</section>
+	<section class="about__reason">
+		<?php echo file_get_contents(get_template_directory() . '/img/about/reason_decoration.svg'); ?>
+		<h1 class="about__reasonHeading">Smart Beが選ばれる<strong class="about__reasonHeadingStrong">3</strong>つの理由</h1>
+		<ul class="about__reasonList">
+			<li class="about__reasonItem">
+				<div class="about__reasonText">
+					<h2 class="about__reasonItemHeading">「好き」を仕事にできる</h2>
+					<p class="about__reasonContent">
+						「好きこそ物の上手なれ」ということわざがあるように誰でも好きなものには熱中し、自然と上達するもの。<br />
+						その効果をうまく利用しながら女性ならではの働き方を学べます。
 					</p>
-					</div>
-					<!-- <div class="openbtn">
-						<div class="close">READ MORE<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_readmore.png"></div>
-						<div class="open">CLOSE<img src="<?php echo get_template_directory_uri(); ?>/img/201909/about_close.png"></div>
-					</div> -->
-				</div><!-- about_stydy_box_ac -->
-			</div><!-- about_study_box -->
-		</div><!-- about_study -->
-		<div class="about_link">
-			<div class="about_link_inner clearfix">
-				<div class="about_link_box">
-					<h4>受講生の声</h4>
-					<p>さらに詳しい声はこちらから</p>
-					<a href="<?php echo get_page_link(52);?>">READ MORE</a>
 				</div>
-				<div class="about_link_box">
-					<h4>よくあるご質問</h4>
-					<p>セミナー参加希望の方や受講生から多く寄せられるご質問はこちらから</p>
-					<a href="<?php echo get_page_link(58);?>">READ MORE</a>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/about/reason01.jpg" alt="" class="about__reasonImage">
+			</li>
+			<li class="about__reasonItem">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/about/reason02.jpg" alt="" class="about__reasonImage">
+				<div class="about__reasonText">
+					<h2 class="about__reasonItemHeading">経済的自立ができる</h2>
+					<p class="about__reasonContent">
+						会社や夫、パートナーなどの収入に頼る時代はもう終わり！<br />
+						自分の「好き」を仕事として確立し、女性が自分の力だけで人生を歩めるようアシストしていきます。
+					</p>
 				</div>
+			</li>
+			<li class="about__reasonItem">
+				<div class="about__reasonText">
+					<h2 class="about__reasonItemHeading">人生の選択肢が増える</h2>
+					<p class="about__reasonContent">
+						結婚や妊娠・出産、親の介護などで自分の人生を歩むのが難しい女性がたくさんの学びを通して精神的・経済的な自立をし、理想の人生を送れるようにサポートします。
+					</p>
+				</div>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/about/reason03.jpg" alt="" class="about__reasonImage">
+			</li>
+		</ul>
+	</section>
+	<section class="about__data">
+		<h1 class="about__heading">受講生データ</h1>
+		<ul class="about__dataList">
+			<li class="about__dataItem">
+				<h2 class="about__dataItemHeading">受講生の数</h2>
+				<hr class="about__dataItemLine" />
+				<span class="about__dataChart"><?php echo file_get_contents(get_template_directory() . '/img/about/data_chart01.svg'); ?></span>
+				<p class="about__dataExplanation">2017年にSmart Be創業以来、高い満足度を獲得し続け、受講生は急増し続けています。</p>
+			</li>
+			<li class="about__dataItem">
+				<h2 class="about__dataItemHeading">受講生の年代</h2>
+				<hr class="about__dataItemLine" />
+				<span class="about__dataChart"><?php echo file_get_contents(get_template_directory() . '/img/about/data_chart01.svg'); ?></span>
+				<p class="about__dataExplanation">受講生の半数が起業されたばかりの30代・40代の女性たちです。</p>
+			</li>
+		</ul>
+		<h3 class="about__dataSummary">受講生は主にコーチ・コンサル・セラピスト・お教室運営など<br /><strong class="about__dataSummaryStrong">おひとりさま起業で頑張る女性たち</strong>です</h3>
+		<img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonImage">
+	</section>
+	<section class="about__about">
+		<h1 class="about__aboutHeading">Smart Beとは</h1>
+		<p class="about__aboutContents">
+			強く、そして本物の美しさをもつ女性は<br />
+			“賢さ”を持ち合わせていると思い<br />
+			社名に「Smart」をいれました。
+		</p>
+		<p class="about__aboutContents">
+			そして「Be」の部分には<br />
+			あなたに必要な学びを選択し自分なりの“賢さ”を<br />
+			作り上げてもらえたらという願いを込めています。
+		</p>
+		<p class="about__aboutContents">
+			そのためには「Be」にあたる講座をたくさんご提供し<br />
+			企業理念である
+			<strong class="about__aboutContentsStrong">「学びを通して、人生を選択できる、自由で幸せな女性を創出する」</strong>
+		</p>
+		<p class="about__aboutContent">
+			これを多くの女性に体現してもらえるよう<br />
+			たくさんの想いと願いを込めてSmart Beといたしました。<br />
+		</p>
+	</section>
+	<section class="about__representatives">
+		<h1 class="about__heading">代表紹介</h1>
+		<div class="about__representativesContentsWrapper">
+			<div class="about__representativesContentsInner">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/about/representatives.jpg" alt="伊藤宏美" class="about__representativesPhoto">
+				<span class="about__about__representativesSns"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></span>
 			</div>
-		</div><!-- about_link -->
-		<div class="about_sns">
-			<h3>公式メールマガジン＆公式LINEアカウント</h3>
-			<div class="about_sns_inner clearfix">
-				<div class="about_sns_box_left">
-					<p>SmartBeではメルマガとLINE@にて</p>
-						<ul>
-							<li>・Facebookを活用した集客テクニック</li>
-							<li>・起業ノウハウ</li>
-							<li>・起業のためのマインドアドバイス</li>
-							<li>・メルマガ会員だけのシークレットイベント情報</li>
-						</ul>
-					<p>などなど、女性起業家に有益な情報を無料でご提供しています。<br>
-					登録者数はメルマガとLINE@で延べ、1万人！<br>
-					まずはここから新しい一歩を踏み出しませんか？</p>
-				</div>
-				<div class="about_sns_box_right">
-					<div class="about_sns_mailmag">
-						<h4>公式メールマガジン登録</h4>
-						<p>メールマガジンを受け取るメールアドレスを入力して、送信ボタンを押してください。</p>
-						<?php echo do_shortcode('[mwform_formkey key="346"]'); ?>
-						</div>
-					<div class="about_sns_line">
-						<h4>公式LINEアカウント登録</h4>
-						<p>友だち追加ボタンまたは、QRコードを読み取って友だち登録してください。</p>
-						<div class="about_sns_line_inner clearfix">
-							<a class="about_sns_line_btn" href="">友だち追加</a>
-							<img class="about_sns_line_qr" src="<?php echo get_template_directory_uri(); ?>/img/201909/about_qr_img01.png">
-						</div>
-					</div>
-				</div>
+			<div class="about__representativesContentsInner">
+				<h2 class="about__representativesName">合同会社 Smart Be 代表　伊藤宏美</h2>
+				<p class="about__representativesContent">
+					株式会社インテリジェンスでキャリコンサルタント、
+					GMOペイメントゲートウェイ株式会社で新卒・中途採用を経験。10年間、企業に属し役職まで就くも雇われず自立したいという思いから個人ビジネスで起業。
+				</p>
+				<p class="about__representativesContent">
+					しかし現実は甘くなく、“売上ゼロ・集客ゼロ”の日々が続く。そんなある日、過労で倒れ仕事ができない状態に。「一生懸命働くのも大切だが、効率的な方法を探さないと女性の幸せは手に入らない」と感じソーシャルメディアを使った独自のWebマーケティング手法を開発。
+					その結果90日間で効果があらわれ、年間1,000人以上の集客に成功。さらにはSNSからNHKや日本テレビ、楽天クリムゾンFM、出版社からの講演依頼をいただくなど活動の幅は多岐にわたる。
+				</p>
+				<p class="about__representativesContent">
+					現在は賢女の集客アカデミーを主宰。受講生一人ひとりにあった集客メソッドを構築。企業で培った人生マネジメント能力をいかし、わずか20日間で売上100万円以上の売上実績を出すなどクライアントの業績アップに貢献している。
+				</p>
+				<span class="about__about__representativesSns"><?php echo file_get_contents(get_template_directory() . '/img/about/sign.svg'); ?></span>
 			</div>
-		</div><!-- about_sns -->
-	</div><!-- about_wrapper -->
-</div><!-- id about --->
+		</div>
+	</section>
+</main>
 
 </div><!-- END #main_col -->
 
