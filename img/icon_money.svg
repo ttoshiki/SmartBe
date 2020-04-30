@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="81" height="80" viewBox="0 0 81 80">
+  <g id="グループ_199" data-name="グループ 199" transform="translate(1.332 1.121)">
+    <g id="icon_yen" transform="translate(0 0)">
+      <ellipse id="楕円形_5" data-name="楕円形 5" cx="39" cy="38.5" rx="39" ry="38.5" transform="translate(0.168 0.379)" fill="#fff" stroke="#b79e84" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="パス_27" data-name="パス 27" d="M40.264,18A9.632,9.632,0,1,1,21,18" transform="translate(8.376 2.194)" fill="#fff" stroke="#b79e84" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="線_30" data-name="線 30" x2="18.712" transform="translate(29.652 35.437)" fill="none" stroke="#b79e84" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="線_31" data-name="線 31" x2="18.712" transform="translate(29.652 48.25)" fill="none" stroke="#b79e84" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="線_32" data-name="線 32" y1="22.455" transform="translate(39.008 35.128)" fill="none" stroke="#b79e84" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
