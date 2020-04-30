@@ -85,11 +85,11 @@
         </div>
         <p class="inflady__paragraph">SmartBeはインフLadyというコミュニティを発足し、3つのSNSの楽しみ方・正しい活用法を学べる環境をご用意しました。</p>
         <p class="inflady__paragraph"><strong class="inflady__strong">有名インフルエンサー</strong>や各SNSを知り尽くした<strong class="inflady__strong">スペシャリスト</strong>から直接指導を受けられるイベントに参加できたり、参加者同士でフォローしあって<strong class="inflady__strong">人脈を広げたり</strong>、SNSの醍醐味を存分に味わうことができます。</p>
-        <figure>
-            <img src="<?php echo content_url() ?>/themes/gensen_tcd050/img/inflady@2x.png" alt="インフLadyの図" class="inflady__chart">
+        <figure class="inflady__chart">
+            <?php echo file_get_contents(get_template_directory() . '/img/inflady_chart.svg');?>
         </figure>
         <p class="inflady__paragraph">出会いの場として楽しんだり、しっかり学んで自らインフルエンサーとなり高い影響力を掴んだり、ビジネスもプライベートも共に充実させられるサービスです。</p>
-        <button class="c-button -primary">無料でコミュニティーに入る</button>
+        <button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>無料でコミュニティーに入る</button>
     </section>
 </div><!-- id voice --->
 
