@@ -59,7 +59,7 @@
 	<section class="about__learn">
 		<h1 class="about__heading">女性による女性のための学び</h1>
 		<p class="about__learnLead">
-			Beでは女性が「好き」なことを仕事にして<br />
+			Smart Beでは女性が「好き」なことを仕事にして<br />
 			経済的自立をしながら自分らしく美しく豊かな人生を生きるための<br />
 			さまざまな学びをご提供しています
 		</p>
@@ -134,7 +134,7 @@
 		</ul>
 		<div class="about__reasonDotLine"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?></div>
 		<h3 class="about__dataSummary">受講生は主にコーチ・コンサル・セラピスト・お教室運営など<br /><strong class="about__dataSummaryStrong">おひとりさま起業で頑張る女性たち</strong>です</h3>
-		<img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonBanner">
+		<a href="/voice"><img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonBanner"></a>
 	</section>
 	<section class="about__about">
 		<h1 class="about__heading">Smart Beとは</h1>

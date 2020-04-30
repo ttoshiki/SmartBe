@@ -345,7 +345,7 @@ a:hover {
   margin: 48px auto;
   padding: 16px 48px;
   font-size: 20px;
-  border-radius: 32px;
+  border-radius: 80px;
   transition: background-color 0.2s;
 }
 
@@ -354,12 +354,15 @@ a:hover {
 }
 
 .c-button.-primary {
-  border: 1px solid #b69e84;
-  color: #b69e84;
-}
-.c-button.-primary:hover {
+  border: 1px solid #fff;
   background-color: #b69e84;
   color: #fff;
+  transition: opacity 0.2s;
+}
+
+.c-button.-primary:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -6606,7 +6609,7 @@ a.guest-url {
   display: inline-block;
   margin-top: 80px;
   padding: 0px 48px 48px;
-  font-weight: var(--semibold);
+  font-weight: var(--medium);
   font-size: 20px;
   letter-spacing: 1px;
   text-align: center;
@@ -6614,6 +6617,7 @@ a.guest-url {
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom, right bottom;
   background-size: 180px;
+  color: #49240d;
 }
 
 .inflady__titleStrong {
@@ -6628,11 +6632,12 @@ a.guest-url {
   margin-top: 48px;
   font-size: 18px;
   line-height: 1.8;
+  color: #49240d;
 }
 
 .inflady__sec {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto 120px;
 }
 
 .inflady__heading {
@@ -6694,6 +6699,23 @@ a.guest-url {
   margin: 48px auto 0;
   width: 100%;
   max-width: 640px;
+}
+
+.inflady__button {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  padding: 16px 100px;
+}
+
+.inflady__buttonIcon {
+  margin-right: 24px;
+  display: flex;
+}
+
+.inflady__buttonIcon svg {
+  width: 40px;
+  height: 40px;
 }
 
 /* ----------------
@@ -7404,6 +7426,7 @@ a.guest-url {
   text-align: center;
   margin: 48px auto 0;
   line-height: 1.8;
+  letter-spacing: 1px;
 }
 
 .about__learnList {
@@ -7590,6 +7613,7 @@ a.guest-url {
 .about__dataExplanation {
   color: #49240d;
   margin-top: 70px;
+  line-height: 1.8;
 }
 
 .about__reasonDotLine {
@@ -7602,7 +7626,7 @@ a.guest-url {
   font-size: 32px;
   font-weight: var(--semibold);
   color: #49240d;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .about__dataSummaryStrong {
