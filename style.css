@@ -7726,6 +7726,67 @@ a.guest-url {
 }
 
 /* ------------------
+ academy
+------------------- */
+
+.academy__mainVisual {
+  background: url(img/academy/main_visual_bg.jpg);
+  background-size: cover;
+  padding-top: 39.79%;
+  position: relative;
+}
+
+.academy__mainVisualCta {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-52%);
+  width: 37.5vw;
+}
+
+.academy__mainVisualText {
+  max-width: 480px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.academy__mainVisualButtons {
+  width: 37.5vw;
+  max-width: 460px;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px auto 0;
+}
+
+.academy__mainVisualButton {
+  background-color: #ff878d;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.69vw;
+  width: 16.87vw;
+  max-width: 216px;
+}
+
+.academy__mainVisualButton:hover {
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.academy__mainVisualButton::before {
+  content: "";
+  background: url(img/icon_play.svg) no-repeat;
+  background-size: cover;
+  width: 1.57vw;
+  height: 1.57vw;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* ------------------
  footer
 ------------------- */
 

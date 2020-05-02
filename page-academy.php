@@ -53,7 +53,15 @@
   </div>
 <?php } ?>
 
-<img src="<?php echo get_template_directory_uri(); ?>/img/about/header.jpg" alt="アカデミー" class="about__header">
+<div class="academy__mainVisual">
+	<div class="academy__mainVisualCta">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/academy/main_visual_text.png" alt="アカデミー" class="academy__mainVisualText">
+		<div class="academy__mainVisualButtons">
+			<a href="" class="academy__mainVisualButton"><span>オンライン講座</span></a>
+			<a href="" class="academy__mainVisualButton">教室講座</a>
+		</div>
+	</div>
+</div>
 
 <div id="academy">
 	<section>
@@ -132,8 +140,129 @@
 			</li>
 		</ul>
 	</section>
+	<section class="academy__appearance">
+		<?php echo file_get_contents(get_template_directory() . '/img/academy/appearance.svg'); ?>
+		<img src="<?php echo get_template_directory_uri(); ?>/img/academy/appearance_photo.jpg" alt="" class="academy__appearancePhoto">
+		<button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+	</section>
+	<section class="academy__recommend">
+		<h1 class="academy__recommendHeading">こんな方にオススメ！</h1>
+		<?php echo file_get_contents(get_template_directory() . '/img/academy/recommend.svg'); ?>
+	</section>
+	<section class="academy__master">
+		<?php echo file_get_contents(get_template_directory() . '/img/academy/master_after.svg'); ?>
+		<h1 class="academy__masterHeading">「女子会・お茶会・ランチ会・朝活」が<br /><strong class="academy__masterHeadingStrong">毎月10人集客できる</strong>ようになります！</h1>
+	</section>
+	<section class="academy__achievement">
+		<ul class="academy__achievementList">
+			<li class="academy__achievementItem">
+				<span class="academy__achievementSpan">Facebookで<strong class="academy__achievementSpanStrong">103</strong>人の集客に成功！</span>
+				<?php echo file_get_contents(get_template_directory() . '/img/academy/activity01.svg'); ?>
+				<p class="academy__achievementParagraph">毎回<strong class="academy__achievementStrong">超満員御礼</strong>のお茶会。これまで<strong class="academy__achievementStrong">17</strong>回開催し、<strong class="academy__achievementStrong">103</strong>人の方々にご参加いただきました！</p>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/academy/achievementImage01.jpg" alt="" class="academy__achievementImage">
+			</li>
+			<li class="academy__achievementItem">
+				<span class="academy__achievementSpan">早朝でも安定集客！</span>
+				<?php echo file_get_contents(get_template_directory() . '/img/academy/activity02.svg'); ?>
+				<p class="academy__achievementParagraph"><strong class="academy__achievementStrong">学ぶオンナは美しい</strong>と題して、月<strong class="academy__achievementStrongSmall">2</strong>回朝活を開催。早朝でも安定して、毎回<strong class="academy__achievementStrongSmall">10</strong>人前後を集客！</p>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/academy/achievementImage02.jpg" alt="" class="academy__achievementImage">
+			</li>
+			<li class="academy__achievementItem">
+				<span class="academy__achievementSpan">700人の起業女子があつまったEXPO</span>
+				<?php echo file_get_contents(get_template_directory() . '/img/academy/activity03.svg'); ?>
+				<p class="academy__achievementParagraph">Facebookを使って700人の女性を集客。<br /><strong class="academy__achievementStrong">メディアにも取り上げられ話題になりました！</strong></p>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/academy/achievementImage03.jpg" alt="" class="academy__achievementImage">
+			</li>
+		</ul>
+	</section>
+	<section class="academy__fullThanks">
+		<h1 class="academy__fullThanksHeading">Facebookを使いこなせば<strong>満員御礼</strong>はあたり前に！</h1>
+		<h2 class="academy__fullThanksSubHeading">集客を楽しめるようになった女性起業家は<br /><strong class="academy__fullThanksStrong">Facebookを効果的に活用しています！</strong></h2>
+		<p class="academy__fullThanksParagraph">実際に、Facebookを活用して、「集客を楽しめるようになった！」「売上UPが叶った！」という女性起業家はたくさんいます。そうなると自然と満員御礼は当たり前となります。</p>
+		<img src="<?php echo get_template_directory_uri(); ?>/img/academy/full_thanks.jpg" alt="" class="academy__fullThanksImage">
+		<div class="academy__fullThanksQuestion">
+			<h2>あなたも、Facebookを賢く活用して<br />
+			本物の自由を手に入れませんか？</h2>
+		</div>
+	</section>
+	<section class="academy__message">
+		<h1 class="academy__messageHeading">Smart Be代表 伊藤宏美からのメッセージ</h1>
+		<div class="academy__messageContents">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/academy/ito-hiromi.jpg" alt="伊藤宏美" class="academy__messageImage">
+			<div class="academy__messageContent">
+				<p>「自分を必要としてくれている人に求められて、より良いサービスを提供したい」</p>
+				<p>そう思っているのになかなか上手くいかず、素敵なお客さまに出会う前に疲れてやめてしまう方がほとんどではないでしょうか？</p>
+				<p>賢い集客方法がわかれば、Facebookは集客にもブランディングにも使える最強のSNSです。</p>
+				<p>そのステップを細分化し、誰にでもすぐに実践できるレベルまで具体的に落とし込み、なおかつ再現性が高いノウハウが学べるのが「賢女の集客アカデミー」です。</p>
+				<p>あなたの「理想的な未来」を「現実」にしていくために。</p>
+				<p>美しく凛とした、賢い女性としてあなたが行動できるキッカケになれば嬉しいです。</p>
+			</div>
+		</div>
+		<button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+	</section>
+	<section class="academy__online">
+		<span class="academy__onlineHeadingSpan">講座に通えない方も自宅で学べる！</span>
+		<h1 class="academy__onlineHeading">
+			<?php echo file_get_contents(get_template_directory() . '/img/academy/master_after.svg'); ?>
+			<span>賢女のオンライン集客アカデミー</span>
+		</h1>
+		<h2>こんなお悩みありませんか？</h2>
+		<ul class="academy__onlineList">
+			<li class="academy__onlineItem">忙しくて通えない</li>
+			<li class="academy__onlineItem">子供がまだ小さくて外出ができない</li>
+			<li class="academy__onlineItem">海外在住のため通うことが難しい</li>
+			<li class="academy__onlineItem">自分のペースで学びたい</li>
+		</ul>
+		<?php echo file_get_contents(get_template_directory() . '/img/academy/online-triangle.svg'); ?>
+		<h2>そんな女性起業家の皆さんへ</h2>
+		<div>
+			<span>＼いつでも・どこでも・何度でも／</span>
+			<p>
+				オンライン講座の内容が<strong>1</strong>年間お得に学べる<br />
+				<strong>オンライン講座</strong>をご用意しました！
+			</p>
+		</div>
+		<div class="academy__onlineMerit">
+			<div class="academy__onlineMeritHeading"><?php echo file_get_contents(get_template_directory() . '/img/academy/academy-merit_heading.svg'); ?></div>
+			<ul class="academy__onlinMeritList">
+				<li class="academy__onlineMeritItem">
+					<h3>いつでもどこでも<br />受講できる!</h3>
+					<?php echo file_get_contents(get_template_directory() . '/img/icon_smartphone.svg'); ?>
+				</li>
+				<li class="academy__onlineMeritItem">
+					<h3>3ヶ月間の<br />サポートメール付</h3>
+					<?php echo file_get_contents(get_template_directory() . '/img/icon_mail.svg'); ?>
+				</li>
+				<li class="academy__onlineMeritItem">
+					<h3>講義動画本数88本<br />の大ボリューム</h3>
+					<?php echo file_get_contents(get_template_directory() . '/img/icon_video.svg'); ?>
+				</li>
+			</ul>
+		</div>
+		<div class="academy__onlineFlow">
+			<div class="academy__onlineFlowHeading"><?php echo file_get_contents(get_template_directory() . '/img/academy/online-flow-heading.svg'); ?></div>
+			<div>
+				<ul class="academy__onlineFlowList">
+					<li class="academy__onlineFlowItem">
+						<h3 class="academy__onlineFlowHeading">Web申し込み</h3>
+						<p class="online__flowParagrapy">お申込みフォームをクリックして、必要事項をご入力ください。<br />
+							「info@smartbe8.com」より受付完了メールが届きます。
+						</p>
+					</li>
+					<li class="academy__onlineFlowItem">
+						<h3 class="academy__onlineFlowHeading">ご入金</h3>
+						<p class="online__flowParagrapy">お申し込み後、48時間以内にご入金に関するご案内をお送りいたします。</p>
+					</li>
+					<li class="academy__onlineFlowItem">
+						<h3 class="academy__onlineFlowHeading">受講スタート</h3>
+						<p class="online__flowParagrapy">視聴開始となりましたらアドレスにパスワード付きの会員サイトURLをご送付させていただきます。PC、スマートフォンからオンライン上でお好きなときにご視聴いただくことが可能です。</p>
+					</li>
+				</ul>
+			</div>
+			<button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+		</div>
+	</section>
 </div><!-- id academy --->
-
 </div><!-- END #main_col -->
 
 <?php get_footer(); ?>
