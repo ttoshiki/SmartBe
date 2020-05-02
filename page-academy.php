@@ -64,14 +64,21 @@
 </div>
 
 <div id="academy">
-	<section>
-		<p><strong>Facebook集客メソッド</strong>の内容を実践すると、</p>
-		<span>あなたが開催する</span>
-		<h1>
-			「女子会・お茶会・ランチ会・朝活」も、<br />
-			<strong>毎回安定してお客様が集まる</strong>
-			ようになります！
-		</h1>
+	<section class="academy__intro">
+		<div class="academy__introSpeechBubbleWrapper">
+			<p class="academy__introParagraph">
+				<strong class="academy__introParagraphStrong">Facebook集客メソッド</strong>の内容を実践すると、
+				<span class="academy__introSpeechBubble"></span>
+			</p>
+		</div>
+		<div class="academy__introCatchCopy">
+			<span class="academy__introCatchCopySpan">あなたが<br />開催する</span>
+			<h1 class="academy__introCatchCopyHeading">
+				「女子会・お茶会・ランチ会・朝活」も、<br />
+				<strong class="academy__introCatchCopyStrong">毎回安定してお客様が集まる</strong><br />
+				ようになります！
+			</h1>
+		</div>
 	</section>
 	<section class="academy__freedom">
 		<h1 class="academy__reasonHeading">Facebookを賢く使いこなすことで、手に入る<strong>3</strong>つの自由</h1>
