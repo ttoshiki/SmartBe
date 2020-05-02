@@ -132,7 +132,7 @@
 				<p class="about__dataExplanation">受講生の半数が起業されたばかりの30代・40代の女性たちです。</p>
 			</li>
 		</ul>
-		<div class="about__reasonDotLine"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?></div>
+		<div class="dotLine"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?></div>
 		<h3 class="about__dataSummary">受講生は主にコーチ・コンサル・セラピスト・お教室運営など<br /><strong class="about__dataSummaryStrong">おひとりさま起業で頑張る女性たち</strong>です</h3>
 		<a href="/voice"><img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonBanner"></a>
 	</section>

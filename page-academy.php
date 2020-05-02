@@ -81,33 +81,35 @@
 		</div>
 	</section>
 	<section class="academy__freedom">
-		<h1 class="academy__reasonHeading">Facebookを賢く使いこなすことで、手に入る<strong>3</strong>つの自由</h1>
-		<div class="about__reasonDotLine"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?></div>
-		<ul class="academy__freedomList">
-			<li class="academy__freedomItem">
-				<div class="about__reasonDotLine"><?php echo file_get_contents(get_template_directory() . '/img/icon_money.svg'); ?></div>
-				<span>経済的自由</span>
-			</li>
-			<li class="academy__freedomItem">
-				<div class="about__reasonDotLine"><?php echo file_get_contents(get_template_directory() . '/img/icon_heart.svg'); ?></div>
-				<span>精神的自由</span>
-			</li>
-			<li class="academy__freedomItem">
-				<div class="about__reasonDotLine"><?php echo file_get_contents(get_template_directory() . '/img/icon_clock.svg'); ?></div>
-				<span>時間的自由</span>
-			</li>
-		</ul>
-		<h2 class="academy__reasonSubHeading">これらが手に入るFacebook集客セミナーを開催しています！</h2>
-		<button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+		<div class="academy__freedomInner">
+			<h1 class="academy__reasonHeading">Facebookを賢く使いこなすことで、手に入る<strong>3</strong>つの自由</h1>
+			<div class="dotLine"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?></div>
+			<ul class="academy__freedomList">
+				<li class="academy__freedomItem">
+					<div class="academy__freedomReasonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_money.svg'); ?></div>
+					<span class="academy__freedomItemText">経済的自由</span>
+				</li>
+				<li class="academy__freedomItem">
+					<div class="academy__freedomReasonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_heart.svg'); ?></div>
+					<span class="academy__freedomItemText">精神的自由</span>
+				</li>
+				<li class="academy__freedomItem">
+					<div class="academy__freedomReasonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_clock.svg'); ?></div>
+					<span class="academy__freedomItemText">時間的自由</span>
+				</li>
+			</ul>
+			<h2 class="academy__reasonSubHeading">これらが手に入る<strong class="academy__reasonSubHeadingStrong">Facebook集客セミナー</strong>を開催しています！</h2>
+			<button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+		</div>
 	</section>
 	<img src="<?php echo get_template_directory_uri(); ?>/img/academy/academy01.jpg" alt="" class="academy__fullSizeImage">
 	<section class="academy__charm">
 		<h1 class="academy__charmHeading">
-			<?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?>
-			<span>2分で分かる集客アカデミーの魅力</span>
+			<?php echo file_get_contents(get_template_directory() . '/img/icon_video.svg'); ?>
+			<span class="academy__charmHeadingText">2分で分かる集客アカデミーの魅力</span>
 		</h1>
-		<div>
-			動画が入ります
+		<div class="academy__movie">
+			<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/263702744?color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 		</div>
 	</section>
 	<section class="academy__voice">
