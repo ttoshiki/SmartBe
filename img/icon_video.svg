@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
-  <g id="_457_ca_h" data-name="457_ca_h" transform="translate(-0.278 -0.473)">
-    <rect id="長方形_140" data-name="長方形 140" width="70" height="70" transform="translate(0.278 0.473)" fill="none"/>
-    <rect id="長方形_141" data-name="長方形 141" width="33.996" height="29.562" rx="1" transform="translate(5.911 22.17)" stroke-width="3" stroke="#49240d" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    <path id="パス_158" data-name="パス 158" d="M32,24.347,49.737,14V46.518L32,36.172" transform="translate(15.298 6.692)" fill="none" stroke="#49240d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-    <line id="線_96" data-name="線 96" x2="19.215" transform="translate(13.301 44.342)" fill="none" stroke="#49240d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-  </g>
-</svg>
+<svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.12 37.74"><defs><style>.movie-cls1{fill:none;stroke:#49240d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><path id="_457_ca_h" data-name=" 457 ca h" class="movie-cls1" d="M2.5,4.09h32a1,1,0,0,1,1,1V32.65a1,1,0,0,1-1,1H2.5a1,1,0,0,1-1-1V5.09A1,1,0,0,1,2.5,4.09ZM42.89,13,60.62,2.61V35.13L42.89,24.78m-34,1.48H28.11"/></svg>

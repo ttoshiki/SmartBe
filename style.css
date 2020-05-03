@@ -7775,6 +7775,10 @@ a.guest-url {
   max-width: 216px;
 }
 
+.academy__mainVisualButton:nth-of-type(2) {
+  letter-spacing: 4px;
+}
+
 .academy__mainVisualButton:hover {
   opacity: 0.8;
   color: #ffffff;
@@ -7987,6 +7991,11 @@ a.guest-url {
   max-width: var(--max-width);
   font-weight: var(--max-width);
   color: #49240d;
+}
+
+.academy__charmHeading svg {
+  width: 70px;
+  margin-right: 8px;
 }
 
 .academy__charmHeadingText {
@@ -8420,7 +8429,8 @@ a.guest-url {
 
 .academy__online {
   background-image: url(img/bg_2.png);
-  padding: 80px 0 64px;
+  background-size: cover;
+  padding: 80px 0 16px;
 }
 
 .academy__onlineInner {
@@ -8473,6 +8483,7 @@ a.guest-url {
   justify-content: center;
   align-items: center;
   letter-spacing: 2px;
+  margin-top: 8px;
 }
 
 .academy__onlineHeadingText {
@@ -8483,6 +8494,7 @@ a.guest-url {
 .academy__onlineWorries {
   background-image: url(img/academy/online-worries-bg.jpg);
   background-size: cover;
+  margin-top: 40px;
   padding: 48px 0 48px 88px;
 }
 
@@ -8490,6 +8502,303 @@ a.guest-url {
   font-size: 36px;
   font-weight: var(--semibold);
   color: #49240d;
+  letter-spacing: 1px;
+}
+
+.academy__onlineList {
+  margin-top: 40px;
+}
+
+.academy__onlineItem {
+  font-size: 20px;
+  color: #49240d;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.academy__onlineItem svg {
+  width: 24px;
+  margin-right: 12px;
+}
+
+.academy__onlineItem .cls-2 {
+  fill: #627ff5;
+}
+
+.academy__onlineItem:not(:first-child) {
+  margin-top: 24px;
+}
+
+.academy__onlineTriangle {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.academy__onlineSubHeading {
+  font-size: 32px;
+  color: #49240d;
+  text-align: center;
+  font-weight: var(--semibold);
+  margin-top: 12px;
+  letter-spacing: 3px;
+}
+
+.academy__onlineOffer {
+  background-color: #ebefff;
+  padding: 32px 0 48px;
+  margin-bottom: 56px;
+}
+
+.academy__onlineOfferSpan {
+  display: block;
+  text-align: center;
+  color: #49240d;
+  font-size: 24px;
+}
+
+.academy__onlineOfferParagraph {
+  color: #49240d;
+  font-size: 32px;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.academy__onlineOfferStrong {
+  font-size: 48px;
+  font-weight: var(--semibold);
+  color: #627ff5;
+}
+
+.academy__onlineOfferStrong.underline {
+  background: linear-gradient(transparent 80%, #fff68e 80%);
+}
+
+.academy__onlineMerit {
+  background-color: #faf9f5;
+  padding: 4px 8px;
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  padding: 64px 80px;
+}
+
+.academy__onlineMeritHeading {
+  text-align: center;
+}
+
+.academy__onlinMeritList {
+  display: flex;
+  justify-content: center;
+  margin: 56px auto 0;
+  max-width: var(--max-width);
+}
+
+.academy__onlineMeritItem {
+  border: 1px solid #b69e83;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 33%;
+  padding: 64px 0;
+  counter-increment: meritList;
+  position: relative;
+}
+
+.academy__onlineMeritItem::before {
+  content: counter(meritList, decimal-leading-zero);
+  width: 56px;
+  height: 56px;
+  color: #ffffff;
+  font-size: 34px;
+  background-color: #becbff;
+  border-radius: 50%;
+  position: absolute;
+  top: -28px;
+  left: -28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.academy__onlineMeritItem:not(:first-child) {
+  margin-left: 40px;
+}
+
+.academy__onlineMeritHeading {
+  font-size: 32px;
+  color: #627ff5;
+  text-align: center;
+  font-weight: var(--semibold);
+}
+
+.academy__onlineMeritItem svg {
+  display: flex;
+  align-items: center;
+  height: 108px;
+  margin: 8px auto 0;
+}
+
+.academy__onlineMeritItem:nth-child(3) svg {
+  width: 100px;
+}
+
+.academy__onlineMeritItem:nth-child(3) .movie-cls1 {
+  stroke: #bdab9c;
+  stroke-width: 2.5px;
+}
+
+.academy__onlineFlow {
+  margin-top: 64px;
+  background-image: url(img/academy/online_flow-bg.jpg);
+  background-size: cover;
+  position: relative;
+  min-height: 764px;
+}
+
+.academy__onlineFlowHeading {
+  padding-top: 32px;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+
+.academy__onlineFlowList {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+}
+
+.academy__onlineFlowItem {
+  position: relative;
+  padding-left: 80px;
+  height: 180px;
+  counter-increment: flowList;
+  margin: 0 48px;
+}
+
+.academy__onlineFlowItem:first-child {
+  margin-top: 140px;
+}
+
+.academy__onlineFlowItem::before {
+  content: counter(flowList);
+  font-size: 30px;
+  font-weight: var(--semibold);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #c4ad9d;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.academy__onlineFlowItem:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 120px;
+  background-color: #c4ad9d;
+  position: absolute;
+  left: 32px;
+  top: 64px;
+}
+
+.academy__onlineFlowSubHeading {
+  font-size: 24px;
+  font-weight: var(--semibold);
+  color: #49240d;
+  padding-top: 12px;
+}
+
+.online__flowParagraph {
+  color: #92785f;
+  margin-top: 4px;
+}
+
+.academy__instructorRecruitment {
+  max-width: var(--max-width);
+  margin: 64px auto 0;
+}
+
+.academy__instructorRecruitmentContents {
+  margin-left: 32px;
+}
+
+.academy__instructorRecruitmentInner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid #707070;
+  padding: 80px 0 72px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.academy__instructorRecruitmentInner::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-bottom: 64px solid transparent;
+  border-left: 64px solid #ff878a;
+}
+
+.academy__instructorRecruitmentImage svg {
+  width: 168px;
+}
+
+.academy__instructorRecruitmentInner .cls-1 {
+  stroke: #49240d;
+}
+
+.academy__instructorRecruitmentHeading {
+  font-size: 38px;
+  font-weight: var(--semibold);
+  color: #ff878a;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+.academy__instructorRecruitmentParagraph {
+  text-align: center;
+  color: #49240d;
+  font-size: 22px;
+  margin-top: 16px;
+  letter-spacing: 1px;
+}
+
+.academy__instructorRecruitmentStrong {
+  font-size: 42px;
+  font-weight: var(--semibold);
+}
+
+.academy__instructorButton {
+  display: flex;
+  align-items: center;
+  margin: 28px auto 0;
+  padding: 10px 32px;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3",
+    "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif !important;
+}
+
+.academy__instructorButtonText {
+  font-size: 20px;
+}
+
+.academy__instructorButtonIcon {
+  margin-right: 8px;
+}
+
+.academy__instructorButtonIcon,
+.academy__instructorButtonIcon svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* ------------------

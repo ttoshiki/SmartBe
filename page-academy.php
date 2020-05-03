@@ -99,7 +99,7 @@
 				</li>
 			</ul>
 			<h2 class="academy__reasonSubHeading">これらが手に入る<strong class="academy__reasonSubHeadingStrong">Facebook集客セミナー</strong>を開催しています！</h2>
-			<button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+			<button onclick="location.href='/seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
 		</div>
 	</section>
 	<img src="<?php echo get_template_directory_uri(); ?>/img/academy/academy01.jpg" alt="" class="academy__fullSizeImage">
@@ -154,7 +154,7 @@
 	<section class="academy__appearance">
 		<div class="academy__appearanceHeading"><?php echo file_get_contents(get_template_directory() . '/img/academy/appearance.svg'); ?></div>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/academy/appearance_photo.jpg" alt="" class="academy__appearancePhoto">
-		<button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+		<button　onclick="location.href='/seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
 	</section>
 	<section class="academy__recommend">
 		<h1 class="academy__recommendHeading">こんな方にオススメ！</h1>
@@ -210,7 +210,7 @@
 				<p class="academy__messageContentText">あなたの「理想的な未来」を「現実」にしていくために。<br />美しく凛とした、賢い女性としてあなたが行動できるキッカケになれば嬉しいです。</p>
 			</div>
 		</div>
-		<button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+		<button onclick="location.href='/seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
 	</section>
 	<section class="academy__online">
 		<div class="academy__onlineInner">
@@ -222,59 +222,82 @@
 			<div class="academy__onlineWorries">
 				<h2 class="academy__onlineWorriesHeading">こんなお悩みありませんか？</h2>
 				<ul class="academy__onlineList">
-					<li class="academy__onlineItem">忙しくて通えない</li>
-					<li class="academy__onlineItem">子供がまだ小さくて外出ができない</li>
-					<li class="academy__onlineItem">海外在住のため通うことが難しい</li>
-					<li class="academy__onlineItem">自分のペースで学びたい</li>
+					<li class="academy__onlineItem">
+						<?php echo file_get_contents(get_template_directory() . '/img/icon_checkbox.svg'); ?>
+						<span>忙しくて通えない</span>
+					</li>
+					<li class="academy__onlineItem">
+						<?php echo file_get_contents(get_template_directory() . '/img/icon_checkbox.svg'); ?>
+						<span>子供がまだ小さくて外出ができない</span>
+					</li>
+					<li class="academy__onlineItem">
+						<?php echo file_get_contents(get_template_directory() . '/img/icon_checkbox.svg'); ?>
+						<span>海外在住のため通うことが難しい</span>
+					</li>
+					<li class="academy__onlineItem">
+						<?php echo file_get_contents(get_template_directory() . '/img/icon_checkbox.svg'); ?>
+						<span>自分のペースで学びたい</span>
+					</li>
 				</ul>
 			</div>
-			<?php echo file_get_contents(get_template_directory() . '/img/academy/online-triangle.svg'); ?>
-			<h2>そんな女性起業家の皆さんへ</h2>
-			<div>
-				<span>＼いつでも・どこでも・何度でも／</span>
-				<p>
-					オンライン講座の内容が<strong>1</strong>年間お得に学べる<br />
-					<strong>オンライン講座</strong>をご用意しました！
+			<div class="academy__onlineTriangle"><?php echo file_get_contents(get_template_directory() . '/img/academy/online-triangle.svg'); ?></div>
+			<h2 class="academy__onlineSubHeading">そんな女性起業家の皆さんへ</h2>
+			<div class="academy__onlineOffer">
+				<span class="academy__onlineOfferSpan">＼いつでも・どこでも・何度でも／</span>
+				<p class="academy__onlineOfferParagraph">
+					オンライン講座の内容が<strong class="academy__onlineOfferStrong">1</strong>年間お得に学べる<br />
+					<strong class="academy__onlineOfferStrong underline">オンライン講座</strong>をご用意しました！
 				</p>
 			</div>
 			<div class="academy__onlineMerit">
 				<div class="academy__onlineMeritHeading"><?php echo file_get_contents(get_template_directory() . '/img/academy/academy-merit_heading.svg'); ?></div>
 				<ul class="academy__onlinMeritList">
 					<li class="academy__onlineMeritItem">
-						<h3>いつでもどこでも<br />受講できる!</h3>
+						<h3 class="academy__onlineMeritHeading">いつでもどこでも<br />受講できる!</h3>
 						<?php echo file_get_contents(get_template_directory() . '/img/icon_smartphone.svg'); ?>
 					</li>
 					<li class="academy__onlineMeritItem">
-						<h3>3ヶ月間の<br />サポートメール付</h3>
-						<?php echo file_get_contents(get_template_directory() . '/img/icon_mail.svg'); ?>
+						<h3 class="academy__onlineMeritHeading">3ヶ月間の<br />サポートメール付</h3>
+						<?php echo file_get_contents(get_template_directory() . '/img/icon_supportMail.svg'); ?>
 					</li>
 					<li class="academy__onlineMeritItem">
-						<h3>講義動画本数88本<br />の大ボリューム</h3>
+						<h3 class="academy__onlineMeritHeading">講義動画本数88本<br />の大ボリューム</h3>
 						<?php echo file_get_contents(get_template_directory() . '/img/icon_video.svg'); ?>
 					</li>
 				</ul>
 			</div>
 			<div class="academy__onlineFlow">
-				<div class="academy__onlineFlowHeading"><?php echo file_get_contents(get_template_directory() . '/img/academy/online-flow-heading.svg'); ?></div>
-				<div>
-					<ul class="academy__onlineFlowList">
-						<li class="academy__onlineFlowItem">
-							<h3 class="academy__onlineFlowHeading">Web申し込み</h3>
-							<p class="online__flowParagrapy">お申込みフォームをクリックして、必要事項をご入力ください。<br />
-								「info@smartbe8.com」より受付完了メールが届きます。
-							</p>
-						</li>
-						<li class="academy__onlineFlowItem">
-							<h3 class="academy__onlineFlowHeading">ご入金</h3>
-							<p class="online__flowParagrapy">お申し込み後、48時間以内にご入金に関するご案内をお送りいたします。</p>
-						</li>
-						<li class="academy__onlineFlowItem">
-							<h3 class="academy__onlineFlowHeading">受講スタート</h3>
-							<p class="online__flowParagrapy">視聴開始となりましたらアドレスにパスワード付きの会員サイトURLをご送付させていただきます。PC、スマートフォンからオンライン上でお好きなときにご視聴いただくことが可能です。</p>
-						</li>
-					</ul>
-				</div>
-				<button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+				<div class="academy__onlineFlowHeading"><?php echo file_get_contents(get_template_directory() . '/img/academy/online_flow_heading.svg'); ?></div>
+				<ul class="academy__onlineFlowList">
+					<li class="academy__onlineFlowItem">
+						<h3 class="academy__onlineFlowSubHeading">Web申し込み</h3>
+						<p class="online__flowParagraph">お申込みフォームをクリックして、必要事項をご入力ください。<br />
+							「info@smartbe8.com」より受付完了メールが届きます。
+						</p>
+					</li>
+					<li class="academy__onlineFlowItem">
+						<h3 class="academy__onlineFlowSubHeading">ご入金</h3>
+						<p class="online__flowParagraph">お申し込み後、48時間以内にご入金に関するご案内をお送りいたします。</p>
+					</li>
+					<li class="academy__onlineFlowItem">
+						<h3 class="academy__onlineFlowSubHeading">受講スタート</h3>
+						<p class="online__flowParagraph">視聴開始となりましたらアドレスにパスワード付きの会員サイトURLをご送付させていただきます。PC、スマートフォンからオンライン上でお好きなときにご視聴いただくことが可能です。</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>お申し込みはこちら</button>
+	</section>
+	<section class="academy__instructorRecruitment">
+		<div class="academy__instructorRecruitmentInner">
+			<div class="academy__instructorRecruitmentImage"><?php echo file_get_contents(get_template_directory() . '/img/icon_seminar.svg'); ?></div>
+			<div class="academy__instructorRecruitmentContents">
+				<h1 class="academy__instructorRecruitmentHeading"><strong class="academy__instructorRecruitmentStrong">セミナー講師</strong>を<strong class="academy__instructorRecruitmentStrong">募集しています！</strong></h1>
+				<p class="academy__instructorRecruitmentParagraph">あなたもSmart Beの講師として輝く女性を応援しませんか？</p>
+				<button onclick="location.href='/instructor-recruitment'" class="c-button -primary academy__instructorButton" >
+					<div class="academy__instructorButtonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>
+					<span class="academy__instructorButtonText">講師募集要項はこちら</span>
+				</button>
 			</div>
 		</div>
 	</section>
