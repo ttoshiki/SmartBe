@@ -154,7 +154,7 @@
 	<section class="academy__appearance">
 		<div class="academy__appearanceHeading"><?php echo file_get_contents(get_template_directory() . '/img/academy/appearance.svg'); ?></div>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/academy/appearance_photo.jpg" alt="" class="academy__appearancePhoto">
-		<button　onclick="location.href='/seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+		<button onclick="location.href='/seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
 	</section>
 	<section class="academy__recommend">
 		<h1 class="academy__recommendHeading">こんな方にオススメ！</h1>
