@@ -8802,6 +8802,92 @@ a.guest-url {
 }
 
 /* ------------------
+ activity
+------------------- */
+
+.activity__title {
+  font-size: 36px;
+  font-weight: var(--semibold);
+  color: #49240d;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 48px;
+}
+
+#activity {
+  max-width: 768px;
+  margin: 48px auto 0;
+}
+
+.activity__list {
+  display: flex;
+}
+
+.activity__datetime {
+  font-size: 16px;
+}
+
+.activity__Contents {
+  margin-left: 24px;
+  width: 100%;
+}
+
+.activity__heading {
+  font-size: 24px;
+  color: #49240d;
+  font-weight: var(--semibold);
+}
+
+.activity__list p {
+  color: #333333;
+  font-size: 18px;
+  margin-top: 24px;
+  line-height: 1.8;
+}
+
+.activity__list:not(:last-child) {
+  padding-bottom: 48px;
+}
+
+.activity__list:not(:first-child) {
+  padding-top: 48px;
+  border-top: 1px solid #eeeeee;
+}
+
+.activity__list .attachment-thumbnail {
+  width: 50%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.activity__thumbnail {
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .activity__list {
+    display: block;
+    padding: 0 16px;
+  }
+
+  .activity__Contents {
+    margin-left: 0;
+  }
+
+  .activity__list .attachment-thumbnail {
+    width: 100%;
+  }
+
+  .activity__list p {
+    margin-top: 16px;
+  }
+
+  .activity__list .attachment-thumbnail:not(:first-of-type) {
+    margin-top: 16px;
+  }
+}
+
+/* ------------------
  footer
 ------------------- */
 
