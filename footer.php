@@ -34,6 +34,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
   </ul>
 </div><!-- side_fixedbanner -->
 
+<?php if (!(is_post_type_archive('activity'))) { ?>
  <section class="footer__mailMagazine">
    <h1 class="footer__mailMagazineHeader">
     <div class="footer__mailMagazineHeaderInner">
@@ -67,6 +68,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
      </div>
    </div>
  </section>
+<?php } ?>
  <!-- original -->
 
 <?php if ($footer_navs) { ?>
