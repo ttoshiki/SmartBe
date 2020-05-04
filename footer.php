@@ -34,7 +34,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
   </ul>
 </div><!-- side_fixedbanner -->
 
-<?php if (!(is_post_type_archive('activity'))) { ?>
+<?php if (!(is_post_type_archive('activity') || is_page('complete'))) { ?>
  <section class="footer__mailMagazine">
    <h1 class="footer__mailMagazineHeader">
     <div class="footer__mailMagazineHeaderInner">

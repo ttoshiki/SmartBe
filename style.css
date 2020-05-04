@@ -8888,6 +8888,182 @@ a.guest-url {
 }
 
 /* ------------------
+complete（メルマガ登録完了）
+------------------- */
+
+.complete__title {
+  margin-top: 56px;
+  font-size: 32px;
+  font-weight: var(--semibold);
+  color: var(--pink);
+  display: flex;
+  justify-content: center;
+}
+
+.complete__titleSpan {
+  margin-left: 12px;
+}
+
+.complete__eyeCatch {
+  display: block;
+  margin: 24px auto 0;
+  width: 240px;
+}
+
+.complete__title svg {
+  width: 32px;
+}
+
+.complete__text {
+  margin-top: 48px;
+  text-align: center;
+  color: #49240d;
+  line-height: 1.7;
+}
+
+.complete__small {
+  font-size: 14px;
+  display: block;
+  margin-top: 64px;
+  text-align: center;
+  color: #49240d;
+  line-height: 1.7;
+}
+
+.complete__settingParagraph {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.complete__settingLink {
+  text-align: center;
+  color: #8a7d72;
+}
+
+.complete__line {
+  display: block;
+  margin: 80px auto 60px;
+  width: 96%;
+  max-width: 768px;
+}
+
+.complete__lineInfo {
+  background-color: #fbfaf7;
+  padding: 80px 0 32px;
+}
+
+.complete__lineInfoHeading {
+  font-size: 40px;
+  color: #00c426;
+  text-align: center;
+  font-weight: var(--semibold);
+  letter-spacing: 1px;
+}
+
+.complete__necessaryHeading {
+  font-size: 24px;
+  font-weight: var(--semibold);
+  color: #49240d;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.complete__necessaryList {
+  display: flex;
+  max-width: 768px;
+  margin: 24px auto 48px;
+}
+
+.complete__necessaryItem {
+  border: 1px solid #bdab9c;
+  border-radius: 20px;
+  background-color: #ffffff;
+  width: 32%;
+  padding: 32px 0;
+}
+
+.complete__necessaryItem:not(:first-child) {
+  margin-left: 24px;
+}
+
+.complete__necessaryParagraph {
+  font-size: 40px;
+  color: #49240d;
+  font-weight: var(--semibold);
+  text-align: center;
+  letter-spacing: 6px;
+  text-indent: 6px;
+}
+
+.complete__necessaryIcon {
+  height: 64px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.complete__necessaryIcon svg {
+  width: 64px;
+}
+
+.complete__necessaryIcon path,
+.complete__necessaryIcon ellipse,
+.complete__necessaryIcon line {
+  stroke: #92785f;
+}
+
+.complete__lineInfoParagraph {
+  text-align: center;
+  color: #49240d;
+  font-size: 24px;
+  line-height: 1.7;
+}
+
+.complete__lineInfoList {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.complete__lineInfoItem {
+  background-color: var(--pink);
+  color: #ffffff;
+  margin: 0 10px;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 22px;
+}
+
+.complete__cta {
+  background-color: #ffffff;
+  max-width: 768px;
+  padding: 24px 0;
+  margin: 48px auto 0;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+}
+
+.complete__ctaHeading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: var(--semibold);
+  color: #00c426;
+}
+
+.complete__cta .footer__lineGuidanceImages {
+  margin-top: 24px;
+}
+
+.complete__cta .footer__lineGuidanceIds {
+  margin-top: 0;
+}
+
+.complete__cta .footer__lineGuidanceQRcode {
+  margin-top: 20px;
+}
+
+/* ------------------
  footer
 ------------------- */
 
