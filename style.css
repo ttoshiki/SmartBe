@@ -306,6 +306,38 @@ a:hover {
 }
 
 /* レイアウト */
+.pc {
+  display: block;
+}
+
+.tb {
+  display: none;
+}
+
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .pc {
+    display: none;
+  }
+
+  .tb {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+}
+
 .inner {
   width: 100%;
   max-width: 1200px;
@@ -3820,10 +3852,6 @@ ul.banner_list li a:hover .caption {
 #footer_nav li li {
   display: inline-block;
 }
-#footer_nav li li:before {
-  content: "|";
-  padding: 0 0.5em;
-}
 #footer_nav .footer_nav_type1 li {
   display: inline-block;
   float: left;
@@ -6726,23 +6754,6 @@ a.guest-url {
 
 ---------------- */
 
-.pc {
-  display: block;
-}
-
-.sp {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .pc {
-    display: none;
-  }
-  .sp {
-    display: block;
-  }
-}
-
 /* カレンダーのスタイル */
 .eo-fullcalendar {
   font-family: "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro",
@@ -7284,6 +7295,60 @@ a.guest-url {
 .front-page__aboutCourseContent {
   line-height: 1.7;
   color: #333333;
+}
+
+@media screen and (max-width: 1025px) {
+  .front-page__mediaHeadingInner::after {
+    left: -20px;
+    width: 105%;
+    height: 11vw;
+    background-size: cover;
+  }
+
+  .front-page__mediaHeadingSpan {
+    font-size: 16px;
+  }
+
+  .front-page__mediaHeading strong {
+    font-size: 32px;
+  }
+
+  .front-page__text {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .front-page__aboutContents {
+    display: block;
+    margin-top: 48px;
+  }
+
+  .front-page__aboutImage {
+    display: block;
+    text-align: center;
+  }
+
+  .front-page__aboutTextWrapper {
+    margin: 48px 0 0;
+    padding: 0 16px;
+  }
+
+  .front-page__serviceItem {
+    width: calc(100% / 2 - 30px);
+  }
+
+  .front-page__serviceItem:first-child {
+    margin: 0 14px 24px;
+  }
+
+  .front-page__serviceItem:first-child svg {
+    margin-left: calc(100% / 2 - 74px);
+  }
+
+  .front-page__mediaList {
+    width: 96%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -9272,4 +9337,57 @@ complete（メルマガ登録完了）
   margin-left: 8px;
   font-size: 26px;
   color: #00c426;
+}
+
+@media only screen and (max-width: 1025px) {
+  .footer__mailMagazine {
+    width: 96%;
+  }
+
+  .footer__mailMagazineHeader {
+    padding: 16px 0;
+  }
+
+  .footer__mailMagazineHeaderInner {
+    height: auto;
+    line-height: 1.5;
+    left: 50%;
+    font-size: 36px;
+    transform: translateX(-47%);
+    margin-left: 0;
+  }
+
+  .footer__mailMagazineHeaderInner::after {
+    top: 4px;
+    width: 70px;
+    height: 60px;
+    background-size: cover;
+  }
+
+  .footer__mailMagazineHeaderStrong {
+    font-size: 44px;
+  }
+
+  .footer__mailMagazineCatch {
+    font-size: 28px;
+  }
+
+  .footer__mailMagazineButton {
+    font-size: 26px;
+    padding: 20px 80px;
+    text-align: center;
+  }
+
+  .footer__lineGuidance {
+    width: 96%;
+  }
+
+  .footer__lineGuidanceHeader {
+    font-size: 44px;
+    height: 108px;
+    line-height: 108px;
+  }
+}
+
+@media screen and (max-width: 767px) {
 }

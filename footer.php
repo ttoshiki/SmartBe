@@ -38,7 +38,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
  <section class="footer__mailMagazine">
    <h1 class="footer__mailMagazineHeader">
     <div class="footer__mailMagazineHeaderInner">
-      <strong class="footer__mailMagazineHeaderStrong">メルマガ</strong>登録<span class="footer__mailMagazineHeaderSmall">で</span>無料プレゼント！
+      <strong class="footer__mailMagazineHeaderStrong">メルマガ</strong>登録<span class="footer__mailMagazineHeaderSmall">で</span><br class="sp">無料プレゼント！
     </div>
    </h1>
    <h2 class="footer__mailMagazineCatch">2つの特典が登録後すぐに手に入ります！</h2>

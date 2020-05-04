@@ -283,7 +283,7 @@
 ?>
 
 <section class="front-page__catchCopy">
-    <h1 class="front-page__text">起業やライフスタイルを豊かにする<br />女性のための総合アカデミー</h1>
+    <h1 class="front-page__text">起業やライフスタイルを<br class="sp">豊かにする<br />女性のための総合アカデミー</h1>
 </section>
 
 <div id="main_col">
@@ -291,7 +291,7 @@
   <section class="front-page__about">
     <h1 class="front-page__aboutHeading">好きを仕事にして、経済的自立をしながら<br />自分らしい美しく豊かな人生を生きるために</h1>
     <div class="front-page__aboutContents">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/top_about_image.svg" alt="">
+        <div class="front-page__aboutImage"><img src="<?php echo get_template_directory_uri(); ?>/img/top_about_image.svg" alt=""></div>
         <ul class="front-page__aboutTextWrapper">
             <li>
                 <div>
@@ -468,7 +468,7 @@
   <section class="front-page__media">
     <h1 class="front-page__mediaHeading">
         <div class="front-page__mediaHeadingInner">
-            <span>日本テレビ「スッキリ」, NHK「ニュース シブ5時」,日経ARIAなど</span><br />
+            <span class="front-page__mediaHeadingSpan">日本テレビ「スッキリ」, NHK「ニュース シブ5時」,日経ARIAなど</span><br />
             <strong>たくさんのメディアにご紹介いただきました！</strong>
         </div>
     </h1>
@@ -952,8 +952,9 @@ $( document ).ready(function( $ ) {
     breakpoints: {
       796: {//表示方法を変えるサイズ
         thumbnailsPosition: 'bottom',
-        thumbnailWidth: 200,
-        thumbnailHeight: 80
+        orientation: 'horizontal',//スライドの方向,
+        thumbnailWidth: 280,
+        thumbnailHeight: 160
       },
       480: {//表示方法を変えるサイズ
         orientation: 'horizontal',
