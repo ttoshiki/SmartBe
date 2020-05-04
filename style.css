@@ -8864,6 +8864,29 @@ a.guest-url {
   margin-top: 24px;
 }
 
+@media screen and (max-width: 767px) {
+  .activity__list {
+    display: block;
+    padding: 0 16px;
+  }
+
+  .activity__Contents {
+    margin-left: 0;
+  }
+
+  .activity__list .attachment-thumbnail {
+    width: 100%;
+  }
+
+  .activity__list p {
+    margin-top: 16px;
+  }
+
+  .activity__list .attachment-thumbnail:not(:first-of-type) {
+    margin-top: 16px;
+  }
+}
+
 /* ------------------
  footer
 ------------------- */
