@@ -7363,7 +7363,7 @@ a.guest-url {
 
   .front-page__aboutHeading {
     padding-top: 48px;
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .front-page__aboutContents {
@@ -9568,4 +9568,145 @@ complete（メルマガ登録完了）
 }
 
 @media screen and (max-width: 767px) {
+  .footer__mailMagazine {
+    padding-bottom: 32px;
+  }
+
+  .footer__mailMagazineHeaderStrong {
+    font-size: 32px;
+  }
+
+  .footer__mailMagazineHeaderSmall {
+    font-size: 24px;
+  }
+
+  .footer__mailMagazineHeaderInner {
+    font-size: 28px;
+  }
+
+  .footer__mailMagazineHeaderInner::after {
+    width: 48px;
+    height: 44px;
+    left: -11%;
+  }
+
+  .footer__mailMagazineHeader {
+    padding: 12px 0;
+  }
+
+  .footer__mailMagazineCatch {
+    font-size: 20px;
+    margin: 24px auto;
+  }
+
+  .footer__mailMagazineImages {
+    display: block;
+  }
+
+  .footer__mailMagazineImage {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer__mailMagazineImage:first-child {
+    margin: 0 auto 24px auto;
+  }
+
+  .footer__mailMagazineCta {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .footer__mailMagazineCta::before {
+    width: 82%;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer__mailMagazineCtaStrong {
+    font-size: 26px;
+  }
+
+  .footer__mailMagazineCta span::before {
+    height: 20px;
+    left: -16px;
+  }
+
+  .footer__mailMagazineCta span::after {
+    height: 20px;
+    right: -16px;
+  }
+
+  .footer__mailMagazineButton {
+    font-size: 20px;
+    padding: 16px 0;
+    width: 80%;
+    margin-top: 8px;
+  }
+
+  .footer__lineGuidance {
+    margin-top: 48px;
+    padding-bottom: 32px;
+  }
+
+  .footer__lineGuidanceHeader {
+    font-size: 26px;
+    line-height: 1.4;
+    padding: 16px 0;
+  }
+
+  .footer__lineGuidanceCatch {
+    font-size: 18px;
+    margin-top: 24px;
+  }
+
+  .footer__lineGuidanceQRcode {
+    display: none;
+  }
+
+  .footer__lineGuidancePhone {
+    margin: 24px auto;
+    width: 25%;
+  }
+
+  .footer__lineGuidanceRegistration {
+    margin-left: 0;
+  }
+
+  .footer__lineGuidanceImages {
+    margin-top: 0;
+    line-height: 40px;
+  }
+
+  .footer__lineGuidanceIds {
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .footer__lineGuidanceLabel {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .footer__lineGuidanceId {
+    font-size: 18px;
+    padding: 0 8px;
+    margin-left: 0;
+  }
+
+  .footer__lineGuidanceButton {
+    color: #000000;
+    background-color: #ffee1c;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  #footer_contents {
+    margin-top: 96px;
+  }
 }
