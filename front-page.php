@@ -46,19 +46,19 @@
 <div id="thumb-v" class="slider-pro">
   <div class="sp-slides">
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.jpg" />
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider01-sp.jpg" />
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.jpg" />
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider02-sp.jpg" />
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.jpg" />
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider03-sp.jpg" />
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04.png" />
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04.png" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider04-sp.jpg" />
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg" />
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider05-sp.jpg" />
     </div>
   </div><!--/ sp-slides-->
   <div class="sp-thumbnails">
@@ -956,6 +956,8 @@ $( document ).ready(function( $ ) {
       },
       480: {//表示方法を変えるサイズ
         orientation: 'horizontal',
+        width: 375,
+        height: 375,
         thumbnailWidth: 0,
         thumbnailHeight: 0
       }
