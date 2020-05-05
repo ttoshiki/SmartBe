@@ -286,20 +286,19 @@
     <h1 class="front-page__text">起業やライフスタイルを<br class="sp">豊かにする<br />女性のための総合アカデミー</h1>
 </section>
 
-<div id="main_col">
   <!-- original -->
   <section class="front-page__about">
-    <h1 class="front-page__aboutHeading">好きを仕事にして、経済的自立をしながら<br />自分らしい美しく豊かな人生を生きるために</h1>
+    <h1 class="front-page__aboutHeading">好きを仕事にして、<br class="sp">経済的自立をしながら<br />自分らしい美しく豊かな<br class="sp">人生を生きるために</h1>
     <div class="front-page__aboutContents">
         <div class="front-page__aboutImage"><img src="<?php echo get_template_directory_uri(); ?>/img/top_about_image.svg" alt=""></div>
         <ul class="front-page__aboutTextWrapper">
-            <li>
+            <li class="front-page__aboutTextItem">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/top_about_learn.svg" alt="学び">
                     <p class="front-page__aboutText">経済・マインド・時間的自立、この3つを習得し女性が自由な生き方を手に入れるためのセミナーを常時開催中です。まずはセミナーに参加して、あなたにピッタリの学びを見つけてください。</p>
                 </div>
             </li>
-            <li>
+            <li class="front-page__aboutTextItem">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/top_about_encounter.svg" alt="出会い">
                     <p class="front-page__aboutText">
@@ -308,7 +307,7 @@
                     </p>
                 </div>
             </li>
-            <li>
+            <li class="front-page__aboutTextItem">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/top_about_future.svg" alt="未来">
                     <p class="front-page__aboutText">
@@ -357,7 +356,7 @@
   </section>
   <section class="front-page__voice">
       <h1 class="front-page__voiceHeading">受講生の声</h1>
-      <p class="front-page__voiceText">累計●●人以上の受講生の喜びの声をご紹介します</p>
+      <p class="front-page__voiceText">累計●●人以上の<br class="sp">受講生の喜びの声をご紹介します</p>
       <div class="front-page__voiceSliderWrapper">
         <div class="front-page__voiceBgGradationPrev"></div>
         <div class="front-page__voiceNextBtn"></div>
@@ -468,8 +467,8 @@
   <section class="front-page__media">
     <h1 class="front-page__mediaHeading">
         <div class="front-page__mediaHeadingInner">
-            <span class="front-page__mediaHeadingSpan">日本テレビ「スッキリ」, NHK「ニュース シブ5時」,日経ARIAなど</span><br />
-            <strong>たくさんのメディアにご紹介いただきました！</strong>
+            <span class="front-page__mediaHeadingSpan">日本テレビ「スッキリ」,<br class="sp"> NHK「ニュース シブ5時」,日経ARIAなど</span><br />
+            <strong>たくさんのメディアに<br class="sp">ご紹介いただきました！</strong>
         </div>
     </h1>
     <ul class="front-page__mediaList">
@@ -506,7 +505,7 @@
   <section class="front-page__aboutCourse">
       <div class="front-page__aboutCourseInner">
           <h1 class="front-page__aboutCourseHeading">講座について</h1>
-          <h2 class="front-page__aboutCourseCatch"><strong class="front-page__aboutCourseStrong -primary"><span>あなたにあった</span><em class="front-page__aboutCourseEmphasis">SNS集客</em></strong>を<strong class="front-page__aboutCourseStrong">総合的に学べる</strong>環境があります</h2>
+          <h2 class="front-page__aboutCourseCatch"><strong class="front-page__aboutCourseStrong -primary"><span>あなたにあった</span><em class="front-page__aboutCourseEmphasis">SNS集客</em></strong>を<br class="sp"><strong class="front-page__aboutCourseStrong">総合的に学べる</strong>環境があります</h2>
           <div class="front-page__aboutCourseSns">
               <img src="<?php echo get_template_directory_uri(); ?>/img/top_sns_list_l.png" alt="FaceBook LINE公式 Instagram" class="front-page__aboutCourseSnsImage"><img src="<?php echo get_template_directory_uri(); ?>/img/top_sns_list_r.png" alt="Youtube Twitter セールスコピーライティング" class="front-page__aboutCourseSnsImage">
           </div>
@@ -896,7 +895,7 @@
     </div>
 
   <!-- カスタム投稿（ブログ） -->
-  <div class="front-page__post">
+  <div class="front-page__post -column">
   <?php
 $args = array(
   'post_type' => 'blog', /* カスタム投稿名が「blog」の場合 */
@@ -935,7 +934,6 @@ $args = array(
 
   <!-- original -->
 
-</div><!-- END #main_col -->
 <script>
 $( document ).ready(function( $ ) {
   $('#thumb-v').sliderPro({
@@ -972,7 +970,7 @@ $( document ).ready(function( $ ) {
         maxSlides: 6,
         moveSlides: 1,
         slideWidth: 200,
-        slideMargin: 24,
+        slideMargin: 0,
         auto: true,
         easing: 'ease-in',
         pause: 3000,
