@@ -4888,25 +4888,7 @@ a.guest-url {
   .front-page__post {
     width: 90%;
     margin: 0 auto;
-    padding: 30px 0;
-  }
-  .front-page__post h3 {
-    color: #b69e84;
-    font-size: 20px;
-    font-weight: normal;
-    text-align: left;
-    margin: 0 auto 20px;
-    width: 100%;
-  }
-  .front-page__post ul {
-    display: flex;
-    justify-content: unset;
-    flex-wrap: wrap;
-  }
-  .front-page__post ul li {
-    width: 48%;
-    margin-right: 4%;
-    margin-bottom: 20px;
+    padding: 48px 0 16px;
   }
   .front-page__post ul li:nth-child(2n) {
     margin-right: 0%;
@@ -6973,6 +6955,10 @@ a.guest-url {
   padding: 80px 0;
 }
 
+.front-page__voiceItem {
+  padding: 12px;
+}
+
 .front-page__voiceHeading {
   font-size: 36px;
   color: #49240d;
@@ -7348,6 +7334,198 @@ a.guest-url {
 
   .front-page__mediaList {
     width: 96%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .front-page__text {
+    font-size: 22px;
+    margin: 80px auto;
+  }
+
+  .front-page__text::before {
+    top: -24px;
+    left: -16px;
+  }
+
+  .front-page__text::after {
+    bottom: -32px;
+  }
+
+  .front-page__text::before,
+  .front-page__text::after {
+    height: 40px;
+  }
+
+  .home-default #main_col {
+    margin-top: 0;
+  }
+
+  .front-page__aboutHeading {
+    padding-top: 48px;
+    font-size: 22px;
+  }
+
+  .front-page__aboutContents {
+    margin-top: 32px;
+    padding-bottom: 48px;
+  }
+
+  .front-page__aboutTextItem:nth-child(3) .front-page__aboutText {
+    margin-bottom: 0;
+  }
+
+  .front-page__aboutImage img {
+    width: 80%;
+  }
+
+  .front-page__aboutText {
+    font-size: 16px;
+  }
+
+  .front-page__aboutTextWrapper img {
+    width: 88px;
+  }
+
+  .front-page__serviceHeading {
+    margin-top: 48px;
+    font-size: 26px;
+  }
+
+  .front-page__serviceItem {
+    width: 96%;
+    padding-bottom: 32px;
+  }
+
+  .front-page__serviceName {
+    margin: 32px auto 16px;
+  }
+
+  .front-page__serviceContent {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .front-page__serviceItem:first-child,
+  .front-page__serviceItem:not(:first-child) {
+    margin-bottom: 32px;
+  }
+
+  .front-page__voice {
+    margin-top: 48px;
+    padding: 48px 0;
+  }
+
+  .front-page__voiceHeading {
+    font-size: 26px;
+  }
+
+  .front-page__voiceText {
+    font-size: 20px;
+    margin: 24px auto 32px;
+  }
+
+  .front-page__serviceItem:nth-child(4) .front-page__serviceName {
+    font-size: 24px;
+    margin: 32px auto 16px;
+  }
+
+  .front-page__voiceBgGradationPrev,
+  .front-page__voiceBgGradationNext {
+    display: none;
+  }
+
+  .front-page__voiceNextBtn {
+    left: 5%;
+  }
+
+  .front-page__voicePrevBtn {
+    right: 5%;
+  }
+
+  .front-page__voiceButton {
+    width: 80%;
+    font-size: 24px;
+    padding: 16px 0;
+  }
+
+  .front-page__media {
+    padding: 60px 0;
+  }
+
+  .front-page__mediaHeading strong {
+    font-size: 30px;
+  }
+
+  .front-page__mediaHeadingInner::after {
+    left: -2%;
+    bottom: -40px;
+    height: 12vw;
+    top: auto;
+  }
+
+  .front-page__mediaHeading {
+    margin-bottom: 64px;
+  }
+
+  .front-page__mediaItem {
+    width: 96%;
+    margin: 0 auto 24px;
+  }
+
+  .front-page__mediaName {
+    font-size: 18px;
+  }
+
+  .front-page__aboutCourseInner {
+    padding: 48px 0;
+  }
+
+  .front-page__aboutCourseHeading {
+    font-size: 26px;
+  }
+
+  .front-page__aboutCourseCatch {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+
+  .front-page__aboutCourseStrong {
+    font-size: 22px;
+  }
+
+  .front-page__aboutCourseEmphasis {
+    font-size: 26px;
+  }
+
+  .front-page__aboutCourseStrong.-primary::before {
+    height: 8px;
+    bottom: -3px;
+  }
+
+  .front-page__aboutCourseSns {
+    margin: 16px 0 24px;
+  }
+
+  .front-page__aboutCourseContent {
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  .front-page__postHeading {
+    font-size: 26px;
+  }
+
+  .front-page__postList {
+    grid-template-columns: 100%;
+  }
+
+  .front-page__postName {
+    height: auto;
+  }
+
+  .front-page__post.-column {
+    padding-top: 0;
   }
 }
 
