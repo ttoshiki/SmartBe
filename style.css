@@ -4962,7 +4962,7 @@ a.guest-url {
   #footer #side_fixedbanner ul {
     position: fixed;
     right: 0px;
-    bottom: 13%;
+    bottom: -8px;
     z-index: 1000;
     width: 20%;
   }
@@ -7780,6 +7780,7 @@ a.guest-url {
 
 .about__reasonItem {
   display: flex;
+  align-items: flex-start;
   counter-increment: reasonList;
   position: relative;
 }
@@ -7837,10 +7838,16 @@ a.guest-url {
   justify-content: space-between;
   max-width: var(--max-width);
   margin: 48px auto 0;
+  padding: 0 16px;
 }
 
 .about__dataItem {
   max-width: 448px;
+  width: 48%;
+}
+
+.about__dataChart svg {
+  width: 96%;
 }
 
 .about__dataItemHeading {
@@ -7970,6 +7977,264 @@ a.guest-url {
 
 .about__representativesSign {
   text-align: right;
+}
+
+@media only screen and (max-width: 960px) {
+  .about__learnList {
+    justify-content: center;
+  }
+
+  .about__learnItem {
+    width: 30%;
+  }
+
+  .about__reasonList {
+    padding: 0 16px;
+  }
+
+  .dotLine {
+    padding: 0 16px;
+  }
+
+  .about__reasonBanner {
+    width: 96%;
+    margin: 64px auto 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__heading {
+    font-size: 26px;
+  }
+
+  .about__learn {
+    padding: 64px 0 48px;
+  }
+
+  .about__learnLead {
+    font-size: 18px;
+  }
+
+  .about__learnList {
+    padding: 0 16px;
+  }
+
+  .about__learnItem {
+    width: 100%;
+  }
+
+  .about__learnItem:nth-child(2n) {
+    margin: 0 auto;
+  }
+
+  .about__learnItem:not(:first-child) {
+    margin-top: 32px;
+  }
+
+  .about__learnImage {
+    margin-top: 40px;
+  }
+
+  .about__learnImage svg {
+    height: 96px;
+  }
+
+  .about__learnItemHeading {
+    font-size: 22px;
+  }
+
+  .about__learnItemHeading {
+    margin-top: 16px;
+  }
+
+  .about__learnItemContent {
+    margin-top: 12px;
+    font-size: 16px;
+    padding-bottom: 32px;
+  }
+
+  .about__reason {
+    padding: 48px 0;
+  }
+
+  .about__reasonDecoration svg {
+    width: 96%;
+  }
+
+  .about__reasonHeading {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-top: 8px;
+  }
+
+  .about__reasonHeadingStrong {
+    font-size: 46px;
+  }
+
+  .about__reasonList {
+    margin: 48px auto 0;
+  }
+
+  .about__reasonItem {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__reasonItem:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .about__reasonItem:first-child .about__reasonText,
+  .about__reasonItem:nth-child(3) .about__reasonText {
+    margin-right: auto;
+  }
+
+  .about__reasonItemHeading {
+    font-size: 26px;
+  }
+
+  .about__reasonContent {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+
+  .about__reasonItem::before {
+    font-size: 140px;
+    top: 10px;
+    left: 0;
+  }
+
+  .about__reasonImage {
+    margin-top: 16px;
+  }
+
+  .about__reasonItem:nth-child(2) .about__reasonText {
+    margin-left: auto;
+  }
+
+  .about__data {
+    padding: 48px 0;
+  }
+
+  .about__dataList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__dataItemLine {
+    margin: 8px auto 0;
+  }
+
+  .about__dataItemHeading {
+    font-size: 20px;
+  }
+
+  .about__dataItem {
+    width: 96%;
+  }
+
+  .about__dataItem:first-child .about__dataExplanation {
+    margin-top: -16px;
+  }
+
+  .about__dataItem:not(:first-child) {
+    margin-top: 64px;
+  }
+
+  .about__dataItem:nth-child(2) .about__dataExplanation {
+    margin-top: -8px;
+  }
+
+  .about__dataExplanation {
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  .about .dotLine {
+    margin: 32px 0 48px;
+  }
+
+  .about__dataSummary {
+    font-size: 22px;
+  }
+
+  .about__dataSummaryStrong {
+    font-size: 30px;
+  }
+
+  .about__reasonBanner {
+    margin: 32px auto 0;
+  }
+
+  .about__about {
+    padding: 48px 0;
+  }
+
+  .about__aboutContents:first-of-type {
+    margin-top: 32px;
+  }
+
+  .about__aboutContents:not(:last-of-type) {
+    margin-bottom: 32px;
+  }
+
+  .about__aboutContents {
+    font-size: 18px;
+  }
+
+  .about__aboutContentsStrong {
+    font-size: 22px;
+  }
+
+  .about__representatives {
+    padding: 48px 0;
+    margin-bottom: 48px;
+  }
+
+  .about__representativesInner {
+    padding: 48px 0 16px;
+  }
+
+  .about__about__representativesSns.pc {
+    display: none;
+  }
+
+  .about__representativesContentsWrapper {
+    flex-direction: column;
+    margin: 32px auto;
+  }
+
+  .about__representativesContentsInner:first-child {
+    margin-right: auto;
+  }
+
+  .about__representativesPhoto {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .about__representativesName {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .about__representativesContent {
+    font-size: 16px;
+  }
+
+  .about__representativesContent {
+    margin-top: 24px;
+    padding: 0 8px;
+  }
+
+  .about__representativesSign svg {
+    width: 160px;
+  }
+
+  .about__about__representativesSns {
+    text-align: center;
+  }
 }
 
 /* ------------------

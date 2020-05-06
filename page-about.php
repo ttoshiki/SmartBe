@@ -59,9 +59,7 @@
 	<section class="about__learn">
 		<h1 class="about__heading">女性による女性のための学び</h1>
 		<p class="about__learnLead">
-			Smart Beでは女性が「好き」なことを仕事にして<br />
-			経済的自立をしながら自分らしく美しく豊かな人生を生きるための<br />
-			さまざまな学びをご提供しています
+			Smart Beでは女性が「好き」なことを<br class="sp">仕事にして<br class="pc" />経済的自立をしながら<br class="sp">自分らしく美しく豊かな人生を生きるための<br />さまざまな学びをご提供しています
 		</p>
 		<ul class="about__learnList">
 			<li class="about__learnItem">
@@ -83,7 +81,7 @@
 	</section>
 	<section class="about__reason">
 		<div class="about__reasonDecoration"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_decoration.svg'); ?></div>
-		<h1 class="about__reasonHeading">Smart Beが選ばれる<strong class="about__reasonHeadingStrong">3</strong>つの理由</h1>
+		<h1 class="about__reasonHeading">Smart Beが選ばれる<br class="sp"><strong class="about__reasonHeadingStrong">3</strong>つの理由</h1>
 		<ul class="about__reasonList">
 			<li class="about__reasonItem">
 				<div class="about__reasonText">
@@ -133,7 +131,7 @@
 			</li>
 		</ul>
 		<div class="dotLine"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?></div>
-		<h3 class="about__dataSummary">受講生は主にコーチ・コンサル・セラピスト・お教室運営など<br /><strong class="about__dataSummaryStrong">おひとりさま起業で頑張る女性たち</strong>です</h3>
+		<h3 class="about__dataSummary">受講生は主にコーチ・コンサル・<br class="tab">セラピスト・お教室運営など<br /><strong class="about__dataSummaryStrong">おひとりさま起業で<br class="sp">頑張る女性たち</strong>です</h3>
 		<a href="/voice"><img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonBanner"></a>
 	</section>
 	<section class="about__about">
@@ -145,17 +143,17 @@
 		</p>
 		<p class="about__aboutContents">
 			そして「Be」の部分には<br />
-			あなたに必要な学びを選択し自分なりの“賢さ”を<br />
-			作り上げてもらえたらという願いを込めています。
+			あなたに必要な学びを選択し<br class="sp">自分なりの“賢さ”を<br />
+			作り上げてもらえたらという<br class="sp">願いを込めています。
 		</p>
 		<p class="about__aboutContents">
-			そのためには「Be」にあたる講座をたくさんご提供し<br />
+			そのためには「Be」にあたる<br class="sp">講座をたくさんご提供し<br class="pc" />
 			企業理念である
 		</p>
-		<p class="about__aboutContents"><strong class="about__aboutContentsStrong">「学びを通して、人生を選択できる、自由で幸せな女性を創出する」</strong></p>
+		<p class="about__aboutContents"><strong class="about__aboutContentsStrong">「学びを通して、人生を選択できる、</strong><br class="sp"><strong class="about__aboutContentsStrong">自由で幸せな女性を創出する」</strong></p>
 		<p class="about__aboutContents">
 			これを多くの女性に体現してもらえるよう<br />
-			たくさんの想いと願いを込めてSmart Beといたしました。
+			たくさんの想いと願いを込めて<br class="sp">Smart Beといたしました。
 		</p>
 	</section>
 	<section class="about__representatives">
@@ -164,10 +162,10 @@
 			<div class="about__representativesContentsWrapper">
 				<div class="about__representativesContentsInner">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/about/representatives.jpg" alt="伊藤宏美" class="about__representativesPhoto">
-					<a href="//www.facebook.com/hiromi.ito.888" class="about__about__representativesSns"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
+					<a href="//www.facebook.com/hiromi.ito.888" class="about__about__representativesSns pc"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
 				</div>
 				<div class="about__representativesContentsInner">
-					<h2 class="about__representativesName">合同会社 Smart Be 代表　伊藤宏美</h2>
+					<h2 class="about__representativesName">合同会社 Smart Be 代表　<br class="tab">伊藤宏美</h2>
 					<p class="about__representativesContent">
 						株式会社インテリジェンスでキャリコンサルタント、
 						GMOペイメントゲートウェイ株式会社で新卒・中途採用を経験。10年間、企業に属し役職まで就くも雇われず自立したいという思いから個人ビジネスで起業。
@@ -180,6 +178,7 @@
 						現在は賢女の集客アカデミーを主宰。受講生一人ひとりにあった集客メソッドを構築。企業で培った人生マネジメント能力をいかし、わずか20日間で売上100万円以上の売上実績を出すなどクライアントの業績アップに貢献している。
 					</p>
 					<div class="about__representativesSign"><?php echo file_get_contents(get_template_directory() . '/img/about/sign.svg'); ?></div>
+					<a href="//www.facebook.com/hiromi.ito.888" class="about__about__representativesSns sp"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
 				</div>
 			</div>
 		</div>
