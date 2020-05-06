@@ -4962,7 +4962,7 @@ a.guest-url {
   #footer #side_fixedbanner ul {
     position: fixed;
     right: 0px;
-    bottom: 13%;
+    bottom: -8px;
     z-index: 1000;
     width: 20%;
   }
