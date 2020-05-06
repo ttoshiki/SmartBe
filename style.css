@@ -400,6 +400,7 @@ a:hover {
 @media screen and (max-width: 767px) {
   .c-button {
     font-size: 16px;
+    margin: 32px auto;
   }
 }
 
@@ -6730,6 +6731,24 @@ a.guest-url {
   height: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .inflady__button {
+    padding: 16px 0;
+    width: 80%;
+    font-size: 22px;
+    justify-content: center;
+  }
+
+  .inflady__buttonIcon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .inflady__buttonIcon {
+    margin-right: 12px;
+  }
+}
+
 /* ----------------
 
 追加CSS
@@ -8263,6 +8282,10 @@ a.guest-url {
   margin: 0 auto;
 }
 
+.academy__mainVisualText.sp {
+  display: none;
+}
+
 .academy__mainVisualButtons {
   width: 37.5vw;
   max-width: 460px;
@@ -8584,6 +8607,11 @@ a.guest-url {
   padding: 80px 0;
 }
 
+.academy__learnSubHeading::before {
+  font-size: 140px;
+  top: -24px;
+}
+
 .academy__learnInner {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -8618,6 +8646,7 @@ a.guest-url {
 .academy__learnItem {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   counter-increment: academyLearnList;
 }
 
@@ -9132,7 +9161,7 @@ a.guest-url {
   margin-left: 40px;
 }
 
-.academy__onlineMeritHeading {
+.academy__onlineMeritItemHeading {
   font-size: 32px;
   color: #627ff5;
   text-align: center;
@@ -9227,6 +9256,7 @@ a.guest-url {
 .online__flowParagraph {
   color: #92785f;
   margin-top: 4px;
+  font-size: 18px;
 }
 
 .academy__instructorRecruitment {
@@ -9307,6 +9337,805 @@ a.guest-url {
 .academy__instructorButtonIcon svg {
   width: 20px;
   height: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+  .academy__introParagraph {
+    font-size: 32px;
+  }
+
+  .academy__introParagraphStrong {
+    font-size: 46px;
+  }
+
+  .academy__introCatchCopySpan {
+    width: 170px;
+    height: 170px;
+    font-size: 30px;
+  }
+
+  .academy__introCatchCopyStrong {
+    font-size: 48px;
+  }
+
+  .academy__freedomItem {
+    width: 28%;
+  }
+
+  .academy__freedomItemText {
+    font-size: 38px;
+    line-height: 1.3;
+  }
+
+  .academy__charmHeading {
+    font-size: 42px;
+  }
+
+  .academy__charmHeading svg {
+    width: 66px;
+    margin-right: 6px;
+  }
+
+  .academy__movie {
+    padding: 0 16px;
+  }
+
+  .academy__voiceHeading {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .academy__voiceList {
+    padding: 0 16px;
+  }
+
+  .academy__learnHeading {
+    line-height: 1.3;
+  }
+
+  .academy__learnList {
+    padding: 0 16px;
+  }
+
+  .academy__learnItemText {
+    font-size: 18px;
+  }
+
+  .academy__learnItemPhoto {
+    width: 44%;
+  }
+
+  .academy__recommend svg {
+    width: 96%;
+  }
+
+  .academy__recommend svg {
+    height: auto;
+  }
+
+  .academy__achievementImage {
+    width: 96%;
+    margin: 16px auto 0;
+  }
+
+  .academy__messageContent {
+    margin-left: 16px;
+  }
+
+  .academy__fullThanksQuestionHeading {
+    font-size: 44px;
+  }
+
+  .academy__fullThanksQuestioStrong {
+    font-size: 64px;
+  }
+
+  .academy__messageContentText {
+    font-size: 16px;
+  }
+
+  .academy__messageImage {
+    width: 50%;
+  }
+
+  .academy__onlineHeadingSpan {
+    font-size: 30px;
+  }
+
+  .academy__onlineHeading {
+    font-size: 46px;
+  }
+
+  .academy__onlineHeadingText {
+    margin-left: 20px;
+  }
+
+  .academy__onlineHeading svg {
+    width: 54px;
+  }
+
+  .academy__onlineWorries {
+    padding: 48px 0 48px 56px;
+  }
+
+  .academy__onlineMerit {
+    padding: 64px 0;
+  }
+
+  .academy__onlineMeritItem {
+    width: 28%;
+  }
+
+  .academy__onlineMeritItemHeading {
+    font-size: 28px;
+    height: 126px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .academy__onlineMeritItem::before {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    top: -25px;
+    left: -25px;
+  }
+
+  .academy__onlineMeritItem:not(:first-child) {
+    margin-left: 32px;
+  }
+
+  .academy__onlineMeritItem svg {
+    height: 100px;
+  }
+
+  .academy__onlineMeritItem:nth-child(3) svg {
+    width: 98px;
+  }
+
+  .academy__onlineFlowList {
+    width: 58%;
+  }
+
+  .academy__instructorRecruitmentInner {
+    width: 96%;
+    margin: 0 auto 80px;
+    padding: 64px 16px 48px;
+  }
+
+  .academy__instructorRecruitmentStrong {
+    font-size: 40px;
+  }
+
+  .academy__instructorRecruitmentContents {
+    margin-left: 48px;
+  }
+
+  .academy__instructorRecruitmentImage {
+    margin-top: 12px;
+  }
+
+  .academy__instructorRecruitmentHeading {
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .academy__learnSubHeading {
+    font-size: 28px;
+  }
+
+  .academy__recommendHeading {
+    font-size: 26px;
+  }
+
+  .academy__recommend svg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .academy__mainVisual {
+    background: url(img/academy/main_visual_bg-sp.jpg);
+    background-size: cover;
+    padding-top: 100%;
+  }
+
+  .academy__mainVisualText.pc {
+    display: none;
+  }
+
+  .academy__mainVisualText.sp {
+    display: block;
+    width: 94%;
+  }
+
+  .academy__mainVisualCta {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+  }
+
+  .academy__intro {
+    margin: 48px auto;
+  }
+
+  .academy__introSpeechBubble {
+    margin: 8px auto -4px;
+  }
+
+  .academy__mainVisualButtons {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  .academy__mainVisualButton {
+    font-size: 16px;
+    height: 12.8vw;
+    width: 46%;
+  }
+
+  .academy__mainVisualButton::before {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .academy__introSpeechBubbleWrapper {
+    padding: 0 16px;
+  }
+
+  .academy__introParagraph {
+    font-size: 24px;
+  }
+
+  .academy__introParagraphStrong {
+    font-size: 32px;
+  }
+
+  .academy__introCatchCopy {
+    flex-direction: column;
+  }
+
+  .academy__introCatchCopySpan {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    font-size: 22px;
+    transform: rotate(0deg);
+  }
+
+  .academy__introCatchCopyHeading {
+    font-size: 20px;
+    margin-left: 0;
+    margin: 12px 0 0 0;
+  }
+
+  .academy__introCatchCopyStrong {
+    font-size: 38px;
+  }
+
+  .academy__reasonHeading {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+
+  .academy__reasonHeading strong {
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  .academy__freedomList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .academy__freedomReasonIcon {
+    height: auto;
+  }
+
+  .academy__freedomReasonIcon svg {
+    width: 64px;
+  }
+
+  .academy__freedomItem {
+    width: 96%;
+    padding: 24px 0;
+  }
+
+  .academy__freedomItem:not(:first-child) {
+    margin-top: 48px;
+  }
+
+  .academy__freedomReasonIcon svg {
+    width: 72px;
+  }
+
+  .academy__freedomItemText {
+    font-size: 30px;
+  }
+
+  .academy__freedomItemText .tab {
+    display: none;
+  }
+
+  .academy__freedomItem::before {
+    width: 48px;
+    height: 48px;
+    font-size: 30px;
+  }
+
+  .academy__reasonSubHeading {
+    font-size: 26px;
+    line-height: 1.8;
+  }
+
+  .academy__reasonSubHeading {
+    margin-top: 32px;
+  }
+
+  .academy__reasonSubHeadingStrong {
+    line-height: 1.4;
+  }
+
+  .academy__appearancePhotos {
+    margin-bottom: 32px;
+  }
+
+  .academy__appearancePhotos img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .academy__charm {
+    padding: 48px 0;
+  }
+
+  .academy__charmHeading svg {
+    margin: 0 0 12px 0;
+    width: 56px;
+  }
+
+  .academy__charmHeading {
+    flex-direction: column;
+  }
+
+  .academy__charmHeadingText {
+    margin-left: 0;
+    padding: 0 16px;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .academy__voice {
+    padding: 48px 0;
+  }
+
+  .academy__movie {
+    margin: 24px auto 0;
+  }
+
+  .academy__voiceHeading {
+    font-size: 22px;
+  }
+
+  .academy__voiceHeading::after {
+    border-top: 26px solid #ff878a;
+    border-right: 28px solid transparent;
+    border-bottom: 26px solid transparent;
+  }
+
+  .academy__voiceItem {
+    font-size: 17px;
+  }
+
+  .academy__voiceItemStrong {
+    font-size: 22px;
+  }
+
+  .academy__voiceItem::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .academy__voiceItem {
+    padding-left: 32px;
+  }
+
+  .academy__learn {
+    padding: 48px 0;
+  }
+
+  .academy__learnHeading {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .academy__learnHeading .tab {
+    display: none;
+  }
+
+  .academy__learnHeadingStrong {
+    font-size: 50px;
+  }
+
+  .academy__learnItem {
+    flex-direction: column;
+  }
+
+  .academy__learnItemContents:first-child,
+  .academy__learnItemContents:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .academy__learnItemContents:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .academy__learnItem:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .academy__learnList {
+    margin-top: 64px;
+  }
+
+  .academy__learnItemText {
+    margin: 16px 0 0;
+  }
+
+  .academy__learnItemPhoto {
+    display: block;
+    margin-top: 24px;
+    width: 100%;
+  }
+
+  .academy__appearance {
+    padding: 48px 16px;
+  }
+
+  .academy__appearanceHeading svg {
+    width: 100%;
+  }
+
+  .academy__appearancePhoto.pc {
+    display: none;
+  }
+
+  .academy__appearanceWrapper img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .academy__appearanceWrapper img:not(:first-of-type) {
+    margin-top: 24px;
+  }
+
+  .academy__achievement {
+    padding: 48px 0;
+  }
+
+  .academy__achievementSpan {
+    font-size: 18px;
+  }
+
+  .academy__achievementSpanStrong {
+    font-size: 26px;
+  }
+
+  .academy__achievementItem svg {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .academy__achievementParagraph {
+    font-size: 18px;
+  }
+
+  .academy__achievementStrong {
+    font-size: 26px;
+  }
+
+  .academy__achievementParagraph {
+    padding: 0 16px;
+  }
+
+  .academy__achievementItem:not(:first-child) {
+    margin-top: 60px;
+  }
+
+  .academy__achievementSpan::before,
+  .academy__achievementSpan::after {
+    height: 20px;
+  }
+
+  .academy__recommend {
+    padding: 48px 16px;
+  }
+
+  .academy__master svg {
+    width: 260px;
+  }
+
+  .academy__masterHeading {
+    font-size: 26px;
+  }
+
+  .academy__masterHeadingStrong {
+    font-size: 36px;
+  }
+
+  .academy__fullThanks {
+    padding: 48px 0 0;
+  }
+
+  .academy__fullThanksHeading {
+    font-size: 24px;
+  }
+
+  .academy__fullThanksHeadingStrong {
+    font-size: 36px;
+  }
+
+  .academy__fullThanksSubHeading {
+    font-size: 24px;
+    padding: 0 16px;
+  }
+
+  .academy__fullThanksStrong {
+    font-size: 36px;
+  }
+
+  .academy__fullThanksParagraph {
+    font-size: 18px;
+    margin: 32px auto 0;
+    line-height: 1.5;
+  }
+
+  .academy__fullThanksImage {
+    margin-top: 32px;
+  }
+
+  .academy__fullThanksQuestionHeading {
+    padding: 48px 0;
+    font-size: 26px;
+  }
+
+  .academy__fullThanksQuestioStrong {
+    font-size: 46px;
+  }
+
+  .academy__message {
+    padding: 48px 16px 64px;
+  }
+
+  .academy__messageHeading {
+    font-size: 26px;
+  }
+
+  .academy__messageHeading::after {
+    margin: 8px auto 0;
+  }
+
+  .academy__messageContents {
+    flex-direction: column;
+    align-items: center;
+    margin: 48px auto 24px;
+  }
+
+  .academy__messageImage {
+    width: 80%;
+  }
+
+  .academy__messageContent {
+    margin: 16px 0 0 0;
+  }
+
+  .academy__messageContentText:not(:first-child) {
+    margin: 24px 0 0 0;
+  }
+
+  .academy__online {
+    padding: 48px 0 16px;
+  }
+
+  .academy__onlineHeadingSpan {
+    font-size: 20px;
+  }
+
+  .academy__onlineHeadingSpan::before,
+  .academy__onlineHeadingSpan::after {
+    height: 18px;
+  }
+
+  .academy__onlineHeadingSpan::before {
+    left: -18px;
+    bottom: 6px;
+  }
+
+  .academy__onlineHeadingSpan::after {
+    right: -18px;
+    bottom: 6px;
+  }
+
+  .academy__onlineHeadingText {
+    margin-left: 0;
+  }
+
+  .academy__onlineHeading {
+    font-size: 38px;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .academy__onlineHeading svg {
+    width: 56px;
+  }
+
+  .academy__onlineWorries {
+    margin-top: 24px;
+    padding: 24px 16px 24px 16px;
+  }
+
+  .academy__onlineWorriesHeading {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .academy__onlineList {
+    margin-top: 24px;
+  }
+
+  .academy__onlineItem svg {
+    width: 22px;
+  }
+
+  .academy__onlineItem {
+    font-size: 18px;
+  }
+
+  .academy__onlineList {
+    width: 308px;
+    margin: 24px auto;
+  }
+
+  .academy__onlineTriangle {
+    margin-top: 24px;
+  }
+
+  .academy__onlineTriangle svg {
+    width: 140px;
+    height: auto;
+  }
+
+  .academy__onlineSubHeading {
+    font-size: 28px;
+  }
+
+  .academy__onlineOffer {
+    margin: 24px 0 0;
+    padding: 32px 0;
+  }
+
+  .academy__onlineOfferSpan {
+    font-size: 18px;
+  }
+
+  .academy__onlineOfferParagraph {
+    font-size: 28px;
+    padding: 0 16px;
+    margin-top: 8px;
+  }
+
+  .academy__onlineOfferStrong {
+    font-size: 40px;
+  }
+
+  .academy__onlineMerit {
+    padding: 48px 0;
+  }
+
+  .academy__onlineMeritHeading svg {
+    width: 100%;
+  }
+
+  .academy__onlinMeritList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .academy__onlineMeritItem {
+    width: 80%;
+    padding: 24px 0;
+  }
+
+  .academy__onlineMeritItem:not(:first-child) {
+    margin: 48px 0 0 0;
+  }
+
+  .academy__onlineMeritItemHeading {
+    height: auto;
+    font-size: 26px;
+  }
+
+  .academy__onlineMeritItem::before {
+    font-size: 30px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .academy__onlineFlow {
+    margin-top: 48px;
+    min-height: 724px;
+  }
+
+  .academy__onlineFlowHeading svg {
+    width: 100%;
+  }
+
+  .academy__onlineFlowList {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .academy__onlineFlowItem {
+    margin: 0 16px;
+  }
+
+  .academy__onlineFlowItem:first-child {
+    margin-top: 106px;
+  }
+
+  .academy__onlineFlowItem::before {
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .academy__onlineFlowItem:not(:last-child)::after {
+    left: 30px;
+    top: 58px;
+    height: 124px;
+  }
+
+  .academy__instructorRecruitment {
+    margin: 32px auto 0;
+  }
+
+  .academy__instructorRecruitmentInner::before {
+    border-bottom: 56px solid transparent;
+    border-left: 56px solid #ff878a;
+  }
+
+  .academy__instructorRecruitmentInner {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 64px;
+    padding: 40px 16px 40px;
+  }
+
+  .academy__instructorRecruitmentImage svg {
+    width: 140px;
+  }
+
+  .academy__instructorRecruitmentContents {
+    margin: 16px 0 0 0;
+  }
+
+  .academy__instructorRecruitmentStrong {
+    font-size: 32px;
+  }
+
+  .academy__instructorRecruitmentHeading {
+    font-size: 28px;
+  }
+
+  .academy__instructorRecruitmentParagraph {
+    font-size: 18px;
+  }
 }
 
 /* ------------------
