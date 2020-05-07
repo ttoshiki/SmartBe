@@ -7792,6 +7792,52 @@ a.guest-url {
   font-weight: var(--medium);
 }
 
+@media only screen and (max-width: 960px) {
+  .recruit__inner {
+    padding: 80px 16px 64px;
+  }
+
+  .recruit__table td {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .recruit__inner {
+    margin: 48px auto;
+    padding: 48px 16px;
+  }
+
+  .recruit__table tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recruit .recruit__table {
+    width: 100%;
+  }
+
+  .recruit__table th {
+    padding: 12px 0;
+  }
+
+  .recruit__table td {
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+  }
+
+  .recruit__table tr:not(:first-child) {
+    margin-top: 32px;
+  }
+
+  .recruit__table {
+    border: none;
+    background-color: transparent;
+  }
+}
+
 /* ------------------
  about
 ------------------- */

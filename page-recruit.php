@@ -53,7 +53,7 @@
   </div>
 <?php } ?>
 
-<img src="<?php echo get_template_directory_uri(); ?>/img/recruit_header.jpg" alt="" class="pc">
+<img src="<?php echo get_template_directory_uri(); ?>/img/recruit_header.jpg" alt="" class="pc tab">
 <img src="<?php echo get_template_directory_uri(); ?>/img/recruit_header-sp.jpg" alt="" class="sp">
 
 <div id="recruit">
@@ -73,9 +73,9 @@
             <tr>
                 <th>以下のような方を<br />求めています！</th>
                 <td>
-                    ・Word／Excel／PowerPoint、それぞれ初級から中級程度のスキルをお持ちの方（Excelは簡単な関数が組める程度、PowerPointは資料作成ができる程度でOK！）<br />
-                    ・FacebookやLINEなど、SNSを日常的に使っていらっしゃる方<br />
-                    ・WEBサイト関連の知識を、ある程度お持ちの方<br />
+                    ・Word／Excel／PowerPoint、それぞれ初級から中級程度のスキルをお持ちの方（Excelは簡単な関数が組める程度、PowerPointは資料作成ができる程度でOK！）<br /><br class="sp">
+                    ・FacebookやLINEなど、SNSを日常的に使っていらっしゃる方<br /><br class="sp">
+                    ・WEBサイト関連の知識を、ある程度お持ちの方<br /><br class="sp">
                     ※上記に当てはまらない方も、積極的に学ぶ姿勢をお持ちであれば歓迎します！<br /><br />
                     経営者と近い距離で会社の成長を楽しみたい方、女性の社会進出を応援したい
                 </td>
