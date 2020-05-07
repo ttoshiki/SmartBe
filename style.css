@@ -10374,9 +10374,13 @@ a.guest-url {
 }
 
 .activity__list .attachment-thumbnail {
-  width: 50%;
+  width: calc(50% - 12px);
   height: 180px;
   object-fit: cover;
+}
+
+.activity__list .attachment-thumbnail:nth-of-type(2) {
+  margin-left: 24px;
 }
 
 .activity__thumbnail {
@@ -10395,6 +10399,10 @@ a.guest-url {
 
   .activity__list .attachment-thumbnail {
     width: 100%;
+  }
+
+  .activity__list .attachment-thumbnail:nth-of-type(2) {
+    margin: 16px 0 0 0;
   }
 
   .activity__list p {
