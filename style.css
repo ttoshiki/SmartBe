@@ -7677,6 +7677,8 @@ a.guest-url {
 
 .instructorRecruitment__paragraph {
   margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .iconWithButtonWrapper {
@@ -7700,6 +7702,140 @@ a.guest-url {
 .iconWithButton__icon {
   margin-right: 12px;
   display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .instructorRecruitment {
+    padding: 48px 0;
+  }
+
+  .instructorRecruitment__inner {
+    padding: 0 16px;
+  }
+
+  .instructorRecruitment__section:not(:first-of-type) {
+    margin-top: 48px;
+  }
+
+  .instructorRecruitment__heading {
+    margin-top: 16px;
+    font-size: 20px;
+    height: auto;
+    line-height: normal;
+    background-size: cover;
+    padding: 12px 8px 10px;
+  }
+
+  .instructorRecruitment__paragraph {
+    font-size: 16px;
+  }
+
+  .iconWithButton {
+    height: 84px;
+    font-size: 20px;
+  }
+
+  .iconWithButton__icon {
+    margin-right: 16px;
+    width: 32px;
+  }
+
+  .instructorRecruitment__buttonSpan {
+    text-align: center;
+  }
+}
+
+/* ------------------
+ recruit
+------------------- */
+
+#recruit {
+  background: url(img/bg_1.png);
+  background-size: cover;
+}
+
+.recruit__inner {
+  max-width: 960px;
+  margin: 96px auto 80px;
+  padding: 80px 0 64px;
+}
+
+.recruit__table {
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+}
+
+.recruit__table th {
+  background-color: #b69e84;
+  color: #ffffff;
+  padding: 48px 16px 0;
+  font-size: 20px;
+  font-weight: var(--semibold);
+  min-width: 212px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.recruit__table tr:not(:last-child) th,
+.recruit__table tr:not(:last-child) td {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.recruit__table td {
+  padding: 0 24px 48px;
+  color: #333333;
+  line-height: 1.7;
+}
+
+.recruit__table strong {
+  color: #92785f;
+  font-weight: var(--medium);
+}
+
+@media only screen and (max-width: 960px) {
+  .recruit__inner {
+    padding: 80px 16px 64px;
+  }
+
+  .recruit__table td {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .recruit__inner {
+    margin: 48px auto;
+    padding: 48px 16px;
+  }
+
+  .recruit__table tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recruit .recruit__table {
+    width: 100%;
+  }
+
+  .recruit__table th {
+    padding: 12px 0;
+  }
+
+  .recruit__table td {
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+  }
+
+  .recruit__table tr:not(:first-child) {
+    margin-top: 32px;
+  }
+
+  .recruit__table {
+    border: none;
+    background-color: transparent;
+  }
 }
 
 /* ------------------
