@@ -10438,6 +10438,8 @@ complete（メルマガ登録完了）
   text-align: center;
   color: #49240d;
   line-height: 1.7;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .complete__small {
@@ -10580,6 +10582,107 @@ complete（メルマガ登録完了）
 
 .complete__cta .footer__lineGuidanceQRcode {
   margin-top: 20px;
+}
+
+.complete #footer_contents {
+  margin-top: 64px;
+}
+
+@media only screen and (max-width: 960px) {
+  .complete__necessaryList {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .complete__title {
+    font-size: 30px;
+  }
+
+  .complete__title svg {
+    width: 30px;
+  }
+
+  .complete__eyeCatch {
+    width: 180px;
+    margin: 16px auto 0;
+  }
+
+  .complete__text {
+    font-size: 16px;
+    margin-top: 32px;
+  }
+
+  .complete__small {
+    margin-top: 48px;
+    padding: 0 16px;
+  }
+
+  .complete__line {
+    margin: 48px auto;
+  }
+
+  .complete__lineInfo {
+    padding: 48px 0 32px;
+  }
+
+  .complete__lineInfoHeading {
+    font-size: 34px;
+    padding: 0 16px;
+  }
+
+  .complete__necessaryList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .complete__necessaryItem {
+    width: 80%;
+    padding: 16px 0;
+  }
+
+  .complete__necessaryItem:not(:first-child) {
+    margin: 24px 0 0 0;
+  }
+
+  .complete__necessaryParagraph {
+    font-size: 34px;
+  }
+
+  .complete__necessaryIcon {
+    height: auto;
+  }
+
+  .complete__necessaryIcon svg {
+    width: 56px;
+    height: auto;
+  }
+
+  .complete__lineInfoList {
+    display: block;
+    text-align: center;
+  }
+
+  .complete__lineInfoParagraph {
+    font-size: 20px;
+    padding: 0 16px;
+  }
+
+  .complete__lineInfoItem {
+    display: inline-block;
+    font-size: 18px;
+    width: 44%;
+    text-align: center;
+    margin: 4px;
+  }
+
+  .complete__ctaHeading {
+    font-size: 22px;
+  }
+
+  .complete__cta .footer__lineGuidanceImages {
+    margin-top: 16px;
+  }
 }
 
 /* ------------------
