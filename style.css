@@ -7675,6 +7675,10 @@ a.guest-url {
   letter-spacing: 1px;
 }
 
+.instructorRecruitment__section:first-of-type .instructorRecruitment__heading {
+  margin-top: 0;
+}
+
 .instructorRecruitment__paragraph {
   margin-top: 24px;
   font-size: 18px;
