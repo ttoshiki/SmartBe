@@ -32,8 +32,10 @@
         </div>
     </div>
      <?php
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $args = array(
-            'post_type' => 'post'
+            'post_type' => 'post',
+            'paged' => $paged,
         );
         $the_query = new WP_Query($args);
     ?>
@@ -114,9 +116,6 @@
                           }
                       }
                   }
-                  if ($dp_options['show_date']) {
-                      $metas[] = '<li class="date"><time class="entry-date updated" datetime="'.get_the_modified_time('c').'">'.get_the_time('Y.m.d').'</time></li>';
-                  }
               } elseif ($post->post_type == $dp_options['introduce_slug']) {
                   if ($dp_options['show_introduce_categories']) {
                       foreach (explode('-', $dp_options['show_introduce_categories']) as $cat) {
@@ -138,6 +137,7 @@
 
                 if ($metas) {
                     echo '<ul class="meta clearfix">'.implode('', $metas).'</ul>';
+                    echo the_category();
                 }
             ?>
           </a>
@@ -145,10 +145,16 @@
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
 
+
       </ol><!-- END #post_list -->
       <?php else: ?>
       <p class="no_post"><?php _e('There is no registered post.', 'tcd-w'); ?></p>
       <?php endif; ?>
+        <?php
+          if (subPagination()) {
+              echo subPagination();
+          }
+        ?>
 
     </div>
   </div>

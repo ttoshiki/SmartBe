@@ -268,6 +268,10 @@ jQuery(function(){
     if(index == 1) {
       $(".seminar-event__item.-show").css('height', 'auto');
     }
+
+    // スマホのとき初期値に戻す
+    $('.seminar-event__selector').val('all')
+    $('.seminar-event__eventSelector').val('all');
   });
 
   $(".seminar-event__taxonomyButton").on("click", function() {
@@ -276,7 +280,6 @@ jQuery(function(){
     $(".seminar-event__calendarCategories").css('display', 'block');
     $(".seminar-event__item.-show").css('height', 'auto');
     var taxonomyIndex = $(".seminar-event__taxonomyButton").index(this);
-    console.log(taxonomyIndex)
     $(".seminar-event__taxonomyButton").removeClass("-active");
     $(this).addClass("-active");
     $(".seminar-event__calendarCategory").removeClass("-show").eq(taxonomyIndex).addClass('-show');
@@ -292,7 +295,7 @@ jQuery(function(){
     var categorySlug = className[0]
     console.log(categorySlug)
     $(".article").each( function() {
-        if($(this).hasClass(categorySlug)) {
+        if(!$(this).hasClass(categorySlug)) {
           $(this).hide();
         }
     });

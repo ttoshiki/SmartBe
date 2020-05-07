@@ -920,6 +920,39 @@ form.columns-5 .header_search_button {
 }
 
 /* ----------------------------------------------------------------------
+ ページネーション
+---------------------------------------------------------------------- */
+.pagination__list {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__item {
+  color: #b69e84;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+}
+
+.page-numbers {
+  border: 1px solid #b69e84;
+  padding: 1px 13px;
+  color: #b69e84;
+}
+
+.page-numbers.current {
+  background-color: #b69e84;
+  color: #ffffff;
+}
+
+.next.page-numbers,
+.prev.page-numbers {
+  border: none;
+}
+
+/* ----------------------------------------------------------------------
  トップページ
 ---------------------------------------------------------------------- */
 .home-default #main_col {
@@ -1566,7 +1599,7 @@ form.columns-5 .header_search_button {
 }
 
 .seminar-event__list {
-  margin-bottom: 80px;
+  margin: 48px auto 80px;
 }
 
 .seminar-event__categoryList {
@@ -1575,9 +1608,10 @@ form.columns-5 .header_search_button {
 
 .seminar-event__tabButton {
   width: 200px;
-  padding: 16px 0;
+  padding: 12px 0;
   border: 1px solid #b69e84;
   color: #b69e84;
+  font-size: 18px;
   transition: background-color 0.2s;
 }
 
@@ -1601,6 +1635,11 @@ form.columns-5 .header_search_button {
   border-radius: 0 12px 12px 0;
 }
 
+.fc-content,
+.eo-fullcalendar .fc-toolbar {
+  font-size: 16px;
+}
+
 .seminar-event__item,
 .seminar-event__tagItem,
 .seminar-event__calendar {
@@ -1614,7 +1653,7 @@ form.columns-5 .header_search_button {
 }
 
 .seminar-event__item.-show {
-  height: 450px;
+  height: auto;
 }
 
 .seminar-event__calendarCategory {
@@ -1633,7 +1672,7 @@ form.columns-5 .header_search_button {
 .seminar-event__taxonomyButton {
   display: inline-block;
   width: 222px;
-  margin-right: 24px;
+  margin: 0 12px;
   padding: 16px 0;
   border: 1px solid var(--pink);
   background-color: transparent;
@@ -1641,6 +1680,9 @@ form.columns-5 .header_search_button {
   color: var(--pink);
   font-size: 16px;
   transition: background-color 0.2s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .seminar-event__taxonomyButton.-active {
@@ -1672,6 +1714,29 @@ form.columns-5 .header_search_button {
   color: var(--pink);
 }
 
+@media screen and (max-width: 1025px) {
+  .seminar-event__tagItem {
+    text-align: left;
+  }
+
+  .seminar-event__taxonomyButton {
+    width: 30%;
+    margin: 0 12px 24px;
+  }
+
+  .seminar_list #footer_contents {
+    margin-top: 48px;
+  }
+
+  .seminar-event__list {
+    margin-bottom: 0;
+  }
+
+  .seminar-event__calendar.-show {
+    margin-bottom: 64px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .seminar-event__taxonomyButton.pc {
     display: none;
@@ -1689,7 +1754,8 @@ form.columns-5 .header_search_button {
     position: relative;
   }
 
-  .seminar-event__selector {
+  .seminar-event__selector,
+  .seminar-event__eventSelector {
     width: 100%;
     color: var(--pink);
     font-size: 16px;
@@ -1739,6 +1805,11 @@ form.columns-5 .header_search_button {
   .fc-listMonth-view .fc-row .fc-content-skeleton,
   .fc-listWeek-view .fc-row .fc-content-skeleton {
     font-size: 18px;
+  }
+
+  .seminar-event__tabButton {
+    font-size: 16px;
+    padding: 8px 0;
   }
 }
 
@@ -1875,6 +1946,14 @@ form.columns-5 .header_search_button {
 #post_list .article .meta {
   margin: 10px 0 0 0;
   padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#post_list .cat-category {
+  background-color: transparent !important;
+  border: 1px solid var(--pink);
+  color: var(--pink);
 }
 
 /* 共通カテゴリー・日付 */
