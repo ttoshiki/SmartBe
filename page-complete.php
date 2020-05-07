@@ -60,12 +60,12 @@
     </h1>
     <img src="<?php echo get_template_directory_uri(); ?>/img/cracker.png" alt="" class="complete__eyeCatch">
     <p class="complete__text">ご登録いただきましたメールアドレスに<br />メールをお送りいたしましたので、ご確認ください。</p>
-    <small class="complete__small">もし届いてない場合は以下をご参照の上、受信設定の変更を行ってください。</small>
-    <p class="complete__settingParagraph"><a href="" class="complete__settingLink">- 迷惑フォルダに入れず受信箱に届かせるメール設定方法</a></p>
+    <small class="complete__small">もし届いてない場合は以下をご参照の上、<br class="sp">受信設定の変更を行ってください。</small>
+    <p class="complete__settingParagraph"><a href="" class="complete__settingLink">- 迷惑フォルダに入れず<br class="sp">受信箱に届かせるメール設定方法</a></p>
     <img src="<?php echo get_template_directory_uri(); ?>/img/decorated_line.png" alt="" class="complete__line">
     <section class="complete__lineInfo">
-        <h1 class="complete__lineInfoHeading">LINE公式でもタイムリーな情報配信中！</h1>
-        <h2 class="complete__necessaryHeading">女性が美しく、凛と輝くために必要なもの</h2>
+        <h1 class="complete__lineInfoHeading">LINE公式でも<br class="sp">タイムリーな情報<br class="sp">配信中！</h1>
+        <h2 class="complete__necessaryHeading">女性が美しく、<br class="sp">凛と輝くために必要なもの</h2>
         <ul class="complete__necessaryList">
             <li class="complete__necessaryItem">
                 <p class="complete__necessaryParagraph">時間</p>
@@ -80,7 +80,7 @@
                 <div class="complete__necessaryIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_beauty.svg'); ?></div>
             </li>
         </ul>
-        <p class="complete__lineInfoParagraph">LINE公式ではこれらを手に入れるための</p>
+        <p class="complete__lineInfoParagraph">LINE公式では<br class="sp">これらを手に入れるための</p>
         <ul class="complete__lineInfoList">
             <li class="complete__lineInfoItem">ビジネスマインド</li>
             <li class="complete__lineInfoItem">集客ノウハウ</li>
@@ -101,6 +101,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/footer_line_qr.png" alt="LINE QRコード" class="footer__lineGuidanceImage">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/footer_line_qr_speech_bubble.svg" alt="QRコードを読み取って友達追加！" class="footer__lineGuidanceImage">
                     </div>
+                    <a href="" class="footer__lineGuidanceButton sp">友達登録する</a>
                 </div>
             </div>
         </div>
