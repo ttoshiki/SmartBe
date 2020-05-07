@@ -57,7 +57,7 @@
     <div class="inflady__titleWrapper">
         <h1 class="inflady__title">
             Instagram・YouTube・Twitter、<br class="sp">それぞれの使い方を学びながら、<br />
-            自ら<strong class="inflady__titleStrong">インフルエンサーとなり<br class="sp">大きな影響力を持つ人材</strong><br />
+            自ら<strong class="inflady__titleStrong">インフルエンサーとなり<br class="tab sp">大きな影響力を持つ人材</strong><br />
             として成長できるコミュニティ
         </h1>
     </div>

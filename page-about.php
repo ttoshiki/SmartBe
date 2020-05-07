@@ -59,7 +59,7 @@
 	<section class="about__learn">
 		<h1 class="about__heading">女性による女性のための学び</h1>
 		<p class="about__learnLead">
-			Smart Beでは女性が「好き」なことを<br class="sp">仕事にして<br class="pc" />経済的自立をしながら<br class="sp">自分らしく美しく豊かな人生を生きるための<br />さまざまな学びをご提供しています
+			Smart Beでは女性が「好き」なことを<br class="sp">仕事にして<br class="pc tab" />経済的自立をしながら<br class="sp">自分らしく美しく豊かな人生を生きるための<br />さまざまな学びをご提供しています
 		</p>
 		<ul class="about__learnList">
 			<li class="about__learnItem">
