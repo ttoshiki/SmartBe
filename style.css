@@ -1680,6 +1680,66 @@ form.columns-5 .header_search_button {
   .seminar-event__item.-show {
     height: auto;
   }
+
+  .seminar-event__selectorWrapper {
+    border: 1px solid var(--pink);
+    border-radius: 12px;
+    padding: 8px 0 8px 16px;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .seminar-event__selector {
+    width: 100%;
+    color: var(--pink);
+    font-size: 16px;
+    text-overflow: ellipsis;
+    border: none;
+    outline: none;
+    height: 26px;
+    background: transparent;
+  }
+
+  .seminar-event__selectorWrapper::before {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid var(--pink);
+    pointer-events: none;
+  }
+
+  .archive__title {
+    margin-bottom: 8px;
+  }
+
+  .seminar-event__tagItem {
+    margin-bottom: 32px;
+  }
+
+  .eo-fullcalendar .fc-toolbar {
+    margin-top: 48px;
+  }
+
+  .eo-fullcalendar-responsive .fc-toolbar h2 {
+    font-size: 16px;
+  }
+
+  .seminar-event__tab {
+    font-size: 18px;
+  }
+
+  .fc-listDay-view .fc-row .fc-content-skeleton,
+  .fc-listMonth-view .fc-row .fc-content-skeleton,
+  .fc-listWeek-view .fc-row .fc-content-skeleton {
+    font-size: 18px;
+  }
 }
 
 /* ----------------------------------------------------------------------

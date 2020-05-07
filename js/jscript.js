@@ -287,9 +287,10 @@ jQuery(function(){
     $('.article').show();
     var classNames = $(this).attr('class');
     var className = classNames.split(' ').filter(function(className) {
-      return className !== "seminar-event__taxonomyButton" && className !== "-active"
+      return className !== "seminar-event__taxonomyButton" && className !== "-active" && className !== "pc"
     });
     var categorySlug = className[0]
+    console.log(categorySlug)
     $(".article").each( function() {
         if($(this).hasClass(categorySlug)) {
           $(this).hide();
@@ -303,7 +304,6 @@ jQuery(function(){
     $(".seminar-event__calendarCategories").css('display', 'block');
 
     var val = Number($('.seminar-event__selector').val());
-    console.log(val)
     if (isNaN(val)) {
       $(".seminar-event__calendarCategory").removeClass("-show");
       $(".seminar-event__calendarCategories").css('display', 'none');
@@ -312,6 +312,23 @@ jQuery(function(){
       $(".seminar-event__calendarCategory").removeClass("-show").eq(val).addClass('-show');
       $('.seminar-event__calendarCategory').css('display', 'none');
       $('.seminar-event__calendarCategory.-show').css('display', 'block');
+    }
+  })
+
+
+  // スマホのセレクトボックスの操作
+  $('.seminar-event__eventSelector').change(function() {
+    $(".article").hide();
+    var categorySlug = $('.seminar-event__eventSelector').val();
+
+    if (categorySlug === 'all') {
+      $(".article").show();
+    } else {
+      $(".article").each( function() {
+          if($(this).hasClass(categorySlug)) {
+            $(this).show();
+          }
+      });
     }
   })
 });

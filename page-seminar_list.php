@@ -18,16 +18,18 @@
               echo '<button class="seminar-event__taxonomyButton pc">' . $taxonomy-> name . '</button>';
           }
         ?>
-        <select class="seminar-event__selector">
-          <option value="all">すべて</option>
-          <?php
-          $index = 0;
-            foreach ($taxonomies as $taxonomy) {
-                echo '<option value="' . $index . '">' . $taxonomy-> name . '</option>';
-                $index += 1;
-            }
-          ?>
-        </select>
+        <div class="seminar-event__selectorWrapper sp">
+          <select class="seminar-event__selector">
+            <option value="all">すべて</option>
+            <?php
+            $index = 0;
+              foreach ($taxonomies as $taxonomy) {
+                  echo '<option value="' . $index . '">' . $taxonomy-> name . '</option>';
+                  $index += 1;
+              }
+            ?>
+          </select>
+        </div>
     </div>
      <?php
         $args = array(
@@ -40,9 +42,19 @@
         $categories = get_categories($args);
         foreach ($categories as $cat) {
             //(例)classにスラッグを指定したカテゴリーのラベル
-            echo '<button class="seminar-event__taxonomyButton ' . $cat->slug . '">'.$cat->name.'</button>';
+            echo '<button class="seminar-event__taxonomyButton pc ' . $cat->slug . '">'.$cat->name.'</button>';
         }
       ?>
+      <div class="seminar-event__selectorWrapper sp">
+        <select class="seminar-event__eventSelector">
+            <option value="all">すべて</option>
+            <?php
+              foreach ($categories as $cat) {
+                  echo '<option value="' . $cat->slug . '">' . $cat-> name . '</option>';
+              }
+            ?>
+          </select>
+      </div>
     </div>
   </div>
   <ul class="seminar-event__tab">
@@ -56,12 +68,12 @@
         </div>
         <div class="seminar-event__calendarCategories">
           <?php foreach ($taxonomies as $taxonomy) {
-          $calendarCategory = '[eo_fullcalendar category="' .$taxonomy->slug .'"]'; ?>
+                $calendarCategory = '[eo_fullcalendar category="' .$taxonomy->slug .'"]'; ?>
            <div class="seminar-event__calendarCategory">
              <?php echo do_shortcode($calendarCategory); ?>
            </div>
         <?php
-      } ?>
+            } ?>
         </div>
     </div>
     <div class="seminar-event__item">
