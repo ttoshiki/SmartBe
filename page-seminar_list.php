@@ -10,14 +10,24 @@
 <div id="main_col">
 
   <h2 class="archive__title">カテゴリーで絞り込む</h2>
-  <div class="seminar-event__list">
+  <div class="seminar-event__categoryList">
     <div class="seminar-event__tagItem -active">
         <?php
           $taxonomies = get_terms('event-category');
           foreach ($taxonomies as $taxonomy) {
-              echo '<button class="seminar-event__taxonomyButton">' . $taxonomy-> name . '</button>';
+              echo '<button class="seminar-event__taxonomyButton pc">' . $taxonomy-> name . '</button>';
           }
-       ?>
+        ?>
+        <select class="seminar-event__selector">
+          <option value="all">すべて</option>
+          <?php
+          $index = 0;
+            foreach ($taxonomies as $taxonomy) {
+                echo '<option value="' . $index . '">' . $taxonomy-> name . '</option>';
+                $index += 1;
+            }
+          ?>
+        </select>
     </div>
      <?php
         $args = array(

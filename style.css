@@ -1565,6 +1565,14 @@ form.columns-5 .header_search_button {
   text-align: center;
 }
 
+.seminar-event__list {
+  margin-bottom: 80px;
+}
+
+.seminar-event__categoryList {
+  text-align: center;
+}
+
 .seminar-event__tabButton {
   width: 200px;
   padding: 16px 0;
@@ -1623,6 +1631,7 @@ form.columns-5 .header_search_button {
 }
 
 .seminar-event__taxonomyButton {
+  display: inline-block;
   width: 222px;
   margin-right: 24px;
   padding: 16px 0;
@@ -1661,6 +1670,16 @@ form.columns-5 .header_search_button {
 
 .seminar-event__tagItem.-active a {
   color: var(--pink);
+}
+
+@media screen and (max-width: 767px) {
+  .seminar-event__taxonomyButton.pc {
+    display: none;
+  }
+
+  .seminar-event__item.-show {
+    height: auto;
+  }
 }
 
 /* ----------------------------------------------------------------------
@@ -1751,8 +1770,8 @@ form.columns-5 .header_search_button {
   font-size: 0;
 }
 #post_list .article {
-  width: 48%;
-  margin: 0 4% 48px 0;
+  width: 29%;
+  margin: 0 2% 48px 2%;
   display: inline-block;
   vertical-align: top;
 }
@@ -1763,9 +1782,6 @@ form.columns-5 .header_search_button {
   vertical-align: top;
 }
 #cb_2 #post_list .article:nth-child(4n) {
-  margin-right: 0;
-}
-#post_list .article:nth-child(2n) {
   margin-right: 0;
 }
 #post_list .article a {
@@ -10440,6 +10456,7 @@ complete（メルマガ登録完了）
   color: var(--pink);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .complete__titleSpan {
