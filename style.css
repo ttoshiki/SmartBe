@@ -7785,6 +7785,7 @@ a.guest-url {
   padding: 0 24px 48px;
   color: #333333;
   line-height: 1.7;
+  font-size: 18px;
 }
 
 .recruit__table strong {
@@ -7835,6 +7836,10 @@ a.guest-url {
   .recruit__table {
     border: none;
     background-color: transparent;
+  }
+
+  .recruit .iconWithButton {
+    height: 70px;
   }
 }
 
