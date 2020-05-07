@@ -158,22 +158,4 @@
 
 </div><!-- END #main_col -->
 
-<div id="community">
-  <h4>コミュニティ一覧</h4>
-  <ul class="community_inner">
-    <li>
-      <a href="https://www.facebook.com/groups/smartbe/" target="_blank">
-        <span><img src="<?php echo get_template_directory_uri(); ?>/img/201911/commu_img01.png"></span>
-        <p>賢女の起業オンラインサロン</p>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/groups/inflady/" target="_blank">
-        <span><img src="<?php echo get_template_directory_uri(); ?>/img/201911/commu_img02.png"></span>
-        <p>インフlady</p>
-      </a>
-    </li>
-  </ul>
-</div>
-
 <?php get_footer(); ?>

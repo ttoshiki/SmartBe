@@ -277,11 +277,23 @@ jQuery(function(){
     $(".seminar-event__calendarCategories").css('display', 'block');
     $(".seminar-event__item.-show").css('height', 'auto');
     var taxonomyIndex = $(".seminar-event__taxonomyButton").index(this);
-    console.log(taxonomyIndex)
     $(".seminar-event__taxonomyButton").removeClass("-active");
     $(this).addClass("-active");
     $(".seminar-event__calendarCategory").removeClass("-show").eq(taxonomyIndex).addClass('-show');
     $('.seminar-event__calendarCategory').css('display', 'none');
     $('.seminar-event__calendarCategory.-show').css('display', 'block');
+
+    // カテゴリで絞り込み表示
+    $('.article').show();
+    var classNames = $(this).attr('class');
+    var className = classNames.split(' ').filter(function(className) {
+      return className !== "seminar-event__taxonomyButton" && className !== "-active"
+    });
+    var category_slug = className[0]
+    $(".article").each( function() {
+        if($(this).hasClass(category_slug)) {
+          $(this).hide();
+        }
+    });
   });
 });
