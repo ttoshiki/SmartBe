@@ -53,7 +53,7 @@
   </div>
 <?php } ?>
 
-<img src="<?php echo get_template_directory_uri(); ?>/img/instructor_recruitment_header.jpg" alt="" class="pc">
+<img src="<?php echo get_template_directory_uri(); ?>/img/instructor_recruitment_header.jpg" alt="" class="pc tab">
 <img src="<?php echo get_template_directory_uri(); ?>/img/instructor_recruitment_header-sp.jpg" alt="" class="sp">
 
 <div class="instructorRecruitment">
