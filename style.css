@@ -7579,7 +7579,10 @@ a.guest-url {
   letter-spacing: 2px;
 }
 
-a:hover.front-page__voiceButton {
+a:hover.front-page__voiceButton,
+a:hover.footer__mailMagazineButton,
+a:hover.first,
+a:hover.last {
   color: #ffffff;
   opacity: 0.8;
 }
