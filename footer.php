@@ -265,30 +265,13 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
       <?php footer_logo(); ?>
      </div>
 
-<?php if ($dp_options['show_rss'] || $dp_options['twitter_url'] || $dp_options['facebook_url'] || $dp_options['insta_url']) { ?>
-     <ul id="footer_social_link">
-<?php   if ($dp_options['twitter_url']) : ?>
-      <li class="twitter"><a href="<?php echo esc_url($dp_options['twitter_url']); ?>" target="_blank">Twitter</a></li>
-<?php   endif; ?>
-<?php   if ($dp_options['facebook_url']) : ?>
-      <li class="facebook"><a href="<?php echo esc_url($dp_options['facebook_url']); ?>" target="_blank">Facebook</a></li>
-<?php   endif; ?>
-<?php   if ($dp_options['insta_url']) : ?>
-      <li class="insta"><a href="<?php echo esc_url($dp_options['insta_url']); ?>" target="_blank">Instagram</a></li>
-<?php   endif; ?>
-<?php   if ($dp_options['show_rss']) : ?>
-      <li class="rss"><a href="<?php bloginfo('rss2_url'); ?>" target="_blank">RSS</a></li>
-<?php   endif; ?>
-     </ul>
-<?php } ?>
-
 <?php
        if (has_nav_menu('footer-bottom-menu')) {
            wp_nav_menu(array( 'sort_column' => 'menu_order', 'theme_location' => 'footer-bottom-menu' , 'container_id' => 'footer_bottom_menu', 'depth' => 1 ));
        }
 ?>
 
-     <p id="copyright"><span><?php _e('Copyright ', 'tcd-w'); ?></span>&copy; <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>. All Rights Reserved.</p>
+     <p id="copyright"><span><?php _e('Copyright ', 'tcd-w'); ?></span><a href="<?php echo esc_url(home_url('/')); ?>">Copyright(C) Smart Be</a>. All Rights Reserved.</p>
 
     </div><!-- END #footer_info -->
    </div><!-- END .inner -->

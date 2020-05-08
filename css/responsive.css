@@ -112,7 +112,7 @@ html {
   a.menu_button {
     position: absolute;
     right: 0px;
-    top: 48px;
+    top: 58px;
     z-index: 9;
     text-align: center;
     display: inline-block;
@@ -127,6 +127,7 @@ html {
     white-space: nowrap;
     overflow: hidden;
     display: block;
+    background-color: #ffffff;
   }
   a.menu_button:before {
     content: "\f0c9";
@@ -435,6 +436,10 @@ html {
   a.menu_button {
     top: 2px;
   }
+
+  a.menu_button span {
+    background-color: transparent;
+  }
 }
 
 /* ----------------------------------------------------------------------
@@ -682,6 +687,19 @@ html {
   /* エリア・カテゴリーメニュー */
   #footer_nav .footer_nav_type1 li {
     min-width: 33% !important;
+  }
+
+  #footer_bottom_menu li {
+    font-size: 15px;
+    line-height: 2;
+    text-align: left;
+    width: 100%;
+    padding: 8px 0 8px 4px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+
+  #footer_contents a {
+    padding: 8px 0 8px 4px;
   }
 }
 

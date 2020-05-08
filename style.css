@@ -503,6 +503,15 @@ a.menu_button {
   display: none;
 }
 
+#global_menu .menu li a {
+  color: #ffffff !important;
+}
+
+#global_menu a,
+#global_menu > ul > li > a {
+  color: #ffffff !important;
+}
+
 @media only screen and (min-width: 1025px) {
   #global_menu {
     display: block !important;
@@ -4970,6 +4979,12 @@ a.guest-url {
   line-height: 50px !important;
   text-align: center !important;
 }
+
+@media screen and (max-width: 1025px) {
+  #header #header_top a {
+    color: #ffffff !important;
+  }
+}
 @media screen and (max-width: 767px) {
   #header_top .header_upper .pc {
     display: none;
@@ -5209,6 +5224,10 @@ a.guest-url {
     padding: 0 !important;
     margin: 0 0 4% 0;
     width: 100% !important;
+  }
+
+  #footer_bottom_menu li:not(:first-child) {
+    margin-left: 0;
   }
 }
 
@@ -7198,7 +7217,7 @@ a.guest-url {
   text-align: center;
   color: #49240d;
   position: relative;
-  margin: 136px auto 80px;
+  margin: 136px auto 120px;
 }
 
 .front-page__text::before,
@@ -7244,6 +7263,10 @@ a.guest-url {
   padding-bottom: 80px;
 }
 
+.front-page__aboutImage {
+  min-width: 440px;
+}
+
 .front-page__aboutTextWrapper {
   margin-left: 60px;
 }
@@ -7252,6 +7275,7 @@ a.guest-url {
   font-size: 18px;
   margin: 6px auto 48px;
   line-height: 1.7;
+  letter-spacing: 1px;
 }
 
 .front-page__service {
@@ -7286,7 +7310,7 @@ a.guest-url {
 
 .front-page__serviceItem {
   width: calc(100% / 3 - 28px);
-  border: 1px solid #49240d;
+  border: 1px solid #92785f;
   padding-bottom: 80px;
   position: relative;
 }
@@ -7380,7 +7404,7 @@ a.guest-url {
 .front-page__voice {
   background-color: #f7f5ef;
   margin-top: 80px;
-  padding: 80px 0;
+  padding: 80px 0 48px;
 }
 
 .front-page__voiceItem {
@@ -7406,8 +7430,9 @@ a.guest-url {
 .front-page__voiceText {
   font-size: 24px;
   color: #574f48;
-  margin: 24px auto 48px;
+  margin: 24px auto 40px;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .front-page__voiceItem {
@@ -7462,7 +7487,7 @@ a.guest-url {
 
 .front-page__voiceContent {
   margin-top: 12px;
-  font-size: 16px;
+  font-size: 15px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
@@ -7479,7 +7504,7 @@ a.guest-url {
 }
 
 .front-page__voice .bx-wrapper {
-  margin: 0 auto 48px;
+  margin: 0 auto 40px;
   background-color: #f7f5ef;
   border: none;
   box-shadow: inherit;
@@ -7538,6 +7563,7 @@ a.guest-url {
 
 .front-page__voice .bx-wrapper img {
   width: 80%;
+  margin: 0 auto;
 }
 
 .front-page__voiceButton {
@@ -7550,6 +7576,12 @@ a.guest-url {
   max-width: 438px;
   text-align: center;
   margin: 0 auto;
+  letter-spacing: 2px;
+}
+
+a:hover.front-page__voiceButton {
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .front-page__media {
@@ -7714,6 +7746,7 @@ a.guest-url {
 .front-page__aboutCourseContent {
   line-height: 1.7;
   color: #333333;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 1025px) {
@@ -7725,7 +7758,7 @@ a.guest-url {
   }
 
   .front-page__mediaHeadingSpan {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .front-page__mediaHeading strong {
@@ -7734,6 +7767,10 @@ a.guest-url {
 
   .front-page__text {
     font-size: 38px;
+  }
+
+  .front-page__mediaName {
+    font-size: 18px;
   }
 }
 
@@ -7802,6 +7839,11 @@ a.guest-url {
   .front-page__aboutContents {
     margin-top: 32px;
     padding-bottom: 48px;
+  }
+
+  .front-page__aboutImage {
+    width: 100%;
+    min-width: auto;
   }
 
   .front-page__aboutTextItem:nth-child(3) .front-page__aboutText {
@@ -7883,17 +7925,26 @@ a.guest-url {
   }
 
   .front-page__media {
-    padding: 60px 0;
+    padding: 60px 0 48px;
+  }
+
+  .front-page__mediaHeadingInner {
+    line-height: 1.4;
+  }
+
+  .front-page__mediaHeadingSpan {
+    font-size: 16px;
   }
 
   .front-page__mediaHeading strong {
-    font-size: 30px;
+    font-size: 26px;
+    line-height: 1.5;
   }
 
   .front-page__mediaHeadingInner::after {
     left: -2%;
     bottom: -40px;
-    height: 12vw;
+    height: 10vw;
     top: auto;
   }
 
@@ -11074,7 +11125,7 @@ complete（メルマガ登録完了）
 
 .footer__mailMagazineCatch {
   margin: 32px auto;
-  font-size: 32px;
+  font-size: 24px;
   color: #333333;
   text-align: center;
   font-weight: 500;
@@ -11262,10 +11313,6 @@ complete（メルマガ登録完了）
     font-size: 44px;
   }
 
-  .footer__mailMagazineCatch {
-    font-size: 28px;
-  }
-
   .footer__mailMagazineButton {
     font-size: 26px;
     padding: 20px 80px;
@@ -11311,7 +11358,7 @@ complete（メルマガ登録完了）
   }
 
   .footer__mailMagazineCatch {
-    font-size: 20px;
+    font-size: 18px;
     margin: 24px auto;
   }
 

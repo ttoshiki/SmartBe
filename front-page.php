@@ -368,7 +368,7 @@
         <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
             <li class="front-page__voiceItem">
                 <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName"><?php the_field('name'); ?></h2>
+                    <h2 class="front-page__voiceName"><?php the_field('name'); ?>さん</h2>
                     <h3 class="front-page__voicePosition"><?php the_field('position'); ?></h3>
                     <p class="front-page__voiceContent"><?php the_title(); ?></p>
                 </div>
