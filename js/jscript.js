@@ -334,6 +334,4 @@ jQuery(function(){
       });
     }
   })
-
-  $('.fc-content').off('mouseenter mouseleave');
 });

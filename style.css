@@ -1672,7 +1672,7 @@ form.columns-5 .header_search_button {
 .seminar-event__taxonomyButton {
   display: inline-block;
   width: 222px;
-  margin: 0 12px;
+  margin: 0 12px 24px;
   padding: 16px 0;
   border: 1px solid var(--pink);
   background-color: transparent;
@@ -1721,7 +1721,6 @@ form.columns-5 .header_search_button {
 
   .seminar-event__taxonomyButton {
     width: 30%;
-    margin: 0 12px 24px;
   }
 
   .seminar_list #footer_contents {
