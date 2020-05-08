@@ -53,7 +53,8 @@
   </div>
 <?php } ?>
 
-<img src="<?php echo get_template_directory_uri(); ?>/img/about/header.jpg" alt="はじめての方へ" class="about__header">
+<img src="<?php echo get_template_directory_uri(); ?>/img/about/header.jpg" alt="はじめての方へ" class="about__header pc tab">
+<img src="<?php echo get_template_directory_uri(); ?>/img/about/header-sp.jpg" alt="はじめての方へ" class="about__header sp">
 
 <main class="about">
 	<section class="about__learn">

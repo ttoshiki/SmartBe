@@ -127,7 +127,6 @@ html {
     white-space: nowrap;
     overflow: hidden;
     display: block;
-    background-color: #ffffff;
   }
   a.menu_button:before {
     content: "\f0c9";
@@ -135,7 +134,7 @@ html {
     color: #fff;
     display: block;
     position: absolute;
-    top: 17px;
+    top: 10px;
     left: 19px;
     font-size: 18px;
     width: 24px;
@@ -439,6 +438,10 @@ html {
 
   a.menu_button span {
     background-color: transparent;
+  }
+
+  a.menu_button:before {
+    top: 15px;
   }
 }
 
