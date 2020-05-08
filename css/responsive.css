@@ -112,6 +112,7 @@ html {
   a.menu_button {
     position: absolute;
     right: 0px;
+    top: 48px;
     z-index: 9;
     text-align: center;
     display: inline-block;
@@ -177,7 +178,9 @@ html {
   #global_menu a,
   #global_menu > ul > li > a {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 9.5px 14px;
     height: auto;
@@ -425,6 +428,12 @@ html {
   #breadcrumb li:after {
     font-size: 9px;
     bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  a.menu_button {
+    top: 2px;
   }
 }
 

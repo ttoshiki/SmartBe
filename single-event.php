@@ -42,41 +42,43 @@ get_header(); ?>
 
 			</header><!-- .entry-header -->
 
+			<ul class="post-categoryList">
+				<?php
+                    $args = array(
+                        'taxonomy' => 'event-category'
+                    );
+                    $categories = get_categories($args);
+                    foreach ($categories as $category) {
+                        echo '<span class="post-categoryItem">' . $category->name . '</span>';
+                    }
+                ?>
+			</ul>
+
+			<div class="event-post-thumbnail">
+				<?php
+                    if (has_post_thumbnail()) { // 投稿にアイキャッチ画像が割り当てられているかチェックします。
+                        the_post_thumbnail('large');
+                    } else {
+                        echo '<img src="' . get_template_directory_uri() . '/img/common/no_image2.gif" title="" alt="" />';
+                    }
+                ?>
+			</div>
+
+
 			<div class="entry-content">
-				<!-- Get event information, see template: event-meta-event-single.php -->
-				<?php eo_get_template_part('event-meta', 'event-single'); ?>
 
 				<!-- The content or the description of the event-->
 				<?php the_content(); ?>
 			</div><!-- .entry-content -->
 
-			<footer class="entry-meta">
-			<?php
-            //Events have their own 'event-category' taxonomy. Get list of categories this event is in.
-            $categories_list = get_the_term_list(get_the_ID(), 'event-category', '', ', ', '');
-
-            if ('' != $categories_list) {
-                $utility_text = __('This event was posted in %1$s by <a href="%3$s">%2$s</a>.', 'eventorganiser');
-            } else {
-                $utility_text = __('This event was posted by <a href="%3$s">%2$s</a>.', 'eventorganiser');
-            }
-            printf(
-                $utility_text,
-                $categories_list,
-                get_the_author(),
-                esc_url(get_author_posts_url(get_the_author_meta('ID')))
-            );
-            ?>
-
-			<?php edit_post_link(__('Edit'), '<span class="edit-link">', '</span>'); ?>
-			</footer><!-- .entry-meta -->
+			<div class="event-prevNextLinks">
+				<?php previous_post_link('%link', '<< 前へ'); ?>
+				<?php next_post_link('%link', '次へ >>'); ?>
+			</div>
 
 			</article><!-- #post-<?php the_ID(); ?> -->
 
 			<!-- If comments are enabled, show them -->
-			<div class="comments-template">
-				<?php comments_template(); ?>
-			</div>
 
 		<?php endwhile; // end of the loop.?>
 
