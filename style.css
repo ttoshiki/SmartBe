@@ -920,6 +920,39 @@ form.columns-5 .header_search_button {
 }
 
 /* ----------------------------------------------------------------------
+ ページネーション
+---------------------------------------------------------------------- */
+.pagination__list {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__item {
+  color: #b69e84;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+}
+
+.page-numbers {
+  border: 1px solid #b69e84;
+  padding: 1px 13px;
+  color: #b69e84;
+}
+
+.page-numbers.current {
+  background-color: #b69e84;
+  color: #ffffff;
+}
+
+.next.page-numbers,
+.prev.page-numbers {
+  border: none;
+}
+
+/* ----------------------------------------------------------------------
  トップページ
 ---------------------------------------------------------------------- */
 .home-default #main_col {
@@ -1565,11 +1598,20 @@ form.columns-5 .header_search_button {
   text-align: center;
 }
 
+.seminar-event__list {
+  margin: 48px auto 80px;
+}
+
+.seminar-event__categoryList {
+  text-align: center;
+}
+
 .seminar-event__tabButton {
   width: 200px;
-  padding: 16px 0;
+  padding: 12px 0;
   border: 1px solid #b69e84;
   color: #b69e84;
+  font-size: 18px;
   transition: background-color 0.2s;
 }
 
@@ -1593,6 +1635,11 @@ form.columns-5 .header_search_button {
   border-radius: 0 12px 12px 0;
 }
 
+.fc-content,
+.eo-fullcalendar .fc-toolbar {
+  font-size: 16px;
+}
+
 .seminar-event__item,
 .seminar-event__tagItem,
 .seminar-event__calendar {
@@ -1606,7 +1653,7 @@ form.columns-5 .header_search_button {
 }
 
 .seminar-event__item.-show {
-  height: 450px;
+  height: auto;
 }
 
 .seminar-event__calendarCategory {
@@ -1623,8 +1670,9 @@ form.columns-5 .header_search_button {
 }
 
 .seminar-event__taxonomyButton {
+  display: inline-block;
   width: 222px;
-  margin-right: 24px;
+  margin: 0 12px;
   padding: 16px 0;
   border: 1px solid var(--pink);
   background-color: transparent;
@@ -1632,6 +1680,9 @@ form.columns-5 .header_search_button {
   color: var(--pink);
   font-size: 16px;
   transition: background-color 0.2s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .seminar-event__taxonomyButton.-active {
@@ -1661,6 +1712,105 @@ form.columns-5 .header_search_button {
 
 .seminar-event__tagItem.-active a {
   color: var(--pink);
+}
+
+@media screen and (max-width: 1025px) {
+  .seminar-event__tagItem {
+    text-align: left;
+  }
+
+  .seminar-event__taxonomyButton {
+    width: 30%;
+    margin: 0 12px 24px;
+  }
+
+  .seminar_list #footer_contents {
+    margin-top: 48px;
+  }
+
+  .seminar-event__list {
+    margin-bottom: 0;
+  }
+
+  .seminar-event__calendar.-show {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .seminar-event__taxonomyButton.pc {
+    display: none;
+  }
+
+  .seminar-event__item.-show {
+    height: auto;
+  }
+
+  .seminar-event__selectorWrapper {
+    border: 1px solid var(--pink);
+    border-radius: 12px;
+    padding: 8px 0 8px 16px;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .seminar-event__selector,
+  .seminar-event__eventSelector {
+    width: 100%;
+    color: var(--pink);
+    font-size: 16px;
+    text-overflow: ellipsis;
+    border: none;
+    outline: none;
+    height: 26px;
+    background: transparent;
+  }
+
+  .seminar-event__selectorWrapper::before {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid var(--pink);
+    pointer-events: none;
+  }
+
+  .archive__title {
+    margin-bottom: 8px;
+  }
+
+  .seminar-event__tagItem {
+    margin-bottom: 32px;
+  }
+
+  .eo-fullcalendar .fc-toolbar {
+    margin-top: 48px;
+  }
+
+  .eo-fullcalendar-responsive .fc-toolbar h2 {
+    font-size: 16px;
+  }
+
+  .seminar-event__tab {
+    font-size: 18px;
+  }
+
+  .fc-listDay-view .fc-row .fc-content-skeleton,
+  .fc-listMonth-view .fc-row .fc-content-skeleton,
+  .fc-listWeek-view .fc-row .fc-content-skeleton {
+    font-size: 18px;
+  }
+
+  .seminar-event__tabButton {
+    font-size: 16px;
+    padding: 8px 0;
+  }
 }
 
 /* ----------------------------------------------------------------------
@@ -1751,8 +1901,8 @@ form.columns-5 .header_search_button {
   font-size: 0;
 }
 #post_list .article {
-  width: 48%;
-  margin: 0 4% 48px 0;
+  width: 29%;
+  margin: 0 2% 48px 2%;
   display: inline-block;
   vertical-align: top;
 }
@@ -1763,9 +1913,6 @@ form.columns-5 .header_search_button {
   vertical-align: top;
 }
 #cb_2 #post_list .article:nth-child(4n) {
-  margin-right: 0;
-}
-#post_list .article:nth-child(2n) {
   margin-right: 0;
 }
 #post_list .article a {
@@ -1799,6 +1946,14 @@ form.columns-5 .header_search_button {
 #post_list .article .meta {
   margin: 10px 0 0 0;
   padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#post_list .cat-category {
+  background-color: transparent !important;
+  border: 1px solid var(--pink);
+  color: var(--pink);
 }
 
 /* 共通カテゴリー・日付 */
@@ -10440,6 +10595,7 @@ complete（メルマガ登録完了）
   color: var(--pink);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .complete__titleSpan {

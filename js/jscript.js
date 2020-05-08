@@ -252,9 +252,8 @@ jQuery(function(){
 
 // セミナーイベント一覧 タブ
 jQuery(function(){
-  $(".seminar-event__taxonomyButton").click();
-  $(".seminar-event__taxonomyButton").click();
   $(".seminar-event__tabButton").on("click", function() {
+    $('.article').show();
     var index = $(".seminar-event__tabButton").index(this);
     $(".seminar-event__tabButton").removeClass("-show");
     $(this).addClass("-show");
@@ -269,6 +268,10 @@ jQuery(function(){
     if(index == 1) {
       $(".seminar-event__item.-show").css('height', 'auto');
     }
+
+    // スマホのとき初期値に戻す
+    $('.seminar-event__selector').val('all')
+    $('.seminar-event__eventSelector').val('all');
   });
 
   $(".seminar-event__taxonomyButton").on("click", function() {
@@ -277,11 +280,58 @@ jQuery(function(){
     $(".seminar-event__calendarCategories").css('display', 'block');
     $(".seminar-event__item.-show").css('height', 'auto');
     var taxonomyIndex = $(".seminar-event__taxonomyButton").index(this);
-    console.log(taxonomyIndex)
     $(".seminar-event__taxonomyButton").removeClass("-active");
     $(this).addClass("-active");
     $(".seminar-event__calendarCategory").removeClass("-show").eq(taxonomyIndex).addClass('-show');
     $('.seminar-event__calendarCategory').css('display', 'none');
     $('.seminar-event__calendarCategory.-show').css('display', 'block');
+
+    // カテゴリで絞り込み表示
+    $('.article').show();
+    var classNames = $(this).attr('class');
+    var className = classNames.split(' ').filter(function(className) {
+      return className !== "seminar-event__taxonomyButton" && className !== "-active" && className !== "pc"
+    });
+    var categorySlug = className[0]
+    console.log(categorySlug)
+    $(".article").each( function() {
+        if(!$(this).hasClass(categorySlug)) {
+          $(this).hide();
+        }
+    });
   });
+
+  $('.seminar-event__selector').change(function() {
+    $(".seminar-event__calendar").removeClass("-show");
+    $(".seminar-event__calendarCategory").css('height', 'auto');
+    $(".seminar-event__calendarCategories").css('display', 'block');
+
+    var val = Number($('.seminar-event__selector').val());
+    if (isNaN(val)) {
+      $(".seminar-event__calendarCategory").removeClass("-show");
+      $(".seminar-event__calendarCategories").css('display', 'none');
+      $(".seminar-event__calendar").addClass("-show");
+    } else {
+      $(".seminar-event__calendarCategory").removeClass("-show").eq(val).addClass('-show');
+      $('.seminar-event__calendarCategory').css('display', 'none');
+      $('.seminar-event__calendarCategory.-show').css('display', 'block');
+    }
+  })
+
+
+  // スマホのセレクトボックスの操作
+  $('.seminar-event__eventSelector').change(function() {
+    $(".article").hide();
+    var categorySlug = $('.seminar-event__eventSelector').val();
+
+    if (categorySlug === 'all') {
+      $(".article").show();
+    } else {
+      $(".article").each( function() {
+          if($(this).hasClass(categorySlug)) {
+            $(this).show();
+          }
+      });
+    }
+  })
 });

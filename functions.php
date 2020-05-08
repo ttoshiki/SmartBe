@@ -1010,4 +1010,40 @@ function sort_pre_get_posts($wp_query)
 }
 add_action('pre_get_posts', 'sort_pre_get_posts');
 
+
+/*********************************
+ サブループページネーション出力用関数
+**********************************/
+function subPagination($end_size = 1, $mid_size = 2, $prev_next = true)
+{
+    global $the_query;
+
+    $page_format = paginate_links(
+        array(
+      'current' => max(1, get_query_var('paged')),
+      'total' => $the_query->max_num_pages,
+      'type'  => 'array',
+      'prev_text' => '<< 前へ',//前へのリンク文言
+      'next_text' => '次へ >>',//次へのリンク文言
+      'end_size' => $end_size,//初期値：１  両端のﾍﾟｰｼﾞﾘﾝｸの数
+      'mid_size' => $mid_size,//初期値：２  現在のﾍﾟｰｼﾞの両端にいくつページリンクを表示するか（現在のページは含まない）
+      'prev_next' => $prev_next,//初期値：true  リストの中に「前へ」「次へ」のリンクを含むか
+    )
+    );
+    $code = '';
+    if (is_array($page_format)) {
+        $paged = get_query_var('paged') == 0 ? 1 : get_query_var('paged');
+        $code .= '<div class="pagination">'.PHP_EOL;
+        $code .= '<ul class="pagination__list">'.PHP_EOL;
+        foreach ($page_format as $page) {
+            $code .= '<li class="pagination__item">'.$page.'</li>'.PHP_EOL;
+        }
+        $code .= '</ul>'.PHP_EOL;
+        $code .= '</div>'.PHP_EOL;
+        // $code .= '<div class="pagination-total">'.$paged.'/'.$the_query->max_num_pages.'</div>'.PHP_EOL;
+    }
+    wp_reset_query();
+    return $code;
+}
+
 ?>
