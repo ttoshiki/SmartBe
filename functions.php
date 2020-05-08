@@ -1011,6 +1011,22 @@ function sort_pre_get_posts($wp_query)
 add_action('pre_get_posts', 'sort_pre_get_posts');
 
 
+// Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
+function official_pagination()
+{
+    global $wp_query;
+    $big = 999999999;
+    echo paginate_links(array(
+        'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+        'format' => '?paged=%#%',
+        'current' => max(1, get_query_var('paged')),
+        'prev_text' => __('<< 前へ'),
+        'next_text' => __('次へ >>'),
+        'mid_size' => 1,
+        'total' => $wp_query->max_num_pages
+    ));
+}
+
 /*********************************
  サブループページネーション出力用関数
 **********************************/
@@ -1060,5 +1076,26 @@ function add_next_post_link_class($output)
 {
     return str_replace('<a href=', '<a class="next-link" href=', $output);
 }
+
+
+/*********************************
+ 管理画面に受講生の声の名前を表示
+**********************************/
+
+function add_posts_columns($columns)
+{
+    $columns['name'] = '名前';
+    return $columns;
+}
+function custom_posts_column($column_name, $post_id)
+{
+    if ($column_name == 'name') {
+        $cf_example = get_post_meta($post_id, 'name', true);
+        echo ($cf_example) ? $cf_example : '－';
+    }
+}
+add_filter('manage_posts_columns', 'add_posts_columns');
+add_action('manage_posts_custom_column', 'custom_posts_column', 10, 2);
+
 
 ?>
