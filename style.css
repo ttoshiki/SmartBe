@@ -8602,6 +8602,14 @@ a:hover.about__about__representativesSns {
   .about__dataExplanation {
     margin-top: 32px;
   }
+
+  .about__representativesContentsInner:first-child {
+    padding-left: 16px;
+  }
+
+  .about__representativesContentsInner:nth-child(2) {
+    padding-right: 16px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -8653,6 +8661,14 @@ a:hover.about__about__representativesSns {
     margin-top: 12px;
     font-size: 16px;
     padding-bottom: 32px;
+  }
+
+  .about__representativesContentsInner:first-child {
+    padding-left: 0;
+  }
+
+  .about__representativesContentsInner:nth-child(2) {
+    padding-right: 0;
   }
 
   .about__reason {
@@ -8838,6 +8854,7 @@ a:hover.about__about__representativesSns {
 
   .about__representativesSign svg {
     width: 160px;
+    margin-right: 8px;
   }
 
   .about__about__representativesSns.sp {

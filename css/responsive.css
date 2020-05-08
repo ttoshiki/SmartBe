@@ -419,11 +419,11 @@ html {
     white-space: initial;
   }
   #breadcrumb li.home a:before {
-    font-size: 10px;
+    font-size: 13px;
     color: #999;
   }
   #breadcrumb li {
-    font-size: 10px;
+    font-size: 13px;
   }
   #breadcrumb li:after {
     font-size: 9px;
