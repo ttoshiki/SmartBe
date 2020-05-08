@@ -7942,6 +7942,8 @@ a:hover.last {
   .front-page__mediaHeading strong {
     font-size: 26px;
     line-height: 1.5;
+    display: inline-block;
+    margin-top: 4px;
   }
 
   .front-page__mediaHeadingInner::after {
