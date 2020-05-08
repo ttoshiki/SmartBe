@@ -1022,7 +1022,7 @@ function official_pagination()
         'current' => max(1, get_query_var('paged')),
         'prev_text' => __('<< 前へ'),
         'next_text' => __('次へ >>'),
-        'mid_size' => 0,
+        'mid_size' => 1,
         'total' => $wp_query->max_num_pages
     ));
 }
