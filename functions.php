@@ -1046,4 +1046,19 @@ function subPagination($end_size = 1, $mid_size = 2, $prev_next = true)
     return $code;
 }
 
+
+/*********************************
+ 次へ、前へにクラスを追加
+**********************************/
+add_filter('previous_post_link', 'add_prev_post_link_class');
+function add_prev_post_link_class($output)
+{
+    return str_replace('<a href=', '<a class="prev-link" href=', $output);
+}
+add_filter('next_post_link', 'add_next_post_link_class');
+function add_next_post_link_class($output)
+{
+    return str_replace('<a href=', '<a class="next-link" href=', $output);
+}
+
 ?>

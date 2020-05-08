@@ -23,6 +23,10 @@ if (! $dp_options) {
   <?php } elseif (is_page('seminar-list')) { ?>
   <li class="last">セミナー・イベント</li>
 
+  <?php } elseif (is_singular('event')) { ?>
+    <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="<?php echo esc_url('/seminar-list'); ?>"><span itemprop="title">セミナー・イベント</span></a></li>
+  <li class="last"><?php echo the_title(); ?></li>
+
 <?php } elseif (is_category()) { ?>
 <?php
         if (!empty($queried_object->term_id)) {
