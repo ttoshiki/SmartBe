@@ -361,108 +361,28 @@
         <div class="front-page__voiceBgGradationPrev"></div>
         <div class="front-page__voiceNextBtn"></div>
         <ul class="front-page__voiceslider">
+        <?php
+            $args = array( 'post_type' => 'voice', 'posts_per_page' => 12 );  // カスタム投稿タイプ Products
+            $the_query = new WP_Query($args); if ($the_query->have_posts()):
+        ?>
+        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
             <li class="front-page__voiceItem">
                 <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼</p>
+                    <h2 class="front-page__voiceName"><?php the_field('name'); ?></h2>
+                    <h3 class="front-page__voicePosition"><?php the_field('position'); ?></h3>
+                    <p class="front-page__voiceContent"><?php the_title(); ?></p>
                 </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_01.png">
+                <?php the_post_thumbnail('thumbnail', array('class' => '"front-page__voiceImage')); ?>
             </li>
-            <li class="front-page__voiceItem">
-                <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
-                </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_02.png">
-            </li>
-            <li class="front-page__voiceItem">
-                <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
-                </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_03.png">
-            </li>
-            <li class="front-page__voiceItem">
-                <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼</p>
-                </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_01.png">
-            </li>
-            <li class="front-page__voiceItem">
-                <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
-                </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_02.png">
-            </li>
-            <li class="front-page__voiceItem">
-                <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
-                </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_03.png">
-            </li>
-            <li class="front-page__voiceItem">
-                <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼</p>
-                </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_01.png">
-            </li>
-            <li class="front-page__voiceItem">
-                <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
-                </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_02.png">
-            </li>
-            <li class="front-page__voiceItem">
-                <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
-                </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_03.png">
-            </li>
-            <li class="front-page__voiceItem">
-                <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼</p>
-                </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_01.png">
-            </li>
-            <li class="front-page__voiceItem">
-                <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
-                </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_02.png">
-            </li>
-            <li class="front-page__voiceItem">
-                <div class="front-page__voiceSpeechBubble">
-                    <h2 class="front-page__voiceName">大谷 美和さん</h2>
-                    <h3 class="front-page__voicePosition">ヘアメイクアーティスト</h3>
-                    <p class="front-page__voiceContent">Facebook初心者でも2日で30人の満員御礼Facebook初心者でも2日で30人の満員御礼</p>
-                </div>
-                <img class="front-page__voiceImage" src="<?php echo get_template_directory_uri(); ?>/img/201909/voice_03.png">
-            </li>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+            <?php endif;?>
         </ul>
         <div class="front-page__voiceBgGradationNext"></div>
         <div class="front-page__voicePrevBtn"></div>
 
     </div>
-    <a href="/voice" class="front-page__voiceButton">もっと見る</a>
+    <a href="voice" class="front-page__voiceButton">もっと見る</a>
   </section>
   <section class="front-page__media">
     <h1 class="front-page__mediaHeading">

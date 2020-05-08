@@ -7450,18 +7450,23 @@ a.guest-url {
 .front-page__voiceName {
   font-size: 18px;
   font-weight: var(--semibold);
+  color: #49240d;
 }
 
 .front-page__voicePosition {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: var(--semibold);
   margin-top: 4px;
-  color: #49240d;
+  color: #b79e84;
 }
 
 .front-page__voiceContent {
   margin-top: 12px;
   font-size: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }
 
 .front-page__voiceImage {
