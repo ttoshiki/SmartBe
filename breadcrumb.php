@@ -20,7 +20,7 @@ if (! $dp_options) {
   <?php } elseif (is_post_type_archive('activity')) { ?>
   <li class="last"><?php echo post_type_archive_title('', false); ?></li>
 
-  <?php } elseif (is_page('seminar_list')) { ?>
+  <?php } elseif (is_page('seminar-list')) { ?>
   <li class="last">セミナー・イベント</li>
 
 <?php } elseif (is_category()) { ?>
