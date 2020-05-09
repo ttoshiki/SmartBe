@@ -34,7 +34,7 @@
      <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $args = array(
-            'type' => 'post',
+            'post_type' => 'post',
             'paged' => $paged,
         );
         $the_query = new WP_Query($args);
@@ -104,8 +104,9 @@
                           if ($cat == 1) {
                               $terms = get_the_terms($post->ID, 'category');
                               if ($terms && !is_wp_error($terms)) {
-                                  $term = array_shift($terms);
-                                  $metas[] = '<li class="cat"><span class="cat-category" data-href="'.get_term_link($term).'" title="'.esc_attr($term->name).'">'.esc_html($term->name).'</span></li>';
+                                  foreach ($terms as $term) {
+                                      $metas[] = '<li class="cat"><span class="cat-category" data-href="'.get_term_link($term).'" title="'.esc_attr($term->name).'">'.esc_html($term->name).'</span></li>';
+                                  }
                               }
                           } elseif (!empty($dp_options['use_category'.$cat])) {
                               $terms = get_the_terms($post->ID, $dp_options['category'.$cat.'_slug']);
