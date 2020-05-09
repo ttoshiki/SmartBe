@@ -9307,6 +9307,7 @@ a:hover.about__about__representativesSns {
   line-height: 1.8;
   position: relative;
   z-index: 100;
+  font-size: 18px;
 }
 
 .academy__appearance {
@@ -9564,6 +9565,7 @@ a:hover.about__about__representativesSns {
 
 .academy__messageContent {
   margin-left: 24px;
+  font-size: 18px;
 }
 
 .academy__messageContentText {
@@ -10465,7 +10467,7 @@ a:hover.about__about__representativesSns {
   }
 
   .academy__achievementItem svg {
-    width: 100%;
+    width: 96%;
     margin: 0 auto;
   }
 
@@ -10553,7 +10555,7 @@ a:hover.about__about__representativesSns {
   }
 
   .academy__messageHeading {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .academy__messageHeading::after {

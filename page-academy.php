@@ -186,7 +186,7 @@
 			<li class="academy__achievementItem">
 				<div class="academy__achievementSpanWrapper"><span class="academy__achievementSpan">早朝でも安定集客！</span></div>
 				<?php echo file_get_contents(get_template_directory() . '/img/academy/activity02.svg'); ?>
-				<p class="academy__achievementParagraph"><strong class="academy__achievementStrong">学ぶオンナは美しい</strong>と題して、<br class="sp">月<strong class="academy__achievementStrong">2</strong>回朝活を開催。<br />早朝でも安定して、毎回<strong class="academy__achievementStrong">10</strong>人前後を集客！</p>
+				<p class="academy__achievementParagraph"><strong class="academy__achievementStrong">学ぶオンナは美しい</strong>と題して、<br class="sp">月<strong class="academy__achievementStrong">2</strong>回朝活を開催。<br />早朝でも安定して、<br class="sp">毎回<strong class="academy__achievementStrong">10</strong>人前後を集客！</p>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/academy/achievementImage02.jpg" alt="" class="academy__achievementImage">
 			</li>
 			<li class="academy__achievementItem">
