@@ -7102,6 +7102,10 @@ a.guest-url {
     height: 24px;
   }
 
+  .inflady__snsCaption {
+    font-size: 13px;
+  }
+
   .inflady__buttonIcon svg {
     width: 26px;
     height: 26px;
