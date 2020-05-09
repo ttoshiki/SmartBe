@@ -192,7 +192,7 @@
 			<li class="academy__achievementItem">
 				<div class="academy__achievementSpanWrapper"><span class="academy__achievementSpan">700人の起業女子があつまったEXPO</span></div>
 				<?php echo file_get_contents(get_template_directory() . '/img/academy/activity03.svg'); ?>
-				<p class="academy__achievementParagraph">Facebookを使って<strong class="academy__achievementStrong">700</strong>人の女性を集客。<br /><strong class="academy__achievementStrong">メディアにも取り上げられ<br class="sp">話題になりました！</strong></p>
+				<p class="academy__achievementParagraph">Facebookを使って<strong class="academy__achievementStrong"><br class="sp">700</strong>人の女性を集客。<br /><strong class="academy__achievementStrong">メディアにも取り上げられ<br class="sp">話題になりました！</strong></p>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/academy/achievementImage03.jpg" alt="" class="academy__achievementImage">
 			</li>
 		</ul>

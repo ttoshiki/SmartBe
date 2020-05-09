@@ -9751,6 +9751,7 @@ a:hover.about__about__representativesSns {
   padding: 64px 0;
   counter-increment: meritList;
   position: relative;
+  text-align: center;
 }
 
 .academy__onlineMeritItem::before {
