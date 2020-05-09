@@ -7055,12 +7055,13 @@ a.guest-url {
   align-items: center;
   font-size: 36px;
   padding: 16px 100px;
+  letter-spacing: 2px;
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3",
     "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif !important;
 }
 
 .inflady__buttonIcon {
-  margin-right: 24px;
+  margin-right: 20px;
   display: flex;
 }
 
@@ -7086,7 +7087,7 @@ a.guest-url {
 
   .inflady__button {
     padding: 16px 0;
-    width: 80%;
+    width: 88%;
     font-size: 22px;
     justify-content: center;
   }
@@ -8950,6 +8951,7 @@ a:hover.about__about__representativesSns {
 .academy__introParagraphStrong {
   font-weight: var(--semibold);
   font-size: 48px;
+  letter-spacing: 2px;
 }
 
 .academy__introSpeechBubble {
@@ -9305,12 +9307,13 @@ a:hover.about__about__representativesSns {
   line-height: 1.8;
   position: relative;
   z-index: 100;
+  font-size: 18px;
 }
 
 .academy__appearance {
   background-image: url(img/bg_1.png);
   background-size: cover;
-  padding: 80px 16px;
+  padding: 80px 16px 8px;
 }
 
 .academy__appearanceHeading {
@@ -9501,6 +9504,10 @@ a:hover.about__about__representativesSns {
   text-align: center;
 }
 
+.academy__fullThanksParagraph .pc.sp {
+  display: block;
+}
+
 .academy__fullThanksImage {
   display: block;
   margin-top: 80px;
@@ -9518,7 +9525,7 @@ a:hover.about__about__representativesSns {
   color: #49240d;
   padding: 140px 0;
   font-weight: var(--semibold);
-  letter-spacing: 4px;
+  letter-spacing: 6px;
 }
 
 .academy__fullThanksQuestioStrong {
@@ -9558,6 +9565,7 @@ a:hover.about__about__representativesSns {
 
 .academy__messageContent {
   margin-left: 24px;
+  font-size: 18px;
 }
 
 .academy__messageContentText {
@@ -9619,7 +9627,7 @@ a:hover.about__about__representativesSns {
 }
 
 .academy__onlineHeading {
-  font-size: 50px;
+  font-size: 56px;
   color: #627ff5;
   font-weight: var(--semibold);
   display: flex;
@@ -9690,7 +9698,7 @@ a:hover.about__about__representativesSns {
 .academy__onlineOffer {
   background-color: #ebefff;
   padding: 32px 0 48px;
-  margin-bottom: 56px;
+  margin: 16px 0 56px;
 }
 
 .academy__onlineOfferSpan {
@@ -9745,6 +9753,7 @@ a:hover.about__about__representativesSns {
   padding: 64px 0;
   counter-increment: meritList;
   position: relative;
+  text-align: center;
 }
 
 .academy__onlineMeritItem::before {
@@ -9945,6 +9954,10 @@ a:hover.about__about__representativesSns {
   height: 20px;
 }
 
+.academy__fullThanksParagraph .pc.sp {
+  display: block;
+}
+
 @media only screen and (max-width: 960px) {
   .academy__introParagraph {
     font-size: 32px;
@@ -9995,6 +10008,10 @@ a:hover.about__about__representativesSns {
     padding: 0 16px;
   }
 
+  .academy__fullThanksParagraph {
+    margin: 32px auto 0;
+  }
+
   .academy__learnHeading {
     line-height: 1.3;
   }
@@ -10004,7 +10021,7 @@ a:hover.about__about__representativesSns {
   }
 
   .academy__learnItemText {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .academy__learnItemPhoto {
@@ -10029,11 +10046,12 @@ a:hover.about__about__representativesSns {
   }
 
   .academy__fullThanksQuestionHeading {
-    font-size: 44px;
+    font-size: 40px;
+    padding: 120px 0;
   }
 
   .academy__fullThanksQuestioStrong {
-    font-size: 64px;
+    font-size: 62px;
   }
 
   .academy__messageContentText {
@@ -10138,6 +10156,10 @@ a:hover.about__about__representativesSns {
   .academy__recommend svg {
     width: 100%;
   }
+
+  .academy__fullThanksParagraph .pc.sp {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -10176,6 +10198,10 @@ a:hover.about__about__representativesSns {
     margin: 0 auto;
   }
 
+  .academy__fullThanksParagraph .pc.sp {
+    display: none;
+  }
+
   .academy__mainVisualButton {
     font-size: 16px;
     height: 12.8vw;
@@ -10192,11 +10218,11 @@ a:hover.about__about__representativesSns {
   }
 
   .academy__introParagraph {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .academy__introParagraphStrong {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .academy__introCatchCopy {
@@ -10269,6 +10295,10 @@ a:hover.about__about__representativesSns {
     width: 48px;
     height: 48px;
     font-size: 30px;
+  }
+
+  .academy__recommend svg {
+    margin: 32px auto 0;
   }
 
   .academy__reasonSubHeading {
@@ -10358,6 +10388,11 @@ a:hover.about__about__representativesSns {
     line-height: 1.3;
   }
 
+  .academy__learnSubHeading::before {
+    font-size: 120px;
+    top: -20px;
+  }
+
   .academy__learnHeading .tab {
     display: none;
   }
@@ -10432,7 +10467,7 @@ a:hover.about__about__representativesSns {
   }
 
   .academy__achievementItem svg {
-    width: 100%;
+    width: 96%;
     margin: 0 auto;
   }
 
@@ -10497,6 +10532,7 @@ a:hover.about__about__representativesSns {
   .academy__fullThanksParagraph {
     font-size: 18px;
     margin: 32px auto 0;
+    padding: 0 16px;
     line-height: 1.5;
   }
 
@@ -10507,6 +10543,7 @@ a:hover.about__about__representativesSns {
   .academy__fullThanksQuestionHeading {
     padding: 48px 0;
     font-size: 26px;
+    letter-spacing: 4px;
   }
 
   .academy__fullThanksQuestioStrong {
@@ -10518,7 +10555,7 @@ a:hover.about__about__representativesSns {
   }
 
   .academy__messageHeading {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .academy__messageHeading::after {
@@ -10548,7 +10585,7 @@ a:hover.about__about__representativesSns {
   }
 
   .academy__onlineHeadingSpan {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .academy__onlineHeadingSpan::before,
@@ -10741,6 +10778,10 @@ a:hover.about__about__representativesSns {
 
   .academy__instructorRecruitmentParagraph {
     font-size: 18px;
+  }
+
+  .academy__fullThanksParagraph .pc.sp {
+    display: block;
   }
 }
 

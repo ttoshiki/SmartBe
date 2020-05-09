@@ -73,7 +73,7 @@
 			</p>
 		</div>
 		<div class="academy__introCatchCopy">
-			<span class="academy__introCatchCopySpan">あなたが<br class="pc" />開催する</span>
+			<span class="academy__introCatchCopySpan">あなたが<br class="pc tab" />開催する</span>
 			<h1 class="academy__introCatchCopyHeading">
 				「女子会・お茶会・ランチ会・朝活」も、<br />
 				<strong class="academy__introCatchCopyStrong">毎回安定して<br class="tab">お客様が集まる</strong><br />
@@ -100,7 +100,7 @@
 				</li>
 			</ul>
 			<h2 class="academy__reasonSubHeading">これらが手に入る<br class="sp"><strong class="academy__reasonSubHeadingStrong">Facebook<br class="sp">集客セミナー</strong>を<br class="tab">開催しています！</h2>
-			<button onclick="location.href='/seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+			<button onclick="location.href='../seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
 		</div>
 	</section>
 	<img src="<?php echo get_template_directory_uri(); ?>/img/academy/academy01.jpg" alt="" class="academy__fullSizeImage pc">
@@ -143,7 +143,7 @@
 				<li class="academy__learnItem">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/academy/learn02.jpg" alt="" class="academy__learnItemPhoto">
 					<div class="academy__learnItemContents">
-						<h2 class="academy__learnSubHeading">「女子会・お茶会・ランチ会・朝活」で<br /><strong class="academy__learnStrong">月収7桁</strong>は可能！</h2>
+						<h2 class="academy__learnSubHeading">「女子会・お茶会・ランチ会・朝活」で<br class="pc tab" /><strong class="academy__learnStrong">月収7桁</strong>は可能！</h2>
 						<p class="academy__learnItemText">稼げる人が大切にしていること、そして月収7桁を稼ぐために必要な準備や心構えとは。「女子会・お茶会・ランチ会・朝活」を楽しく開催しながら、ビジネスを飛躍させ突き抜ける方法をお伝えします。</p>
 					</div>
 				</li>
@@ -165,7 +165,7 @@
 			<img src="<?php echo get_template_directory_uri(); ?>/img/academy/seminar05.jpg" alt="" class="academy__fullSizeImage sp">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/academy/seminar06.jpg" alt="" class="academy__fullSizeImage sp">
 		</div>
-		<button onclick="location.href='/seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+		<button onclick="location.href='../seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
 	</section>
 	<section class="academy__recommend">
 		<h1 class="academy__recommendHeading">こんな方にオススメ！</h1>
@@ -186,13 +186,13 @@
 			<li class="academy__achievementItem">
 				<div class="academy__achievementSpanWrapper"><span class="academy__achievementSpan">早朝でも安定集客！</span></div>
 				<?php echo file_get_contents(get_template_directory() . '/img/academy/activity02.svg'); ?>
-				<p class="academy__achievementParagraph"><strong class="academy__achievementStrong">学ぶオンナは美しい</strong>と題して、<br class="sp">月<strong class="academy__achievementStrong">2</strong>回朝活を開催。<br />早朝でも安定して、毎回<strong class="academy__achievementStrong">10</strong>人前後を集客！</p>
+				<p class="academy__achievementParagraph"><strong class="academy__achievementStrong">学ぶオンナは美しい</strong>と題して、<br class="sp">月<strong class="academy__achievementStrong">2</strong>回朝活を開催。<br />早朝でも安定して、<br class="sp">毎回<strong class="academy__achievementStrong">10</strong>人前後を集客！</p>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/academy/achievementImage02.jpg" alt="" class="academy__achievementImage">
 			</li>
 			<li class="academy__achievementItem">
 				<div class="academy__achievementSpanWrapper"><span class="academy__achievementSpan">700人の起業女子があつまったEXPO</span></div>
 				<?php echo file_get_contents(get_template_directory() . '/img/academy/activity03.svg'); ?>
-				<p class="academy__achievementParagraph">Facebookを使って<strong class="academy__achievementStrong">700</strong>人の女性を集客。<br /><strong class="academy__achievementStrong">メディアにも取り上げられ<br class="sp">話題になりました！</strong></p>
+				<p class="academy__achievementParagraph">Facebookを使って<strong class="academy__achievementStrong"><br class="sp">700</strong>人の女性を集客。<br /><strong class="academy__achievementStrong">メディアにも取り上げられ<br class="sp">話題になりました！</strong></p>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/academy/achievementImage03.jpg" alt="" class="academy__achievementImage">
 			</li>
 		</ul>
@@ -221,7 +221,7 @@
 				<p class="academy__messageContentText">あなたの「理想的な未来」を「現実」にしていくために。<br />美しく凛とした、賢い女性としてあなたが行動できるキッカケになれば嬉しいです。</p>
 			</div>
 		</div>
-		<button onclick="location.href='/seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+		<button onclick="location.href='../seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
 	</section>
 	<section class="academy__online">
 		<div class="academy__onlineInner">
@@ -305,7 +305,7 @@
 			<div class="academy__instructorRecruitmentContents">
 				<h1 class="academy__instructorRecruitmentHeading"><strong class="academy__instructorRecruitmentStrong">セミナー講師</strong>を<br class="tab"><strong class="academy__instructorRecruitmentStrong">募集しています！</strong></h1>
 				<p class="academy__instructorRecruitmentParagraph">あなたもSmart Beの講師として<br class="tab">輝く女性を応援しませんか？</p>
-				<button onclick="location.href='/instructor-recruitment'" class="c-button -primary academy__instructorButton" >
+				<button onclick="location.href='../instructor-recruit'" class="c-button -primary academy__instructorButton" >
 					<div class="academy__instructorButtonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>
 					<span class="academy__instructorButtonText">講師募集要項はこちら</span>
 				</button>
