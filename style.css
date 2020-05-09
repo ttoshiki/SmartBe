@@ -2063,6 +2063,7 @@ form.columns-5 .header_search_button {
   padding: 0;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 #post_list .cat-category {
