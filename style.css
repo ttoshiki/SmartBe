@@ -7591,7 +7591,8 @@ a:hover.front-page__voiceButton,
 a:hover.footer__mailMagazineButton,
 a:hover.first,
 a:hover.last,
-a:hover.about__about__representativesSns {
+a:hover.about__about__representativesSns,
+a:hover.iconWithButton {
   color: #ffffff;
   opacity: 0.8;
 }
@@ -8084,6 +8085,7 @@ a:hover.about__about__representativesSns {
 .iconWithButton__icon {
   margin-right: 12px;
   display: block;
+  width: 32px;
 }
 
 @media screen and (max-width: 767px) {

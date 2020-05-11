@@ -127,7 +127,7 @@
 			<li class="academy__voiceItem">子どもがいる私でもFacebookからのお申込みで<strong class="academy__voiceItemStrong">毎回満員御礼！</strong></li>
 			<li class="academy__voiceItem">発信の仕方を変えたことでお客様との距離が縮まったのを実感！<br class="tab"><strong class="academy__voiceItemStrong">成約率も上がりました！</strong></li>
 		</ul>
-		<a href="/voice"><img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonBanner"></a>
+		<a href="./voice"><img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonBanner"></a>
 	</section>
 	<section class="academy__learn">
 		<div class="academy__learnInner">
