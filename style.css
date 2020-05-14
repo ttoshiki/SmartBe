@@ -7597,6 +7597,11 @@ a:hover.iconWithButton {
   opacity: 0.8;
 }
 
+a:hover.page-numbers {
+  color: #b69e84;
+  opacity: 0.8;
+}
+
 .front-page__media {
   background: url(img/bg_2.png);
   padding: 120px 0;
