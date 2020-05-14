@@ -90,7 +90,7 @@
                 </td>
             </tr>
         </table>
-        <a href="" class="iconWithButton">
+        <a href="../contact" class="iconWithButton">
             <img src="<?php echo get_template_directory_uri(); ?>/img/icon_play.svg" alt="" class="iconWithButton__icon">
             <span class="recruit__buttonSpan">お問い合わせはこちら</span>
         </a>

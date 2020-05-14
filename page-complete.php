@@ -101,7 +101,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/footer_line_qr.png" alt="LINE QRコード" class="footer__lineGuidanceImage">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/footer_line_qr_speech_bubble.svg" alt="QRコードを読み取って友達追加！" class="footer__lineGuidanceImage">
                     </div>
-                    <a href="" class="footer__lineGuidanceButton sp">友達登録する</a>
+                    <a href="https://lin.ee/5vkOEpY" class="footer__lineGuidanceButton sp">友達登録する</a>
                 </div>
             </div>
         </div>

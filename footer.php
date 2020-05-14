@@ -22,12 +22,12 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
  <div id="side_fixedbanner">
   <ul>
     <li>
-      <a href="<?php echo content_url() ?>">
+      <a href="//smartbe8.com/wp/magazine/">
         <img src="<?php echo get_template_directory_uri(); ?>/img/mailmagazine_registration.svg" class="side_fixedbanner__image">
       </a>
     <li>
     <li>
-      <a href="/contact" target="_blank">
+      <a href="./contact">
         <img src="<?php echo get_template_directory_uri(); ?>/img/contact.svg" class="side_fixedbanner__image">
       </a>
     <li>
@@ -49,7 +49,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
    <h3 class="footer__mailMagazineCta">
      <span class="footer__mailMagazineCtaSpan"><strong class="footer__mailMagazineCtaStrong">5</strong>秒で簡単登録♪特典も即ゲット！</span>
    </h3>
-   <a href="" class="footer__mailMagazineButton">今すぐ無料で登録する</a>
+   <a href="//smartbe8.com/wp/magazine/" class="footer__mailMagazineButton">今すぐ無料で登録する</a>
  </section>
  <section class="footer__lineGuidance">
    <h1 class="footer__lineGuidanceHeader">LINE公式アカウント<br class="sp">ご案内</h1>
@@ -66,7 +66,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
           <span class="footer__lineGuidanceLabel">LINE ID</span>
           <span class="footer__lineGuidanceId">@hiromi888</span>
         </div>
-        <a href="" class="footer__lineGuidanceButton sp">友達登録する</a>
+        <a href="https://lin.ee/5vkOEpY" class="footer__lineGuidanceButton sp">友達登録する</a>
      </div>
    </div>
  </section>
