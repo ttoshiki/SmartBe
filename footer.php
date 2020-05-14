@@ -66,7 +66,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
           <span class="footer__lineGuidanceLabel">LINE ID</span>
           <span class="footer__lineGuidanceId">@hiromi888</span>
         </div>
-        <a href="" class="footer__lineGuidanceButton sp">友達登録する</a>
+        <a href="https://lin.ee/5vkOEpY" class="footer__lineGuidanceButton sp">友達登録する</a>
      </div>
    </div>
  </section>

@@ -89,7 +89,7 @@
             <?php echo file_get_contents(get_template_directory() . '/img/inflady_chart.svg');?>
         </figure>
         <p class="inflady__paragraph">出会いの場として楽しんだり、しっかり学んで自らインフルエンサーとなり高い影響力を掴んだり、ビジネスもプライベートも共に充実させられるサービスです。</p>
-        <button class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>無料でコミュニティーに入る</button>
+        <button onclick="location.href='https://www.facebook.com/groups/inflady/'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>無料でコミュニティーに入る</button>
     </section>
 </div><!-- id voice --->
 
