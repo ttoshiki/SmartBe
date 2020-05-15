@@ -8944,6 +8944,16 @@ a:hover.page-numbers {
   margin-right: 10px;
 }
 
+#academy__seminarButton {
+  margin-top: -120px;
+  padding-top: 120px;
+}
+
+#academy__online {
+  margin-top: -170px;
+  padding-top: 170px;
+}
+
 .academy__intro {
   max-width: var(--max-width);
   margin: 80px auto;
@@ -10223,6 +10233,16 @@ a:hover.page-numbers {
   .academy__mainVisualButton::before {
     width: 5vw;
     height: 5vw;
+  }
+
+  #academy__seminarButton {
+    margin-top: -30px;
+    padding-top: 30px;
+  }
+
+  #academy__online {
+    margin-top: -80px;
+    padding-top: 80px;
   }
 
   .academy__introSpeechBubbleWrapper {

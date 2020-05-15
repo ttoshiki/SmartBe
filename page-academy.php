@@ -100,7 +100,8 @@
 				</li>
 			</ul>
 			<h2 class="academy__reasonSubHeading">これらが手に入る<br class="sp"><strong class="academy__reasonSubHeadingStrong">Facebook<br class="sp">集客セミナー</strong>を<br class="tab">開催しています！</h2>
-			<button onclick="location.href='../seminar'" id="academy__seminarButton" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
+			<div id="academy__seminarButton"></div>
+			<button onclick="location.href='../seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
 		</div>
 	</section>
 	<img src="<?php echo get_template_directory_uri(); ?>/img/academy/academy01.jpg" alt="" class="academy__fullSizeImage pc">
@@ -127,7 +128,7 @@
 			<li class="academy__voiceItem">子どもがいる私でもFacebookからのお申込みで<strong class="academy__voiceItemStrong">毎回満員御礼！</strong></li>
 			<li class="academy__voiceItem">発信の仕方を変えたことでお客様との距離が縮まったのを実感！<br class="tab"><strong class="academy__voiceItemStrong">成約率も上がりました！</strong></li>
 		</ul>
-		<a href="./voice"><img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonBanner"></a>
+		<a href="../voice"><img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonBanner"></a>
 	</section>
 	<section class="academy__learn">
 		<div class="academy__learnInner">
@@ -223,8 +224,8 @@
 		</div>
 		<button onclick="location.href='../seminar'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>セミナー情報はこちら</button>
 	</section>
-	<section id="academy__online" class="academy__online">
-		<div class="academy__onlineInner">
+	<section class="academy__online">
+		<div class="academy__onlineInner" id="academy__online">
 			<div class="academy__onlineHeadingSpanWrapper"><span class="academy__onlineHeadingSpan">講座に通えない方も自宅で学べる！</span></div>
 			<h1 class="academy__onlineHeading">
 				<?php echo file_get_contents(get_template_directory() . '/img/icon_pc.svg'); ?>
