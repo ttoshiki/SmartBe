@@ -10726,7 +10726,7 @@ a:hover.sitemap__link {
   }
 
   .academy__onlineMeritHeading svg {
-    width: 100%;
+    width: 96%;
   }
 
   .academy__onlinMeritList {
@@ -10760,11 +10760,12 @@ a:hover.sitemap__link {
   }
 
   .academy__onlineFlowHeading svg {
-    width: 100%;
+    width: 96%;
   }
 
   .academy__onlineFlowList {
     width: 100%;
+    padding: 0 16px;
     background-color: rgba(255, 255, 255, 0.8);
   }
 
