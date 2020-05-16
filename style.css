@@ -357,7 +357,7 @@ a:hover {
   position: relative;
 }
 #main_col {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 50px auto 150px;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -367,7 +367,7 @@ a:hover {
   box-sizing: border-box;
 }
 #left_col {
-  width: 860px;
+  max-width: var(--max-width);
   float: left;
 }
 #side_col {
@@ -1560,6 +1560,12 @@ form.columns-5 .header_search_button {
   width: 50%;
   width: -webkit-calc(100% - 150px);
   width: calc(100% - 150px);
+}
+
+/* 会社概要 */
+.overview #left_col,
+.law #left_col {
+  float: none;
 }
 
 /* ブログ記事一覧 */
@@ -7597,9 +7603,15 @@ a:hover.iconWithButton {
   opacity: 0.8;
 }
 
-a:hover.page-numbers {
+a:hover.page-numbers,
+a:hover.sitemap__link {
   color: #b69e84;
   opacity: 0.8;
+}
+
+a:hover.sitemap__link {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .front-page__media {
@@ -8889,7 +8901,7 @@ a:hover.page-numbers {
 .academy__mainVisualCta {
   position: absolute;
   top: 50%;
-  left: 3%;
+  left: 5%;
   transform: translateY(-52%);
   width: 37.5vw;
 }
