@@ -271,7 +271,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
        }
 ?>
 
-     <p id="copyright"><span><?php _e('Copyright ', 'tcd-w'); ?></span><a href="<?php echo esc_url(home_url('/')); ?>">Copyright(C) Smart Be</a>. All Rights Reserved.</p>
+     <p id="copyright"><a href="<?php echo esc_url(home_url('/')); ?>">Copyright(C) Smart Be</a>. All Rights Reserved.</p>
 
     </div><!-- END #footer_info -->
    </div><!-- END .inner -->
