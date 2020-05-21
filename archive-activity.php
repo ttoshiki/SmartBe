@@ -22,8 +22,8 @@
                     if ($thumbnail1 || $thumbnail2) { ?>
                         <div class="activity__thumbnail">
                         <?php
-                            echo wp_get_attachment_image($thumbnail1);
-                            echo wp_get_attachment_image($thumbnail2);
+                            echo wp_get_attachment_image($thumbnail1, 'medium');
+                            echo wp_get_attachment_image($thumbnail2, 'medium');
                         ?>
                         </div>
                     <?php }

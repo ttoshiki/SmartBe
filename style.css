@@ -7080,6 +7080,11 @@ a.guest-url {
     "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif !important;
 }
 
+.academy__applicationButton {
+  max-width: 600px;
+  justify-content: center;
+}
+
 .inflady__buttonIcon {
   margin-right: 20px;
   display: flex;
@@ -7426,6 +7431,7 @@ a.guest-url {
   margin: 24px auto 0;
   color: #333333;
   font-size: 18px;
+  min-height: 135px;
 }
 
 .front-page__voice {
@@ -7922,6 +7928,7 @@ a:hover.sitemap__link {
   .front-page__serviceContent {
     width: 90%;
     font-size: 16px;
+    min-height: auto;
   }
 
   .front-page__serviceItem:first-child,
@@ -10909,6 +10916,9 @@ a:hover.sitemap__link {
 
 .activity__thumbnail {
   margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 960px) {
@@ -10940,6 +10950,14 @@ a:hover.sitemap__link {
   }
 
   .activity__list .attachment-thumbnail:not(:first-of-type) {
+    margin-top: 16px;
+  }
+
+  .activity__thumbnail {
+    flex-direction: column;
+  }
+
+  .activity__thumbnail img:not(:first-child) {
     margin-top: 16px;
   }
 }
@@ -11257,13 +11275,14 @@ complete（メルマガ登録完了）
 
 .footer__mailMagazineHeaderInner::after {
   content: "";
-  width: 90px;
-  height: 82px;
+  width: 66px;
+  height: 58px;
   position: absolute;
   display: block;
-  top: 12px;
+  top: 14px;
   left: -9%;
   background: url(img/icon_mail.svg) no-repeat;
+  background-size: cover;
 }
 
 .footer__mailMagazineHeaderStrong {
