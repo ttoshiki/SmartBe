@@ -83,7 +83,7 @@
 	</section>
 	<section class="academy__freedom">
 		<div class="academy__freedomInner">
-			<h1 class="academy__reasonHeading">Facebookを賢く<br class="sp">使いこなすことで、<br class="tab">手に入る<strong>3</strong>つの自由</h1>
+			<h1 class="academy__reasonHeading">Facebookを賢く<br class="sp">使いこなすことで手に入る<strong>3</strong>つの自由</h1>
 			<div class="dotLine"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?></div>
 			<ul class="academy__freedomList">
 				<li class="academy__freedomItem">
@@ -126,7 +126,7 @@
 			<li class="academy__voiceItem">Facebook初心者でも<strong class="academy__voiceItemStrong">2日で満員御礼に！</strong></li>
 			<li class="academy__voiceItem">売上数万円だった私が、<strong class="academy__voiceItemStrong">月商7桁を達成！夫婦仲も◎に♪</strong></li>
 			<li class="academy__voiceItem">子どもがいる私でもFacebookからのお申込みで<strong class="academy__voiceItemStrong">毎回満員御礼！</strong></li>
-			<li class="academy__voiceItem">発信の仕方を変えたことでお客様との距離が縮まったのを実感！<br class="tab"><strong class="academy__voiceItemStrong">成約率も上がりました！</strong></li>
+			<li class="academy__voiceItem">発信の仕方を変えたことでお客様との距離が縮まったのを実感！<br /><strong class="academy__voiceItemStrong">成約率も上がりました！</strong></li>
 		</ul>
 		<a href="../voice"><img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonBanner"></a>
 	</section>
@@ -202,7 +202,7 @@
 		<h1 class="academy__fullThanksHeading">Facebookを使いこなせば<br class="sp"><strong class="academy__fullThanksHeadingStrong">満員御礼</strong>はあたり前に！</h1>
 		<div class="dotLine"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?></div>
 		<h2 class="academy__fullThanksSubHeading">集客を楽しめるようになった<br class="sp">女性起業家は<br /><strong class="academy__fullThanksStrong">Facebookを<br class="sp">効果的に<br class="tab">活用しています！</strong></h2>
-		<p class="academy__fullThanksParagraph">実際に、Facebookを活用して、<br class="sp">「集客を楽しめるようになった！」<br class="tab">「売上UPが叶った！」という<br class="pc sp" />女性起業家はたくさんいます。<br class="tab">そうなると自然と満員御礼は<br class="sp">当たり前となります。</p>
+		<p class="academy__fullThanksParagraph">実際に、Facebookを活用して、<br>「集客を楽しめるようになった！」「売上UPが叶った！」という<br class="pc sp" />女性起業家はたくさんいます。<br class="tab">そうなると自然と満員御礼は<br class="sp">当たり前となります。</p>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/academy/full_thanks.jpg" alt="" class="academy__fullThanksImage">
 		<div class="academy__fullThanksQuestion">
 			<h2 class="academy__fullThanksQuestionHeading">
@@ -298,7 +298,7 @@
 				</ul>
 			</div>
 		</div>
-		<button onclick="location.href='https://peraichi.com/landing_pages/view/smart8online'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>お申し込みはこちら</button>
+		<button onclick="location.href='https://peraichi.com/landing_pages/view/smart8online'" target="_blank" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>お申し込みはこちら</button>
 	</section>
 	<section class="academy__instructorRecruitment">
 		<div class="academy__instructorRecruitmentInner">

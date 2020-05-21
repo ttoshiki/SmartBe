@@ -73,7 +73,7 @@
             <p class="instructorRecruitment__paragraph">受講生の多くは、日頃からFacebookやInstagramといったSNSを大いに活用している女性ばかりなので、セミナーの模様も随時SNSにて発信されます。フォロワーが数万人、数十万人いるインフルエンサーの女性が参加することも珍しくないので、講師になると認知度が一気に広まるでしょう。</p>
             <p class="instructorRecruitment__paragraph">なお、セミナー講師のメリットなどさらに詳しい内容は、以下のPDFファイルも併せてご参照ください。</p>
         </section>
-        <a href="" class="iconWithButton">
+        <a href="<?php bloginfo('template_directory'); ?>/assets/lecture_documents.pdf" class="iconWithButton"　 target="_blank">
             <img src="<?php echo get_template_directory_uri(); ?>/img/icon_play.svg" alt="" class="iconWithButton__icon">
             <span class="instructorRecruitment__buttonSpan">講師募集資料(PDF)<br class="sp">ダウンロード</span>
         </a>

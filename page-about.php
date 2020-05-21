@@ -168,7 +168,7 @@
 				<div class="about__representativesContentsInner">
 					<h2 class="about__representativesName">合同会社 Smart Be 代表　<br class="tab">伊藤宏美</h2>
 					<p class="about__representativesContent">
-						株式会社インテリジェンスでキャリコンサルタント、
+						株式会社インテリジェンスでキャリアコンサルタント、
 						GMOペイメントゲートウェイ株式会社で新卒・中途採用を経験。10年間、企業に属し役職まで就くも雇われず自立したいという思いから個人ビジネスで起業。
 					</p>
 					<p class="about__representativesContent">

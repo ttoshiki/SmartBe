@@ -34,11 +34,11 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
   </ul>
 </div><!-- side_fixedbanner -->
 
-<?php if (!(is_post_type_archive('activity') || is_page('complete') || is_page('seminar-list') || is_page('privacy-policy') || is_single())) { ?>
+<?php if (!(is_post_type_archive('activity') || is_page('complete') || is_page('seminar-list') || is_page('privacy-policy') || is_page('law') || is_single())) { ?>
  <section class="footer__mailMagazine">
    <h1 class="footer__mailMagazineHeader">
     <div class="footer__mailMagazineHeaderInner">
-      <strong class="footer__mailMagazineHeaderStrong">メルマガ</strong>登録<span class="footer__mailMagazineHeaderSmall">で</span><br class="sp">無料プレゼント！
+      <strong class="footer__mailMagazineHeaderStrong"></strong>メルマガ登録<span class="footer__mailMagazineHeaderSmall">で</span><br class="sp">無料プレゼント！
     </div>
    </h1>
    <h2 class="footer__mailMagazineCatch">2つの特典が登録後<br class="sp">すぐに手に入ります！</h2>
