@@ -282,6 +282,30 @@
     endif;
 ?>
 
+<section class="front-page__news">
+    <h1 class="front-page__newsHeading">NEWS</h1>
+    <?php
+        $args = array(
+            'post_type' => 'activity',
+            'posts_per_page' => '5'
+        );
+        $the_query = new WP_Query($args); if ($the_query->have_posts()):
+    ?>
+    <ul class="front-page__activityList">
+    <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+        <li id="post-<?php the_ID(); ?>" <?php post_class('front-page__activityItem'); ?>>
+            <span class="front-page__activityDate"><?php echo get_the_date('Y.m.d'); ?></span>
+            <a href="activity/#<?php the_ID(); ?>" class="front-page__activityTitle"><?php echo get_the_title(); ?></a>
+        </li>
+        <?php endwhile; ?>
+    </ul>
+    <a href="activity" class="front-page__activityButton">お知らせ一覧</a>
+    <?php wp_reset_postdata(); ?>
+    <?php else: ?>
+        <p>お知らせはありません</p>
+    <?php endif; ?>
+</section>
+
 <section class="front-page__catchCopy">
     <h1 class="front-page__text">起業やライフスタイルを<br class="sp">豊かにする<br />女性のための総合アカデミー</h1>
 </section>
