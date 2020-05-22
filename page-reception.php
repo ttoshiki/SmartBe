@@ -125,7 +125,7 @@
 		</div><!-- recep_message -->
 		<section class="about__representatives">
 			<div class="about__representativesInner">
-				<h1 class="about__heading">代表紹介</h1>
+				<h1 class="about__heading">代表 プロフィール</h1>
 				<div class="about__representativesContentsWrapper">
 					<div class="about__representativesContentsInner">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/about/representatives.jpg" alt="伊藤宏美" class="about__representativesPhoto">
