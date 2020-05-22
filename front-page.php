@@ -445,7 +445,7 @@
         <li class="front-page__mediaItem">
             <img src="<?php echo get_template_directory_uri(); ?>/img/top_media04.jpg" alt="著書 玉の輿にのれなかった崖っぷち女が　年収1000万円になった黄金の大逆転ルール" class="front-page__mediaImage">
             <div class="front-page__mediaNameBg">
-                <h2 class="front-page__mediaName">著書 玉の輿にのれなかった崖っぷち女が<br />年収1000万円になった黄金の大逆転ルール</h2>
+                <h2 class="front-page__mediaName">著書「玉の輿にのれなかった崖っぷち女が<br />年収1000万円になった黄金の大逆転ルール」</h2>
             </div>
             <time datetime="2019-09">2019年9月</time>
         </li>
