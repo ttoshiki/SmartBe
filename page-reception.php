@@ -2,29 +2,41 @@
     get_header();
 
     $display_title = get_post_meta($post->ID, 'display_title', true);
-    if (!$display_title) $display_title = 'show';
+    if (!$display_title) {
+        $display_title = 'show';
+    }
     $display_side_content = get_post_meta($post->ID, 'display_side_content', true);
-    if (!$display_side_content) $display_side_content = 'show';
+    if (!$display_side_content) {
+        $display_side_content = 'show';
+    }
 
     $image_id = get_post_meta($post->ID, 'page_image', true);
     if ($image_id) {
-      $image = wp_get_attachment_image_src( $image_id, 'full' );
+        $image = wp_get_attachment_image_src($image_id, 'full');
     }
     if (!empty($image[0])) {
-      $headline = get_post_meta($post->ID, 'page_headline', true);
-      $caption_style = 'font-size:'.get_post_meta($post->ID, 'page_headline_font_size', true).'px;';
-      $caption_style .= 'color:'.get_post_meta($post->ID, 'page_headline_color', true).';';
-      $shadow1 = get_post_meta($post->ID, 'page_headline_shadow1', true);
-      $shadow2 = get_post_meta($post->ID, 'page_headline_shadow2', true);
-      $shadow3 = get_post_meta($post->ID, 'page_headline_shadow3', true);
-      $shadow4 = get_post_meta($post->ID, 'page_headline_shadow4', true);
-      if (empty($shadow1)) $shadow1 = 0;
-      if (empty($shadow2)) $shadow2 = 0;
-      if (empty($shadow3)) $shadow3 = 0;
-      if (empty($shadow4)) $shadow4 = '#333333';
-      if ($shadow1 || $shadow2 || $shadow3) {
-        $caption_style .= 'text-shadow:'.$shadow1.'px '.$shadow2.'px '.$shadow3.'px '.$shadow4.';';
-      }
+        $headline = get_post_meta($post->ID, 'page_headline', true);
+        $caption_style = 'font-size:'.get_post_meta($post->ID, 'page_headline_font_size', true).'px;';
+        $caption_style .= 'color:'.get_post_meta($post->ID, 'page_headline_color', true).';';
+        $shadow1 = get_post_meta($post->ID, 'page_headline_shadow1', true);
+        $shadow2 = get_post_meta($post->ID, 'page_headline_shadow2', true);
+        $shadow3 = get_post_meta($post->ID, 'page_headline_shadow3', true);
+        $shadow4 = get_post_meta($post->ID, 'page_headline_shadow4', true);
+        if (empty($shadow1)) {
+            $shadow1 = 0;
+        }
+        if (empty($shadow2)) {
+            $shadow2 = 0;
+        }
+        if (empty($shadow3)) {
+            $shadow3 = 0;
+        }
+        if (empty($shadow4)) {
+            $shadow4 = '#333333';
+        }
+        if ($shadow1 || $shadow2 || $shadow3) {
+            $caption_style .= 'text-shadow:'.$shadow1.'px '.$shadow2.'px '.$shadow3.'px '.$shadow4.';';
+        }
     }
 ?>
 
@@ -33,7 +45,7 @@
 <?php if (!empty($image[0])) { ?>
   <div id="header_image">
    <img src="<?php echo esc_attr($image[0]); ?>" alt="" />
-   <?php if ($headline){ ?>
+   <?php if ($headline) { ?>
    <div class="caption rich_font" style="<?php echo esc_attr($caption_style); ?>">
     <?php echo str_replace(array("\r\n", "\r", "\n"), '<br />', esc_html($headline)); ?>
    </div>
@@ -111,22 +123,33 @@
 				</div>
 			</div>
 		</div><!-- recep_message -->
-		<div class="recep_profile">
-			<div class="recep_profile_inner">
-				<h5>代表　伊藤宏美プロフィール</h5>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/201909/rec_prof01.png">
-				<p>1980年生まれ、神奈川県出身。<br>
-				一流上場企業へ就職するが、「会社に雇われず自立したい」という想いから、35歳で一念発起し起業。<br>
-				しかし現実は甘くなく、“売上ゼロ・集客ゼロ” な日々に陥り、がむしゃらに働き続けた結果、過労で倒れ、仕事ができない状態に。<br>
-				「一生懸命働くのも大切だけど、もっと効率的に働く方法を見つけないと女性の幸せは手に入らない」と感じ、効率的・効果的に働ける道の一つとしてブランディングを意識するようになる。<br>
-				それまで毎日投稿していたSNSに着目し、ブランディングとFacebookを掛け合わせた独自の集客メソッドを開発。<br>
-				その結果90日間で効果があらわれ、年間1,000人以上の集客に成功。<br>
-				また会社員時代より働く時間は1/3に減り、年収は8桁を超えるなど、満員電車に乗ることのない自由なライフスタイルを手に入れる。<br>
-				現在は、起業塾「賢女の集客アカデミー」を主宰。<br>
-				「SNSを賢く使った集客メソッドで、起業した女性に経済的な豊かさを手にしてもらいたい」という使命感から、受講生一人ひとりににあった集客メソッドを構築。わずか20日間で100万円以上の売上実績を出すなど、クライアントの業績アップに貢献。その実績やメソッドが認められ、NHK、日本テレビ、楽天ラジオなど大手メディアにも出演している。
-				</p>
+		<section class="about__representatives">
+			<div class="about__representativesInner">
+				<h1 class="about__heading">代表紹介</h1>
+				<div class="about__representativesContentsWrapper">
+					<div class="about__representativesContentsInner">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/about/representatives.jpg" alt="伊藤宏美" class="about__representativesPhoto">
+						<a href="//www.facebook.com/hiromi.ito.888" class="about__about__representativesSns pc"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
+					</div>
+					<div class="about__representativesContentsInner">
+						<h2 class="about__representativesName">合同会社 Smart Be 代表　<br class="tab">伊藤宏美</h2>
+						<p class="about__representativesContent">
+							株式会社インテリジェンスでキャリアコンサルタント、
+							GMOペイメントゲートウェイ株式会社で新卒・中途採用を経験。10年間、企業に属し役職まで就くも雇われず自立したいという思いから個人ビジネスで起業。
+						</p>
+						<p class="about__representativesContent">
+							しかし現実は甘くなく、“売上ゼロ・集客ゼロ”の日々が続く。そんなある日、過労で倒れ仕事ができない状態に。「一生懸命働くのも大切だが、効率的な方法を探さないと女性の幸せは手に入らない」と感じソーシャルメディアを使った独自のWebマーケティング手法を開発。
+							その結果90日間で効果があらわれ、年間1,000人以上の集客に成功。さらにはSNSからNHKや日本テレビ、楽天クリムゾンFM、出版社からの講演依頼をいただくなど活動の幅は多岐にわたる。
+						</p>
+						<p class="about__representativesContent">
+							現在は賢女の集客アカデミーを主宰。受講生一人ひとりにあった集客メソッドを構築。企業で培った人生マネジメント能力をいかし、わずか20日間で売上100万円以上の売上実績を出すなどクライアントの業績アップに貢献している。
+						</p>
+						<div class="about__representativesSign"><?php echo file_get_contents(get_template_directory() . '/img/about/sign.svg'); ?></div>
+						<a href="//www.facebook.com/hiromi.ito.888" class="about__about__representativesSns sp"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
+					</div>
+				</div>
 			</div>
-		</div><!-- recep_profile -->
+		</section>
 		<div class="recep_form">
 			<h5>取材・サービスをご希望される<br>
 				報道関係者様</h5>

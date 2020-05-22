@@ -138,6 +138,7 @@ html {
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  scroll-padding-top: 151px; /* 固定ヘッダの高さ分 */
 }
 ul,
 ol {
@@ -6476,6 +6477,30 @@ a.guest-url {
     color: #ff0000;
   }
 }
+@media screen and (max-width: 1025px) {
+  #recep .recep_wrapper {
+    width: 100%;
+  }
+
+  #recep .recep_message {
+    width: 96%;
+  }
+
+  #recep .recep_message .recep_message_works {
+    width: 100%;
+  }
+
+  #recep .recep_message .recep_message_works .recep_message_works_box {
+    width:47%;
+  }
+
+  .reception #contact .contact_form,
+  .reception #contact .contact_wrapper {
+    width: 100%;
+  }
+
+
+}
 @media screen and (max-width: 767px) {
   /* smartphone */
   #recep .recep_wrapper {
@@ -6620,6 +6645,9 @@ a.guest-url {
   }
   #recep .recep_form p span {
     color: #ff0000;
+  }
+  .reception #contact .mw_wp_form {
+    width: 90%;
   }
 }
 
@@ -9063,13 +9091,13 @@ a:hover.sitemap__link {
 }
 
 #academy__seminarButton {
-  margin-top: -120px;
-  padding-top: 120px;
+  margin-top: -190px;
+  padding-top: 190px;
 }
 
 #academy__online {
-  margin-top: -170px;
-  padding-top: 170px;
+  margin-top: -230px;
+  padding-top: 230px;
 }
 
 .academy__intro {
@@ -11728,6 +11756,42 @@ complete（メルマガ登録完了）
 
   #footer_contents {
     margin-top: 96px;
+  }
+}
+
+.reception .about__representatives {
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.reception .about__representativesInner{
+  padding: 0;
+}
+
+.reception .about__representativesContentsWrapper {
+  max-width: 800px;
+}
+
+.reception .about__heading {
+  color: #b69e84;
+  font-size: 30px;
+}
+
+.reception .about__heading::after {
+  display: none;
+}
+
+.reception .about__representativesName {
+  color: #b69e84;
+}
+
+@media screen and (max-width: 767px) {
+  .reception .about__heading {
+    font-size: 26px;
+  }
+
+  .reception .about__representativesContentsWrapper {
+    margin-top: 24px;
   }
 }
 
