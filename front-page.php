@@ -55,7 +55,7 @@
       <a href="seminar-list"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider03-sp.jpg" /></a>
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04.png" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider04-sp.jpg" />
+      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04@2x.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider04-sp.jpg" />
     </div>
     <div class="sp-slide">
       <a href="academy#academy__online"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider05-sp.jpg" /></a>
@@ -65,7 +65,7 @@
     <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.jpg"/>
     <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.jpg"/>
     <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.jpg"/>
-    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04.png"/>
+    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04.jpg"/>
     <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg"/>
   </div>
 <!--/ thumb-v--></div>
@@ -895,7 +895,7 @@ $( document ).ready(function( $ ) {
     thumbnailsPosition: 'right',//サムネイルの位置
     thumbnailPointer: true,//アクティブなサムネイルにマークを付ける
     thumbnailWidth: 280,//サムネイルの横幅
-    thumbnailHeight: 160,//サムネイルの縦幅
+    thumbnailHeight: 157,//サムネイルの縦幅
     breakpoints: {
       796: {//表示方法を変えるサイズ
         thumbnailsPosition: 'bottom',
