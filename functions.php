@@ -1098,4 +1098,18 @@ add_filter('manage_posts_columns', 'add_posts_columns');
 add_action('manage_posts_custom_column', 'custom_posts_column', 10, 2);
 
 
+/*********************************
+ 活動実績の表示件数を無限に
+**********************************/
+
+function change_activity_posts_per_page($query)
+{
+    if (is_post_type_archive('activity')) {
+        $query->set('posts_per_page', '-1');
+        return $query;
+    }
+}
+add_filter('pre_get_posts', 'change_activity_posts_per_page');
+
+
 ?>
