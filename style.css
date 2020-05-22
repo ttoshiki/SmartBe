@@ -8589,6 +8589,7 @@ a:hover.sitemap__link {
 
 .about__dataChart svg {
   width: 96%;
+  height: 346px;
 }
 
 .about__dataItemHeading {
@@ -8608,7 +8609,7 @@ a:hover.sitemap__link {
 
 .about__dataExplanation {
   color: #49240d;
-  margin-top: 56px;
+  margin-top: 48px;
   line-height: 1.8;
   font-size: 18px;
 }
@@ -8899,6 +8900,15 @@ a:hover.sitemap__link {
     align-items: center;
   }
 
+  .about__dataChart {
+    margin-top: 24px;
+  }
+
+  .about__dataChart svg {
+    max-height: auto;
+    height: auto;
+  }
+
   .about__dataItemLine {
     margin: 8px auto 0;
   }
@@ -8911,20 +8921,12 @@ a:hover.sitemap__link {
     width: 96%;
   }
 
-  .about__dataItem:first-child .about__dataExplanation {
-    margin-top: -16px;
-  }
-
   .about__dataItem:not(:first-child) {
     margin-top: 64px;
   }
 
-  .about__dataItem:nth-child(2) .about__dataExplanation {
-    margin-top: -8px;
-  }
-
   .about__dataExplanation {
-    margin-top: 0;
+    margin-top: 24px;
     font-size: 16px;
   }
 
