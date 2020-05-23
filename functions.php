@@ -1112,4 +1112,21 @@ function change_activity_posts_per_page($query)
 add_filter('pre_get_posts', 'change_activity_posts_per_page');
 
 
+/*********************************
+ Youtube埋め込みをdivで囲む
+**********************************/
+
+function iframe_in_div($the_content)
+{
+    if (is_post_type_archive('activity')) {
+        $the_content = preg_replace('/<iframe/i', '<div class="youtube"><iframe', $the_content);
+        $the_content = preg_replace('/<\/iframe>/i', '</iframe></div>', $the_content);
+    }
+    return $the_content;
+}
+add_filter('the_content', 'iframe_in_div');
+
+
+
 ?>
+

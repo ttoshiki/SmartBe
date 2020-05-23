@@ -13,7 +13,7 @@
         <?php while (have_posts()) : the_post(); ?>
         <li class="activity__list" id="<?php the_ID(); ?>">
             <time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="activity__datetime"><?php echo get_the_date('Y.m.d'); ?></time>
-            <div class="activity__Contents">
+            <div class="activity__contents">
                 <h3 class="activity__heading"><?php the_title(); ?></h3>
                 <?php the_content(); ?>
                 <?php
