@@ -46,7 +46,7 @@
 <div id="thumb-v" class="slider-pro">
   <div class="sp-slides">
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider01-sp.jpg" />
+      <a href="about"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider01-sp.jpg" /></a>
     </div>
     <div class="sp-slide">
       <a href="academy"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider02-sp.jpg" /></a>
@@ -55,10 +55,10 @@
       <a href="seminar-list"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider03-sp.jpg" /></a>
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04@2x.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider04-sp.jpg" />
+      <a href="https://smartbe8.com/book1/amazon.html"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04@2x.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider04-sp.jpg" /></a>
     </div>
     <div class="sp-slide">
-      <a href="academy#academy__online"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider05-sp.jpg" /></a>
+      <a href="https://peraichi.com/landing_pages/view/smart8online"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider05-sp.jpg" /></a>
     </div>
   </div><!--/ sp-slides-->
   <div class="sp-thumbnails">
