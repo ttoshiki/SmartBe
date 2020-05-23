@@ -46,26 +46,26 @@
 <div id="thumb-v" class="slider-pro">
   <div class="sp-slides">
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider01-sp.jpg" />
+      <a href="about"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider01-sp.jpg" /></a>
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider02-sp.jpg" />
+      <a href="academy"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider02-sp.jpg" /></a>
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider03-sp.jpg" />
+      <a href="seminar-list"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider03-sp.jpg" /></a>
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04.png" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider04-sp.jpg" />
+      <a href="https://smartbe8.com/book1/amazon.html"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04@2x.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider04-sp.jpg" /></a>
     </div>
     <div class="sp-slide">
-      <img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider05-sp.jpg" />
+      <a href="https://peraichi.com/landing_pages/view/smart8online"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider05-sp.jpg" /></a>
     </div>
   </div><!--/ sp-slides-->
   <div class="sp-thumbnails">
     <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider01.jpg"/>
     <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider02.jpg"/>
     <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.jpg"/>
-    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04.png"/>
+    <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04.jpg"/>
     <img class="sp-thumbnail" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg"/>
   </div>
 <!--/ thumb-v--></div>
@@ -282,6 +282,30 @@
     endif;
 ?>
 
+<section class="front-page__news">
+    <h1 class="front-page__newsHeading">NEWS</h1>
+    <?php
+        $args = array(
+            'post_type' => 'activity',
+            'posts_per_page' => '5'
+        );
+        $the_query = new WP_Query($args); if ($the_query->have_posts()):
+    ?>
+    <ul class="front-page__activityList">
+    <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+        <li id="post-<?php the_ID(); ?>" <?php post_class('front-page__activityItem'); ?>>
+            <span class="front-page__activityDate"><?php echo get_the_date('Y.m.d'); ?></span>
+            <a href="activity/#<?php the_ID(); ?>" class="front-page__activityTitle"><?php echo get_the_title(); ?></a>
+        </li>
+        <?php endwhile; ?>
+    </ul>
+    <a href="activity" class="front-page__activityButton">お知らせ一覧</a>
+    <?php wp_reset_postdata(); ?>
+    <?php else: ?>
+        <p>お知らせはありません</p>
+    <?php endif; ?>
+</section>
+
 <section class="front-page__catchCopy">
     <h1 class="front-page__text">起業やライフスタイルを<br class="sp">豊かにする<br />女性のための総合アカデミー</h1>
 </section>
@@ -421,7 +445,7 @@
         <li class="front-page__mediaItem">
             <img src="<?php echo get_template_directory_uri(); ?>/img/top_media04.jpg" alt="著書 玉の輿にのれなかった崖っぷち女が　年収1000万円になった黄金の大逆転ルール" class="front-page__mediaImage">
             <div class="front-page__mediaNameBg">
-                <h2 class="front-page__mediaName">著書 玉の輿にのれなかった崖っぷち女が<br />年収1000万円になった黄金の大逆転ルール</h2>
+                <h2 class="front-page__mediaName">著書「玉の輿にのれなかった崖っぷち女が<br />年収1000万円になった黄金の大逆転ルール」</h2>
             </div>
             <time datetime="2019-09">2019年9月</time>
         </li>
@@ -862,16 +886,16 @@ $args = array(
 <script>
 $( document ).ready(function( $ ) {
   $('#thumb-v').sliderPro({
-    width: 933,//横幅
-    height: 526,
-    orientation: 'vertical',//スライドの方向
+    width: 943,//横幅
+    height: 531,
+    orientation: 'horizontal',//スライドの方向
     arrows: true,//左右の矢印
     buttons: false,//ナビゲーションボタン
     loop: false,//ループ
     thumbnailsPosition: 'right',//サムネイルの位置
     thumbnailPointer: true,//アクティブなサムネイルにマークを付ける
     thumbnailWidth: 280,//サムネイルの横幅
-    thumbnailHeight: 160,//サムネイルの縦幅
+    thumbnailHeight: 142,//サムネイルの縦幅
     breakpoints: {
       796: {//表示方法を変えるサイズ
         thumbnailsPosition: 'bottom',

@@ -11,6 +11,7 @@
   margin: 0 auto;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+  padding-right: 257px !important;
 }
 
 .sp-slides-container {
@@ -93,6 +94,7 @@
 
 .sp-thumbnail {
   border: none;
+  top: 0;
 }
 
 .sp-thumbnail-container {
@@ -130,12 +132,7 @@
 ----------------------*/
 .sp-left-thumbnails .sp-thumbnail-container,
 .sp-right-thumbnails .sp-thumbnail-container {
-  margin-top: 24px;
-}
-
-.sp-left-thumbnails .sp-thumbnail-container:first-child,
-.sp-right-thumbnails .sp-thumbnail-container:first-child {
-  margin-top: 0;
+  margin-top: 16px;
 }
 
 .sp-left-thumbnails .sp-thumbnail-container:last-child,
@@ -151,7 +148,7 @@
 
 .sp-right-thumbnails.sp-has-pointer .sp-thumbnail {
   position: absolute;
-  left: 18px;
+  right: 0;
   margin-left: 0 !important;
 }
 
@@ -160,7 +157,7 @@
   position: absolute;
   height: 100%;
   border-left: 5px solid #f00;
-  left: 0;
+  left: 10px;
   top: 0;
   margin-left: 13px;
 }

@@ -298,7 +298,7 @@
 				</ul>
 			</div>
 		</div>
-		<button onclick="location.href='https://peraichi.com/landing_pages/view/smart8online'" target="_blank" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>お申し込みはこちら</button>
+		<a href="https://peraichi.com/landing_pages/view/smart8online" target="_blank" rel="noopener" class="c-button -primary inflady__button academy__applicationButton"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>お申し込みはこちら</a>
 	</section>
 	<section class="academy__instructorRecruitment">
 		<div class="academy__instructorRecruitmentInner">

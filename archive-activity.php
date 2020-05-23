@@ -11,7 +11,7 @@
   <div id="activity">
     <ul>
         <?php while (have_posts()) : the_post(); ?>
-        <li class="activity__list">
+        <li class="activity__list" id="<?php the_ID(); ?>">
             <time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="activity__datetime"><?php echo get_the_date('Y.m.d'); ?></time>
             <div class="activity__Contents">
                 <h3 class="activity__heading"><?php the_title(); ?></h3>
@@ -22,8 +22,8 @@
                     if ($thumbnail1 || $thumbnail2) { ?>
                         <div class="activity__thumbnail">
                         <?php
-                            echo wp_get_attachment_image($thumbnail1);
-                            echo wp_get_attachment_image($thumbnail2);
+                            echo wp_get_attachment_image($thumbnail1, 'medium');
+                            echo wp_get_attachment_image($thumbnail2, 'medium');
                         ?>
                         </div>
                     <?php }
