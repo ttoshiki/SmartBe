@@ -886,8 +886,8 @@ $args = array(
 <script>
 $( document ).ready(function( $ ) {
   $('#thumb-v').sliderPro({
-    width: 933,//横幅
-    height: 526,
+    width: 943,//横幅
+    height: 531,
     orientation: 'horizontal',//スライドの方向
     arrows: true,//左右の矢印
     buttons: false,//ナビゲーションボタン
@@ -895,7 +895,7 @@ $( document ).ready(function( $ ) {
     thumbnailsPosition: 'right',//サムネイルの位置
     thumbnailPointer: true,//アクティブなサムネイルにマークを付ける
     thumbnailWidth: 280,//サムネイルの横幅
-    thumbnailHeight: 157,//サムネイルの縦幅
+    thumbnailHeight: 142,//サムネイルの縦幅
     breakpoints: {
       796: {//表示方法を変えるサイズ
         thumbnailsPosition: 'bottom',
