@@ -55,10 +55,10 @@
       <a href="seminar-list"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider03.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider03-sp.jpg" /></a>
     </div>
     <div class="sp-slide">
-      <a href="https://smartbe8.com/book1/amazon.html"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04@2x.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider04-sp.jpg" /></a>
+      <a href="https://smartbe8.com/book1/amazon.html" target="_blank" rel="noopener"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider04@2x.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider04-sp.jpg" /></a>
     </div>
     <div class="sp-slide">
-      <a href="https://peraichi.com/landing_pages/view/smart8online"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider05-sp.jpg" /></a>
+      <a href="https://peraichi.com/landing_pages/view/smart8online" target="_blank" rel="noopener"><img class="sp-image" src="<?php echo content_url() ?>/themes/gensen_tcd050/img/top_slider05.jpg" data-small="<?php echo get_template_directory_uri(); ?>/img/top_slider05-sp.jpg" /></a>
     </div>
   </div><!--/ sp-slides-->
   <div class="sp-thumbnails">

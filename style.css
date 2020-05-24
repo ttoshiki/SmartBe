@@ -1843,7 +1843,7 @@ form.columns-5 .header_search_button {
 /* イベント記事ページ */
 
 .entry-title {
-  max-width: 769px;
+  max-width: var(--max-width);
   margin: 48px auto 0;
   color: #49240d;
   text-align: center;
@@ -1878,7 +1878,7 @@ form.columns-5 .header_search_button {
 }
 
 .entry-content {
-  max-width: 796px;
+  max-width: var(--max-width);
   margin: 48px auto 0;
   font-size: 18px;
   line-height: 1.7;
@@ -1888,7 +1888,7 @@ form.columns-5 .header_search_button {
 .event-prevNextLinks {
   display: flex;
   justify-content: space-between;
-  max-width: 796px;
+  max-width: var(--max-width);
   margin: 120px auto 0;
 }
 
@@ -7702,7 +7702,9 @@ a:hover.first,
 a:hover.last,
 a:hover.about__about__representativesSns,
 a:hover.iconWithButton,
-a:hover.front-page__activityButton {
+a:hover.front-page__activityButton,
+a:hover.prev-link,
+a:hover.next-link {
   color: #ffffff;
   opacity: 0.8;
 }

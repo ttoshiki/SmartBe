@@ -44,10 +44,7 @@ get_header(); ?>
 
 			<ul class="post-categoryList">
 				<?php
-                    $args = array(
-                        'taxonomy' => 'event-category'
-                    );
-                    $categories = get_categories($args);
+                    $categories = get_the_category();
                     foreach ($categories as $category) {
                         echo '<span class="post-categoryItem">' . $category->name . '</span>';
                     }
