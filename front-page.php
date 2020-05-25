@@ -326,7 +326,7 @@
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/top_about_encounter.svg" alt="出会い">
                     <p class="front-page__aboutText">
-                        集客アカデミーやスクールには、150人を超える同じ志を持った仲間が待っています。<br />
+                        集客アカデミーやスクールには、累計150人を超える同じ志を持った仲間が待っています。<br />
                         ともに学ぶことでモチベーション高く学べ、コミュニティの力も身につきます。
                     </p>
                 </div>
@@ -350,7 +350,7 @@
             <h2 class="front-page__serviceName">アカデミー</h2>
             <?php echo file_get_contents(get_template_directory() . '/img/icon_academy.svg'); ?>
             <h3 class="front-page__serviceCatchCopy">一人ひとりに合わせた<br />再現性高い集客メソッド</h3>
-            <p class="front-page__serviceContent">毎月10人の安定的な集客を可能にし、理想の収入を得るためのメソッドを、150人を超える同志と一緒に学べる女性起業家のための学校です。</p>
+            <p class="front-page__serviceContent">毎月10人の安定的な集客を可能にし、理想の収入を得るためのメソッドを、累計500人を超える同志と一緒に学べる女性起業家のための学校です。</p>
 			<div class="m_botton"><a href="http://25works.sakura.ne.jp/smartbe/academy/">詳細はこちら</a></div>
         </li>
         <li class="front-page__serviceItem">
