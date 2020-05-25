@@ -7516,6 +7516,7 @@ a.guest-url {
   color: #333333;
   font-size: 18px;
   min-height: 135px;
+  word-break: break-all;
 }
 
 .front-page__voice {
@@ -8225,7 +8226,7 @@ a:hover.sitemap__link {
   margin: 56px auto 0;
   justify-content: center;
   align-items: center;
-  background-color: #92785f;
+  background-color: #b79e84;
   color: #fff;
   border-radius: 64px;
   max-width: 450px;
@@ -11442,6 +11443,18 @@ complete（メルマガ登録完了）
   .complete__cta .footer__lineGuidanceImages {
     margin-top: 16px;
   }
+}
+
+#article .faq_info_one p.q {
+  font-size: 20px;
+}
+
+#article .faq_info_one p {
+  font-size: 18px;
+}
+
+#article .post_content > :last-child {
+  font-size: 18px;
 }
 
 /* ------------------
