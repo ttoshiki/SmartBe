@@ -10993,6 +10993,11 @@ a:hover.sitemap__link {
   vertical-align: bottom;
 }
 
+#activity .youtube {
+  display: inline-block;
+  width: 50%;
+}
+
 #activity .youtube img {
   filter: brightness(0.7);
 }
@@ -11001,10 +11006,9 @@ a:hover.sitemap__link {
   position: relative;
 }
 
-#activity .youtube::before {
-  content: "";
-  width: 72px;
-  height: 50px;
+#activity a.activity__youtubeLink {
+  width: 52px;
+  height: 36px;
   background-image: url(img/yt_icon.png);
   position: absolute;
   background-size: cover;
@@ -11012,6 +11016,19 @@ a:hover.sitemap__link {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
+}
+
+#activity .attachment-medium {
+  display: inline-block;
+  margin-top: 32px;
+}
+
+#activity .attachment-medium:nth-of-type(2) {
+  margin-left: 16px;
+}
+
+.activity__youtubeLink:hover {
+  cursor: pointer;
 }
 
 .activity__list {
@@ -11061,7 +11078,6 @@ a:hover.sitemap__link {
 
 .activity__contents .youtube {
   position: relative;
-  width: 100%;
   margin-top: 24px;
 }
 
@@ -11139,9 +11155,12 @@ a:hover.sitemap__link {
     width: 100%;
   }
 
-  #activity .youtube::before {
-    width: 60px;
-    height: 42px;
+  #activity .youtube {
+    width: 100%;
+  }
+
+  #activity .attachment-medium:nth-of-type(2) {
+    margin-left: 0;
   }
 }
 

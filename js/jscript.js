@@ -343,4 +343,15 @@ jQuery(function(){
       });
     }
   })
+
+  $('#activity .youtube a').each(function() {
+    $(this).before(function() {
+      var youtubeLink = $(this).attr('href')
+      $('a').attr('href');
+      return '<a href="' + youtubeLink + '" target="_blank" rel="noopener" class="activity__youtubeLink"><span class="activity__youtubeIcon"></span></a>'
+    })
+  })
+
+
+
 });
