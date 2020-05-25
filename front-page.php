@@ -891,7 +891,7 @@ $( document ).ready(function( $ ) {
     orientation: 'horizontal',//スライドの方向
     arrows: true,//左右の矢印
     buttons: false,//ナビゲーションボタン
-    loop: false,//ループ
+    loop: true,//ループ
     thumbnailsPosition: 'right',//サムネイルの位置
     thumbnailPointer: true,//アクティブなサムネイルにマークを付ける
     thumbnailWidth: 280,//サムネイルの横幅
