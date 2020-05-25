@@ -10998,7 +10998,6 @@ a:hover.sitemap__link {
 }
 
 #activity .youtube a {
-  z-index: 1000;
   position: relative;
 }
 
@@ -11012,7 +11011,7 @@ a:hover.sitemap__link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 5000;
+  z-index: 100;
 }
 
 .activity__list {
