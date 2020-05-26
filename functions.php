@@ -1099,13 +1099,18 @@ add_action('manage_posts_custom_column', 'custom_posts_column', 10, 2);
 
 
 /*********************************
- 活動実績の表示件数を無限に
+ アーカイブの表示件数を変更
 **********************************/
 
 function change_activity_posts_per_page($query)
 {
     if (is_post_type_archive('activity')) {
         $query->set('posts_per_page', '-1');
+        return $query;
+    }
+
+    if (is_post_type_archive('blog')) {
+        $query->set('posts_per_page', '6');
         return $query;
     }
 }

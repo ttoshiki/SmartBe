@@ -5308,10 +5308,19 @@ a.guest-url {
   justify-content: center;
 }
 
+.index__pagination {
+  margin-bottom: 80px;
+}
+
 .official_pagination__list a,
 .official_pagination__list span {
   margin: 80px 8px 0;
   font-size: 18px;
+}
+
+.index__pagination a,
+.index__pagination span {
+  margin: 48px 8px 0;
 }
 
 @media screen and (min-width: 768px) {

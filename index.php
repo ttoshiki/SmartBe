@@ -108,7 +108,9 @@
  <p class="no_post"><?php _e('There is no registered post.', 'tcd-w'); ?></p>
 <?php endif; ?>
 
-<?php get_template_part('navigation'); get_template_part('navigation2'); ?>
+<div class="official_pagination__list index__pagination">
+  <?php official_pagination(); ?>
+</div>
 
 </div><!-- END #main_col -->
 

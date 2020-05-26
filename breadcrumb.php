@@ -20,10 +20,13 @@ if (! $dp_options) {
   <?php } elseif (is_post_type_archive('activity')) { ?>
   <li class="last"><?php echo post_type_archive_title('', false); ?></li>
 
+  <?php } elseif (is_post_type_archive('blog')) { ?>
+  <li class="last">コラム</li>
+
   <?php } elseif (is_page('seminar-list')) { ?>
   <li class="last">セミナー・イベント</li>
 
-  <?php } elseif (is_archive('voice')) { ?>
+  <?php } elseif (is_post_type_archive('voice')) { ?>
   <li class="last">受講生の声</li>
 
   <?php } elseif (is_singular('event')) { ?>
@@ -92,6 +95,20 @@ if (! $dp_options) {
 
 <?php } elseif (is_singular($dp_options['introduce_slug'])) { ?>
   <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="<?php echo get_post_type_archive_link($dp_options['introduce_slug']); ?>"><span itemprop="title"><?php echo esc_html($dp_options['introduce_breadcrumb_label']); ?></span></a></li>
+  <li class="last"><?php the_title(); ?></li>
+
+<?php } elseif (is_singular('blog')) { ?>
+  <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="../../column"><span itemprop="title">コラム</span></a></li>
+  <!-- <?php echo get_the_term_list($post->ID, 'category_blog'); ?> -->
+  <?php
+    $terms = get_the_terms(get_the_ID(), 'category_blog');
+    if (!empty($terms)) : if (!is_wp_error($terms)) :
+    ?>
+      <?php foreach ($terms as $term) : ?>
+      <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="<?php echo get_term_link($term); ?>"><span itemprop="title"><?php echo $term->name; ?></span></a></li>
+      <?php endforeach; ?>
+    <?php endif; endif; ?>
+
   <li class="last"><?php the_title(); ?></li>
 
 <?php
