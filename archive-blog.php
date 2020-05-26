@@ -18,7 +18,7 @@
           <div class="front-page__postInfo">
             <h4 class="front-page__postName"><?php the_title(); ?></h4>
             <ul class="post-categories">
-              <?php $terms = wp_get_object_terms($post->ID, 'category_blog');//カスタムタクソノミーのスラッグ
+              <?php $terms = wp_get_object_terms($post->ID, 'category_blog');
                 if ($terms) {
                     foreach ($terms as $term) {
                         echo '<li class="'.$term->slug.'">'.$term->name.'</li>' ;
