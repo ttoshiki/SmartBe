@@ -878,7 +878,7 @@ $args = array(
 </ul>
 
 <?php wp_reset_postdata(); ?>
-	  <div><a href="#" class="column_b">コラム一覧</a></div>
+	  <div><a href="column" class="column_b">コラム一覧</a></div>
 </div>
 
 
