@@ -11910,6 +11910,7 @@ complete（メルマガ登録完了）
   .reception .about__representativesContentsWrapper {
     margin-top: 24px;
   }
+	
 }
 
 /*追加*/
@@ -11997,3 +11998,16 @@ complete（メルマガ登録完了）
   opacity: 0.7;
   color: #fff;
 }
+
+
+@media screen and (max-width: 767px) {
+#recep .recep_message br.sp {
+    display: block;
+}
+	
+	#recep .recep_message p{
+		font-size:14px;
+	}
+}
+
+

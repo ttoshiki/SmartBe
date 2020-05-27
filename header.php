@@ -36,6 +36,7 @@ if (! $dp_options) {
 <script src="<?php echo content_url(); ?>/themes/gensen_tcd050/js/jquery.sliderPro.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <?php wp_head(); ?>
+	<link rel="SHORTCUT ICON" href="http://25works.sakura.ne.jp/smartbe/wp-content/uploads/2020/05/favicon.ico"/>
 </head>
 <body id="body" <?php body_class(); ?>>
 
