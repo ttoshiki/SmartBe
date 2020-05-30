@@ -2046,7 +2046,7 @@ form.columns-5 .header_search_button {
   width: 100%;
   height: 0;
   overflow: hidden;
-  padding-top: 64.285%;
+  padding-top: 56.25%;
   position: relative;
 }
 #post_list .article .image img {
@@ -3829,9 +3829,6 @@ ul.banner_list li a:hover .caption {
   color: #fff;
   text-align: center;
   margin-top: 120px;
-}
-#footer_contents a {
-  color: #fff;
 }
 #footer_contents a:hover {
   color: #92785f;
@@ -11910,7 +11907,7 @@ complete（メルマガ登録完了）
   .reception .about__representativesContentsWrapper {
     margin-top: 24px;
   }
-	
+
 }
 
 /*追加*/
@@ -12004,7 +12001,7 @@ complete（メルマガ登録完了）
 #recep .recep_message br.sp {
     display: block;
 }
-	
+
 	#recep .recep_message p{
 		font-size:14px;
 	}
