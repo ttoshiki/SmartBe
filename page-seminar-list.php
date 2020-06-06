@@ -5,8 +5,8 @@
 
 <?php get_template_part('breadcrumb'); ?>
 
-<img src="<?php echo get_template_directory_uri(); ?>/img/seminar_event_header.jpg" alt="" class="pc tab">
-<img src="<?php echo get_template_directory_uri(); ?>/img/seminar_event_header-sp.jpg" alt="" class="sp">
+<img src="<?php echo get_template_directory_uri(); ?>/img/seminar_event_header.jpg" alt="" class="seminar_event_header pc tab">
+<img src="<?php echo get_template_directory_uri(); ?>/img/seminar_event_header-sp.jpg" alt="" class="seminar_event_header sp">
 <div id="main_col">
 
   <h2 class="archive__title">カテゴリーで絞り込む</h2>
