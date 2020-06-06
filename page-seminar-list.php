@@ -93,7 +93,7 @@
             <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
               <div class="image">
                 <?php if (has_post_thumbnail()) {
-              the_post_thumbnail('size2');
+              the_post_thumbnail();
           } else { ?><img src="<?php echo get_template_directory_uri(); ?>/img/common/no_image2.gif" title="" alt="" /><?php } ?>
               </div>
               <h3 class="title js-ellipsis"><?php the_title(); ?></h3>
