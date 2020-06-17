@@ -12142,6 +12142,13 @@ complete（メルマガ登録完了）
 #recep .recep_message br.sp {
     display: block;
 }
+<<<<<<< HEAD
+=======
+
+	#recep .recep_message p{
+		font-size:14px;
+	}
+>>>>>>> 3769f25f6d49b031a8c7c06fb16a1844eabf7156
 }
 
 @media screen and (max-width: 767px) {
