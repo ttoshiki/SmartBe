@@ -113,11 +113,6 @@ if (! $dp_options) {
 
 <?php
       } elseif (is_single()) {
-          if (get_post_type_archive_link('post') != get_bloginfo('url')) {
-              echo '  <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="'.get_post_type_archive_link('post').'">'.esc_html($dp_options['blog_breadcrumb_label']).'</a></li>'."\n";
-          } else {
-              echo '  <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">'.esc_html($dp_options['blog_breadcrumb_label']).'</li>'."\n";
-          }
 
           if ($dp_options['show_categories']) {
               foreach (explode('-', $dp_options['show_categories']) as $cat) {

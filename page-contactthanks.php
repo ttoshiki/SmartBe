@@ -44,13 +44,13 @@
 <div id="contact">
 	<div class="contact_wrapper">
 		<h4><?php the_title(); ?></h4>
-		
+
 		<div class="contact_form conf">
-			<p>お問い合わせ頂き誠にありがとうございました。<br>
+			<p>お問い合わせ頂き<br class="sp">誠にありがとうございました。<br>
       <br>
-      お問い合わせ内容を確認させていただき、後ほど担当者よりご回答をさせていただきます。<br>
+      お問い合わせ内容を確認させていただき、<br class="sp">後ほど担当者より<br class="sp">ご回答をさせていただきます。<br>
       <br>
-      恐れ入りますが、今しばらくお待ちいただけますよう、宜しくお願い申し上げます。</p>
+      恐れ入りますが、<br class="sp">今しばらくお待ちいただけますよう、<br class="sp">宜しくお願い申し上げます。</p>
 			<?php echo do_shortcode('[mwform_formkey key="332"]'); ?>
 		</div><!-- contact_form -->
 	</div><!-- contact_wrapper -->

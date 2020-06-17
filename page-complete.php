@@ -59,9 +59,9 @@
         <span class="complete__titleSpan">メルマガ登録完了</span>
     </h1>
     <img src="<?php echo get_template_directory_uri(); ?>/img/cracker.png" alt="" class="complete__eyeCatch">
-    <p class="complete__text">ご登録いただきましたメールアドレスに<br />メールをお送りいたしましたので、ご確認ください。</p>
+    <p class="complete__text">ご登録いただきましたメールアドレスに<br />メールをお送りいたしましたので、<br class="sp">ご確認ください。</p>
     <small class="complete__small">もし届いてない場合は以下をご参照の上、<br class="sp">受信設定の変更を行ってください。</small>
-    <p class="complete__settingParagraph"><a href="" class="complete__settingLink">- 迷惑フォルダに入れず<br class="sp">受信箱に届かせるメール設定方法</a></p>
+    <p class="complete__settingParagraph"><a href="http://46mail.net/index.php?a=" target="_blank" class="complete__settingLink">- 迷惑フォルダに入れず<br class="sp">受信箱に届かせるメール設定方法</a></p>
     <img src="<?php echo get_template_directory_uri(); ?>/img/decorated_line.png" alt="" class="complete__line">
     <section class="complete__lineInfo">
         <h1 class="complete__lineInfoHeading">LINE公式でも<br class="sp">タイムリーな情報<br class="sp">配信中！</h1>

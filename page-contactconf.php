@@ -44,11 +44,11 @@
 <div id="contact">
 	<div class="contact_wrapper">
 		<h4><?php the_title(); ?></h4>
-		
+
 		<div class="contact_form conf">
 			<p>入力内容を確認後、「上記の内容で送信する」ボタンから内容を送信してください。<br>
       （<span>※</span>は必須項目です。）</p>
-			<?php echo do_shortcode('[mwform_formkey key="332"]'); ?>
+			<?php echo do_shortcode('[mwform_formkey key="15"]'); ?>
 		</div><!-- contact_form -->
 	</div><!-- contact_wrapper -->
 </div><!-- id contact --->

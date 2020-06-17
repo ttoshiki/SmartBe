@@ -44,13 +44,13 @@
 <div id="contact">
 	<div class="contact_wrapper">
 		<h4><?php the_title(); ?></h4>
-		
+
 		<div class="contact_form">
 			<p>各種お問い合わせは下記お問い合わせフォームよりご連絡ください。<br>
       （<span>※</span>は必須項目です。）</p>
       <p>よくあるご質問については<a href="<?php echo get_page_link( 58 );?>">こちらから</a><br>
 取材ご希望の方は<a href="<?php echo get_page_link( 64 );?>">こちらから</a></p>
-			<?php echo do_shortcode('[mwform_formkey key="332"]'); ?>
+			<?php echo do_shortcode('[mwform_formkey key="15"]'); ?>
 		</div><!-- contact_form -->
 	</div><!-- contact_wrapper -->
 </div><!-- id contact --->

@@ -14,7 +14,7 @@ html {
   #left_col {
     width: -webkit-calc(100% - 3.3333% - 300px);
     width: -moz-calc(100% - 3.3333% - 300px);
-    width: calc(100% - 3.3333% - 300px);
+    width: 100%;
   }
   #side_col {
     width: 300px;
@@ -1007,7 +1007,7 @@ html {
   ul.meta li.cat a,
   ul.meta li.cat span {
     margin: 0 4px 4px 0;
-    padding: 0 8px;
+    padding: 0 2px;
     min-width: 44px;
     line-height: 21px;
     border-radius: 10.5px;
@@ -1948,7 +1948,7 @@ html {
     font-size: 20px !important;
     line-height: 1.5;
   }
-	
+
 	.m_botton a {
     font-size: 1.3em;
 }

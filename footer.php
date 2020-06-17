@@ -49,7 +49,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
    <h3 class="footer__mailMagazineCta">
      <span class="footer__mailMagazineCtaSpan"><strong class="footer__mailMagazineCtaStrong">5</strong>秒で簡単登録♪特典も即ゲット！</span>
    </h3>
-   <a href="//smartbe8.com/wp/magazine/" class="footer__mailMagazineButton">今すぐ無料で登録する</a>
+  <a href="//smartbe8.com/wp/magazine/" target="_blank" class="footer__mailMagazineButton">今すぐ無料で登録する</a>
  </section>
  <section class="footer__lineGuidance">
    <h1 class="footer__lineGuidanceHeader">LINE公式アカウント<br class="sp">ご案内</h1>
@@ -624,5 +624,3 @@ jQuery(document).ready(function($){
 <?php wp_footer(); ?>
 </body>
 </html>
-
-

@@ -326,7 +326,7 @@
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/top_about_encounter.svg" alt="出会い">
                     <p class="front-page__aboutText">
-                        集客アカデミーやスクールには、累計150人を超える同じ志を持った仲間が待っています。<br />
+                        集客アカデミーやスクールには、累計500人を超える同じ志を持った仲間が待っています。<br />
                         ともに学ぶことでモチベーション高く学べ、コミュニティの力も身につきます。
                     </p>
                 </div>
@@ -351,41 +351,41 @@
             <?php echo file_get_contents(get_template_directory() . '/img/icon_academy.svg'); ?>
             <h3 class="front-page__serviceCatchCopy">一人ひとりに合わせた<br />再現性高い集客メソッド</h3>
             <p class="front-page__serviceContent">毎月10人の安定的な集客を可能にし、理想の収入を得るためのメソッドを、累計500人を超える同志と一緒に学べる女性起業家のための学校です。</p>
-			<div class="m_botton"><a href="http://25works.sakura.ne.jp/smartbe/academy/">詳細はこちら</a></div>
+			<div class="m_botton"><a href="academy" target="_blank" class="">詳細はこちら</a></div>
         </li>
         <li class="front-page__serviceItem">
             <h2 class="front-page__serviceName">セミナー講座</h2>
             <?php echo file_get_contents(get_template_directory() . '/img/icon_seminar.svg'); ?>
             <h3 class="front-page__serviceCatchCopy">女性起業に必要なスキルを<br />短時間で学ぶ</h3>
             <p class="front-page__serviceContent">多岐に渡るテーマの中から、自分に足りない部分だけを半日で学べるミニセミナーや短期講座を多数開催しています。</p>
-			<div class="m_botton"><a href="http://25works.sakura.ne.jp/smartbe/seminar-list/">詳細はこちら</a></div>
+			<div class="m_botton"><a href="seminar-list" target="_blank" class="">詳細はこちら</a></div>
         </li>
         <li class="front-page__serviceItem">
             <h2 class="front-page__serviceName">オンライン講座</h2>
             <?php echo file_get_contents(get_template_directory() . '/img/icon_online_school.svg'); ?>
             <h3 class="front-page__serviceCatchCopy">女性起業のノウハウが<br />どこでも学べる</h3>
             <p class="front-page__serviceContent">88本の動画を365日24時間、国内外どこへいても学ぶことができます。忙しくてセミナーに参加できない、自由に学びたい方にはオススメです。</p>
-			<div class="m_botton"><a href="https://peraichi.com/landing_pages/view/smart8online/">詳細はこちら</a></div>
+			<div class="m_botton"><a href="https://peraichi.com/landing_pages/view/smart8online/" target="_blank" class="">詳細はこちら</a></div>
         </li>
         <li class="front-page__serviceItem">
             <h2 class="front-page__serviceName">インフルエンサー育成</h2>
             <?php echo file_get_contents(get_template_directory() . '/img/icon_influencer.svg'); ?>
             <h3 class="front-page__serviceCatchCopy">SNSで大きな影響力を持つ<br />方法を身につける</h3>
             <p class="front-page__serviceContent">Instagram・YouTube・Twitter、それぞれの正しい活用方法を知り、SNSを自分の味方にして大きな影響力を持った人材として成長できます。</p>
-			<div class="m_botton"><a href="http://25works.sakura.ne.jp/smartbe/inflady/">詳細はこちら</a></div>
+			<div class="m_botton"><a href="inflady" target="_blank" class="">詳細はこちら</a></div>
         </li>
         <li class="front-page__serviceItem">
             <h2 class="front-page__serviceName">EXPO</h2>
             <?php echo file_get_contents(get_template_directory() . '/img/icon_expo.svg'); ?>
             <h3 class="front-page__serviceCatchCopy">1日で美容や健康、お金に<br />ついて総合的に体験</h3>
             <p class="front-page__serviceContent">1,000人の女性がもっと自分らしく生きるために必要な美容や健康、食事や子育て、お金の稼ぎ方から増やし方までを1日で学べて体験できる祭典です。</p>
-			<div class="m_botton"><a href="https://smartbeauty-expo.com/">詳細はこちら</a></div>
+			<div class="m_botton"><a href="https://smartbeauty-expo.com/" target="_blank" class="">詳細はこちら</a></div>
         </li>
     </ul>
   </section>
   <section class="front-page__voice">
       <h1 class="front-page__voiceHeading">受講生の声</h1>
-      <p class="front-page__voiceText">累計500名以上の<br class="sp">受講生の喜びの声をご紹介します</p>
+      <p class="front-page__voiceText">累計500人以上の<br class="sp">受講生の喜びの声をご紹介します</p>
       <div class="front-page__voiceSliderWrapper">
         <div class="front-page__voiceBgGradationPrev"></div>
         <div class="front-page__voiceNextBtn"></div>

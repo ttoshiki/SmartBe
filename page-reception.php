@@ -57,22 +57,22 @@
 	<div class="recep_wrapper">
 		<h4><?php the_title(); ?></h4>
 		<div class="recep_message">
-			<h5>合同会社Smart Be代表 伊藤宏美より<br>
+			<h5>合同会社Smart Be代表 <br class="sp">伊藤宏美より<br>
 			報道関係者様へ</h5>
-			<p class="mb60">弊社では、女性の未来のためにご提供しているサービスを<br class="sp">
+			<p class="mb60">弊社では、女性の未来のために<br class="sp">ご提供しているサービスを<br class="sp">
 			より多くの方に知っていただくために、<br>メディア・報道関係者様に<br class="sp">
-			ご紹介いただける機会を広く受け付けております。<br>
+			ご紹介いただける機会を<br class="sp">広く受け付けております。<br>
 			<br>
-			Smart Beは女性の起業に必要なことが<br class="sp">すべて学べる女性のための総合アカデミーです。<br>
+			Smart Beは女性の起業に必要なことが<br class="sp">すべて学べる女性のための<br class="sp">総合アカデミーです。<br>
 			起業というと「難しそう」「アヤシイ」<br class="sp">「会社員以上の給料は望めない」といった<br>
 			ネガティブなイメージがあると思いますが、<br>
 			私たちは女性が起業を通して<br class="sp">自由に思い描いた通りの人生を送るための<br>
-			選択肢の1つとして、起業が当たり前にある社会を目指し、<br>
+			選択肢の1つとして、<br class="sp">起業が当たり前にある社会を目指し、<br>
 			起業によって安定的に理想の収入を得るための<br class="sp">メソッドを提供しております。<br>
 			</p>
 			<h5>お受けできる取材テーマ</h5>
-			<p>年間2,000人以上の集客を行い、<br>女性起業家500人以上のビジネスサポートを行う<br class="sp">アカデミーの代表の立場から、<br class="pc">
-			女性の起業の専門家として<br class="sp">女性の新しい生き方全般に関するあらゆることに回答可能です。</p>
+			<p>年間2,000人以上の集客を行い、<br>女性起業家500人以上のビジネスサポートを行う<br class="sp">アカデミーの代表の立場から、<br>
+			女性の起業の専門家として<br class="sp">女性の新しい生き方全般に関する<br class="sp">あらゆることに回答可能です。</p>
 			<ul>
 				<li>1.最新の起業業界の実情についての情報（集客手法、収入の実態など）</li>
 				<li>2.これから起業に取り組む方や既に実績を出しているアカデミー生へのインタビュー</li>
@@ -129,7 +129,7 @@
 				<div class="about__representativesContentsWrapper">
 					<div class="about__representativesContentsInner">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/about/representatives.jpg" alt="伊藤宏美" class="about__representativesPhoto">
-						<a href="//www.facebook.com/hiromi.ito.888" class="about__about__representativesSns pc"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
+						<a href="//www.facebook.com/hiromi.ito.888" target="_blank" class="about__about__representativesSns pc"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
 					</div>
 					<div class="about__representativesContentsInner">
 						<h2 class="about__representativesName">合同会社 Smart Be 代表　<br class="tab">伊藤宏美</h2>
@@ -139,13 +139,13 @@
 						</p>
 						<p class="about__representativesContent">
 							しかし現実は甘くなく、“売上ゼロ・集客ゼロ”の日々が続く。そんなある日、過労で倒れ仕事ができない状態に。「一生懸命働くのも大切だが、効率的な方法を探さないと女性の幸せは手に入らない」と感じソーシャルメディアを使った独自のWebマーケティング手法を開発。
-							その結果90日間で効果があらわれ、年間1,000人以上の集客に成功。さらにはSNSからNHKや日本テレビ、楽天クリムゾンFM、出版社からの講演依頼をいただくなど活動の幅は多岐にわたる。
+							その結果90日間で効果があらわれ、年間2,000人以上の集客に成功。さらにはSNSからNHKや日本テレビ、楽天クリムゾンFM、出版社からの講演依頼をいただくなど活動の幅は多岐にわたる。
 						</p>
 						<p class="about__representativesContent">
 							現在は賢女の集客アカデミーを主宰。受講生一人ひとりにあった集客メソッドを構築。企業で培った人生マネジメント能力をいかし、わずか20日間で売上100万円以上の売上実績を出すなどクライアントの業績アップに貢献している。
 						</p>
 						<div class="about__representativesSign"><?php echo file_get_contents(get_template_directory() . '/img/about/sign.svg'); ?></div>
-						<a href="//www.facebook.com/hiromi.ito.888" class="about__about__representativesSns sp"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
+						<a href="//www.facebook.com/hiromi.ito.888" target="_blank" class="about__about__representativesSns sp"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
 					</div>
 				</div>
 			</div>
@@ -153,7 +153,7 @@
 		<div class="recep_form">
 			<h5>取材・サービスをご希望される<br>
 				報道関係者様</h5>
-			<p>取材・サービスをご希望される報道関係者様は下記お問い合わせフォームよりご連絡ください。<br>
+			<p>取材・サービスをご希望される報道関係者様は<br class="sp">下記お問い合わせフォームより<br class="sp">ご連絡ください。<br>
 			（<span>※</span>は必須項目です。）</p>
 		</div><!-- recep_form -->
 	</div><!-- recep_wrapper -->

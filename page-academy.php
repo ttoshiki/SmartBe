@@ -83,7 +83,7 @@
 	</section>
 	<section class="academy__freedom">
 		<div class="academy__freedomInner">
-			<h1 class="academy__reasonHeading">Facebookを賢く<br class="sp">使いこなすことで手に入る<strong>3</strong>つの自由</h1>
+			<h1 class="academy__reasonHeading">Facebookを賢く<br class="sp">使いこなすことで<br class="sp">手に入る<strong>3</strong>つの自由</h1>
 			<div class="dotLine"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?></div>
 			<ul class="academy__freedomList">
 				<li class="academy__freedomItem">
@@ -122,11 +122,11 @@
 	<section class="academy__voice">
 		<h1 class="academy__voiceHeading">たくさんの受講生たちが<br class="tab">圧倒的な成果を出しています！</h1>
 		<ul class="academy__voiceList">
-			<li class="academy__voiceItem">起業がはじめての私でも、<strong class="academy__voiceItemStrong">60人以上の集客に成功！</strong></li>
-			<li class="academy__voiceItem">Facebook初心者でも<strong class="academy__voiceItemStrong">2日で満員御礼に！</strong></li>
-			<li class="academy__voiceItem">売上数万円だった私が、<strong class="academy__voiceItemStrong">月商7桁を達成！夫婦仲も◎に♪</strong></li>
-			<li class="academy__voiceItem">子どもがいる私でもFacebookからのお申込みで<strong class="academy__voiceItemStrong">毎回満員御礼！</strong></li>
-			<li class="academy__voiceItem">発信の仕方を変えたことでお客様との距離が縮まったのを実感！<br /><strong class="academy__voiceItemStrong">成約率も上がりました！</strong></li>
+			<li class="academy__voiceItem">起業がはじめての私でも、<br class="sp"><strong class="academy__voiceItemStrong">60人以上の集客に成功！</strong></li>
+			<li class="academy__voiceItem">Facebook初心者でも<br class="sp"><strong class="academy__voiceItemStrong">2日で満員御礼に！</strong></li>
+			<li class="academy__voiceItem">売上数万円だった私が、<br class="sp"><strong class="academy__voiceItemStrong">月商7桁を達成！夫婦仲も◎に♪</strong></li>
+			<li class="academy__voiceItem">子どもがいる私でも<br class="sp">Facebookからのお申込みで<br class="sp"><strong class="academy__voiceItemStrong">毎回満員御礼！</strong></li>
+			<li class="academy__voiceItem">発信の仕方を変えたことで<br class="sp">お客様との距離が縮まったのを実感！<br /><strong class="academy__voiceItemStrong">成約率も上がりました！</strong></li>
 		</ul>
 		<a href="../voice"><img src="<?php echo get_template_directory_uri(); ?>/img/about/banner.jpg" alt="" class="about__reasonBanner"></a>
 	</section>
@@ -144,7 +144,7 @@
 				<li class="academy__learnItem">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/academy/learn02.jpg" alt="" class="academy__learnItemPhoto">
 					<div class="academy__learnItemContents">
-						<h2 class="academy__learnSubHeading">「女子会・お茶会・ランチ会・朝活」で<br class="pc tab" /><strong class="academy__learnStrong">月収7桁</strong>は可能！</h2>
+						<h2 class="academy__learnSubHeading">「女子会・お茶会・<br class="sp">ランチ会・朝活」で<br><strong class="academy__learnStrong">月収7桁</strong>は可能！</h2>
 						<p class="academy__learnItemText">稼げる人が大切にしていること、そして月収7桁を稼ぐために必要な準備や心構えとは。「女子会・お茶会・ランチ会・朝活」を楽しく開催しながら、ビジネスを飛躍させ突き抜ける方法をお伝えします。</p>
 					</div>
 				</li>
@@ -202,7 +202,7 @@
 		<h1 class="academy__fullThanksHeading">Facebookを使いこなせば<br class="sp"><strong class="academy__fullThanksHeadingStrong">満員御礼</strong>はあたり前に！</h1>
 		<div class="dotLine"><?php echo file_get_contents(get_template_directory() . '/img/about/reason_dot_line.svg'); ?></div>
 		<h2 class="academy__fullThanksSubHeading">集客を楽しめるようになった<br class="sp">女性起業家は<br /><strong class="academy__fullThanksStrong">Facebookを<br class="sp">効果的に<br class="tab">活用しています！</strong></h2>
-		<p class="academy__fullThanksParagraph">実際に、Facebookを活用して、<br>「集客を楽しめるようになった！」「売上UPが叶った！」という<br class="pc sp" />女性起業家はたくさんいます。<br class="tab">そうなると自然と満員御礼は<br class="sp">当たり前となります。</p>
+		<p class="academy__fullThanksParagraph">実際に、Facebookを活用して、<br>「集客を楽しめるようになった！」<br class="sp">「売上UPが叶った！」という<br class="pc sp" />女性起業家はたくさんいます。<br class="tab">そうなると自然と満員御礼は<br class="sp">当たり前となります。</p>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/academy/full_thanks.jpg" alt="" class="academy__fullThanksImage">
 		<div class="academy__fullThanksQuestion">
 			<h2 class="academy__fullThanksQuestionHeading">

@@ -53,6 +53,9 @@
   </div>
 <?php } ?>
 
+<img src="<?php echo get_template_directory_uri(); ?>/img/inflady_header.png" alt="" class="instructor_recruitment_header pc tab">
+<img src="<?php echo get_template_directory_uri(); ?>/img/inflady_header.png" alt="" class="instructor_recruitment_header sp">
+
 <div id="inflady">
     <div class="inflady__titleWrapper">
         <h1 class="inflady__title">
@@ -89,7 +92,7 @@
             <?php echo file_get_contents(get_template_directory() . '/img/inflady_chart.svg');?>
         </figure>
         <p class="inflady__paragraph">出会いの場として楽しんだり、しっかり学んで自らインフルエンサーとなり高い影響力を掴んだり、ビジネスもプライベートも共に充実させられるサービスです。</p>
-        <button onclick="location.href='https://www.facebook.com/groups/inflady/'" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>無料でコミュニティーに入る</button>
+        <button onclick="window.open('https://www.facebook.com/groups/inflady/','_blank')" class="c-button -primary inflady__button"><div class="inflady__buttonIcon"><?php echo file_get_contents(get_template_directory() . '/img/icon_play.svg');?></div>無料でコミュニティーに入る</button>
     </section>
 </div><!-- id voice --->
 

@@ -352,6 +352,4 @@ jQuery(function(){
     })
   })
 
-
-
 });

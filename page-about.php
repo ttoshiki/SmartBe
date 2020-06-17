@@ -140,7 +140,7 @@
 		<p class="about__aboutContents">
 			強く、そして本物の美しさをもつ女性は<br />
 			“賢さ”を持ち合わせていると思い<br />
-			社名に「Smart」をいれました。
+			社名に「Smart」を入れました。
 		</p>
 		<p class="about__aboutContents">
 			そして「Be」の部分には<br />
@@ -154,7 +154,7 @@
 		<p class="about__aboutContents"><strong class="about__aboutContentsStrong">「学びを通して、人生を選択できる、</strong><br class="sp"><strong class="about__aboutContentsStrong">自由で幸せな女性を創出する」</strong></p>
 		<p class="about__aboutContents">
 			これを多くの女性に体現してもらえるよう<br />
-			たくさんの想いと願いを込めて<br class="sp">Smart Beといたしました。
+			たくさんの想いと願いを込めて<br class="sp">Smart Beと名付けました。
 		</p>
 	</section>
 	<section class="about__representatives">
@@ -163,7 +163,7 @@
 			<div class="about__representativesContentsWrapper">
 				<div class="about__representativesContentsInner">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/about/representatives.jpg" alt="伊藤宏美" class="about__representativesPhoto">
-					<a href="//www.facebook.com/hiromi.ito.888" class="about__about__representativesSns pc"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
+					<a href="//www.facebook.com/hiromi.ito.888" target="_blank" class="about__about__representativesSns pc"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
 				</div>
 				<div class="about__representativesContentsInner">
 					<h2 class="about__representativesName">合同会社 Smart Be 代表　<br class="tab">伊藤宏美</h2>
@@ -173,13 +173,13 @@
 					</p>
 					<p class="about__representativesContent">
 						しかし現実は甘くなく、“売上ゼロ・集客ゼロ”の日々が続く。そんなある日、過労で倒れ仕事ができない状態に。「一生懸命働くのも大切だが、効率的な方法を探さないと女性の幸せは手に入らない」と感じソーシャルメディアを使った独自のWebマーケティング手法を開発。
-						その結果90日間で効果があらわれ、年間1,000人以上の集客に成功。さらにはSNSからNHKや日本テレビ、楽天クリムゾンFM、出版社からの講演依頼をいただくなど活動の幅は多岐にわたる。
+						その結果90日間で効果があらわれ、年間2,000人以上の集客に成功。さらにはSNSからNHKや日本テレビ、楽天クリムゾンFM、出版社からの講演依頼をいただくなど活動の幅は多岐にわたる。
 					</p>
 					<p class="about__representativesContent">
 						現在は賢女の集客アカデミーを主宰。受講生一人ひとりにあった集客メソッドを構築。企業で培った人生マネジメント能力をいかし、わずか20日間で売上100万円以上の売上実績を出すなどクライアントの業績アップに貢献している。
 					</p>
 					<div class="about__representativesSign"><?php echo file_get_contents(get_template_directory() . '/img/about/sign.svg'); ?></div>
-					<a href="//www.facebook.com/hiromi.ito.888" class="about__about__representativesSns sp"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
+					<a href="//www.facebook.com/hiromi.ito.888" target="_blank" class="about__about__representativesSns sp"><?php echo file_get_contents(get_template_directory() . '/img/about/facebook_button.svg'); ?></a>
 				</div>
 			</div>
 		</div>

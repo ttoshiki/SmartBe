@@ -1131,7 +1131,17 @@ function iframe_in_div($the_content)
 }
 add_filter('the_content', 'iframe_in_div');
 
+function my_error_message($error, $key, $rule){
+    if($key === 'お名前' && $rule === 'noempty'){
+        return 'お名前が入力されていません';
+    }
+    if($key === 'メールアドレス' && $rule === 'noempty'){
+        return 'メールアドレスが入力されていません';
+    }
+    return $error;
+}
+add_filter( 'mwform_error_message_mw-wp-form-15', 'my_error_message', 10, 3 );
+
 
 
 ?>
-

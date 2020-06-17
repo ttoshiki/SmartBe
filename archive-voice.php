@@ -5,8 +5,8 @@
 
 <?php get_template_part('breadcrumb'); ?>
 
-<img src="<?php echo get_template_directory_uri(); ?>/img/voice_header.jpg" alt="" class="pc tab">
-<img src="<?php echo get_template_directory_uri(); ?>/img/voice_header-sp.jpg" alt="" class="sp">
+<img src="<?php echo get_template_directory_uri(); ?>/img/voice_header.jpg" alt="" class="voice_header pc tab">
+<img src="<?php echo get_template_directory_uri(); ?>/img/voice_header-sp.jpg" alt="" class="voice_header sp">
 
 <div id="voice">
     <div class="voice_wrapper">

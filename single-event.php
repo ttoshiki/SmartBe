@@ -43,15 +43,17 @@ get_header(); ?>
 			</header><!-- .entry-header -->
 
 			<ul class="post-categoryList">
-				<?php
-                    $args = array(
-                        'taxonomy' => 'event-category'
-                    );
-                    $categories = get_categories($args);
-                    foreach ($categories as $category) {
-                        echo '<span class="post-categoryItem">' . $category->name . '</span>';
-                    }
-                ?>
+				<?php // 投稿に紐づくタームの一覧を表示
+					$taxonomy_slug = 'event-category';
+					$category_terms = wp_get_object_terms($post->ID, $taxonomy_slug);
+					if (!empty($category_terms)) {
+						if (!is_wp_error($category_terms)) {
+							foreach ($category_terms as $category_term) {
+								echo '<li class="post-categoryItem">'.$category_term->name.'</li>';
+							}
+						}
+					}
+				?>
 			</ul>
 
 			<div class="event-post-thumbnail">

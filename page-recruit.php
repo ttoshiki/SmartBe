@@ -53,8 +53,8 @@
   </div>
 <?php } ?>
 
-<img src="<?php echo get_template_directory_uri(); ?>/img/recruit_header.jpg" alt="" class="pc tab">
-<img src="<?php echo get_template_directory_uri(); ?>/img/recruit_header-sp.jpg" alt="" class="sp">
+<img src="<?php echo get_template_directory_uri(); ?>/img/recruit_header.jpg" alt="" class="recruit_header pc tab">
+<img src="<?php echo get_template_directory_uri(); ?>/img/recruit_header-sp.jpg" alt="" class="recruit_header sp">
 
 <div id="recruit">
     <div class="recruit__inner">
@@ -77,7 +77,7 @@
                     ・FacebookやLINEなど、SNSを日常的に使っていらっしゃる方<br /><br class="sp">
                     ・WEBサイト関連の知識を、ある程度お持ちの方<br /><br class="sp">
                     ※上記に当てはまらない方も、積極的に学ぶ姿勢をお持ちであれば歓迎します！<br /><br />
-                    経営者と近い距離で会社の成長を楽しみたい方、女性の社会進出を応援したい
+                    経営者と近い距離で会社の成長を楽しみたい方、女性の社会進出を応援したい方、お待ちしております。
                 </td>
             </tr>
             <tr>
